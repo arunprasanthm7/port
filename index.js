@@ -1,5 +1,3 @@
-
-
 mode.addEventListener("click", () => {
   const mode = document.getElementById("mode");
   const body = document.getElementsByTagName("BODY")[0];
@@ -27,38 +25,41 @@ mode.addEventListener("click", () => {
     r.style.setProperty("--bg", "rgb(231, 231, 231)");
   }
 });
-let showSlides=(n)=>{
- 
-  let slides=document.getElementsByClassName('image');
-  let dots=document.getElementsByClassName('dot');
-if(n>slides.length)
-{slideIndex=1}
-if(n<1)
-{slideIndex=slides.length}
-for(let i=0;i<slides.length;i++)
-{
-  slides[i].style.visibility='hidden'
-}
-for(let j=0;j<dots.length;j++)
-{
- dots[j].className = dots[j].className.replace(" active"," ");
-}
-slides[slideIndex-1].style.visibility='visible';
-dots[slideIndex-1].className +=" active";
-}
-let slideIndex = 1;  
+let showSlides = (n) => {
+  let slides = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+    slides[0].style.marginLeft = "0";
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+    slides[0].style.marginLeft = "-60%";
+  }
+  if (n == 1) {
+    slides[0].style.marginLeft = "0";
+  }
+  if (n == 2) {
+    slides[0].style.marginLeft = "-20%";
+  }
+  if (n == 3) {
+    slides[0].style.marginLeft = "-40%";
+  }
+  if (n == 4) {
+    slides[0].style.marginLeft = "-60%";
+  }
+  for (let j = 0; j < dots.length; j++) {
+    dots[j].className = dots[j].className.replace(" active", " ");
+  }
+  dots[slideIndex - 1].className += " active";
+};
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
-}                   
-
-
-  
-
-
-
+  showSlides((slideIndex = n));
+}
