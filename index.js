@@ -1,9 +1,11 @@
-const mode = document.getElementById("mode");
-const body = document.getElementsByTagName("BODY")[0];
-const r = document.querySelector(":root");
-const modeName = document.getElementById("modeName");
-const onOffBtn = document.getElementById("onOffBtn");
+
+
 mode.addEventListener("click", () => {
+  const mode = document.getElementById("mode");
+  const body = document.getElementsByTagName("BODY")[0];
+  const r = document.querySelector(":root");
+  const modeName = document.getElementById("modeName");
+  const onOffBtn = document.getElementById("onOffBtn");
   if (modeName.innerText == "Day") {
     modeName.innerText = "";
     onOffBtn.style.width = "60px";
@@ -25,3 +27,38 @@ mode.addEventListener("click", () => {
     r.style.setProperty("--bg", "rgb(231, 231, 231)");
   }
 });
+let showSlides=(n)=>{
+ 
+  let slides=document.getElementsByClassName('image');
+  let dots=document.getElementsByClassName('dot');
+if(n>slides.length)
+{slideIndex=1}
+if(n<1)
+{slideIndex=slides.length}
+for(let i=0;i<slides.length;i++)
+{
+  slides[i].style.visibility='hidden'
+}
+for(let j=0;j<dots.length;j++)
+{
+ dots[j].className = dots[j].className.replace(" active"," ");
+}
+slides[slideIndex-1].style.visibility='visible';
+dots[slideIndex-1].className +=" active";
+}
+let slideIndex = 1;  
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}                   
+
+
+  
+
+
+

@@ -237,11 +237,12 @@ body {
   position: relative;
   border-radius: 50px;
 }
-.images {
+.image {
   position: absolute;
   height: 100%;
   width: 100%;
   border-radius: 50px;
+
 }
 .gallery-btns {
   position: absolute;
@@ -253,8 +254,8 @@ body {
   align-items: end;
   justify-content: center;
 }
-.prev,
-.next {
+#prev,
+#next {
   cursor: pointer;
   transition: 0.6s ease;
   width: 36px;
@@ -263,21 +264,20 @@ body {
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.2);
 }
-.prev:hover,
-.next:hover {
+#prev:hover,
+#next:hover {
   transition: 0.6s ease;
-  box-shadow: 0px 0px 0px 8px rgb(181, 179, 179);
+  box-shadow: 0px 0px 0px 8px rgba(181, 179, 179,0.6);
 }
 .radio-btns {
   gap: 8px;
 }
 .dot {
   background-color: rgba(255, 255, 255, 0.6);
-
   padding: 6px;
   border-radius: 6px;
 }
-.dot:hover {
+#active,.dot:hover {
   background-color: rgba(255, 255, 255, 1);
 }
 /*skill*/
