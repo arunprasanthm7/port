@@ -13,7 +13,7 @@
         <div id="navContainer" class="flex ver-center">
           <a id="home" class="nav-options">Home</a>
           <a id="blog" class="nav-options">About</a>
-          <a id="resume" class="nav-options">Resume</a>
+          <a id="resume" class="nav-options" href="assets/Arun[resume].pdf">Resume</a>
           <a id="projects" class="nav-options">Projects</a>
           <a id="blog" class="nav-options">Media</a>
         </div>
@@ -33,20 +33,37 @@
               deliver business value while levelling up my skills as a
               developer.
             </div>
-            <div class="flex gap-bio">
+            <!-- <div class="flex gap-bio">
               <div class="parent-see-my-work-learn-more flex center">
                 <div id="SeeMyWork">See my work</div>
               </div>
               <div class="parent-see-my-work-learn-more flex center">
                 <div id="LearnMore">Learn more</div>
               </div>
-            </div>
+            </div> -->
           </div>
-          <div id="photo" class="grid-items item2"></div>
-          <div
-            id="skill"
-            class="grid-items item3 flex flex-col ver-center skill-gap"
-          >
+          <div id="gallery" class="grid-items item2">
+        
+          <img class="images" src="assets/1920x1080.jpg"/>
+          <img class="images" src="assets/1920x1200.jpg"/>
+          <img class="images" src="assets/2560x1440.jpg"/>
+           <img class="images" src="assets/3840x2160.jpg"/>
+            <!-- Next and previous buttons -->
+            <div class="gallery-btns flex ">
+              <img class="prev"  src="assets/icons8-less-than-30.png"onclick="plusSlides(-1)"/>
+           <div class="radio-btns flex">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+          </div>
+          <img class="next" src="assets/icons8-more-than-30.png" onclick="plusSlides(1)"/>
+            </div>
+ 
+         
+          
+          </div>
+          <div id="skill" class="grid-items item3 flex flex-col ver-center skill-gap">
             <div id="skillHeading">Learned Skills</div>
             <div class="flex flex-col skill-gap">
               <div class="flex icon-name-pairing center">

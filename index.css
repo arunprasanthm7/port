@@ -12,6 +12,9 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+* {
+  box-sizing: border-box;
+}
 .flex {
   display: flex;
 }
@@ -52,7 +55,7 @@ body {
   position: absolute;
   top: 4px;
   left: 5px;
-  transition: 0.6s;
+  transition: 0.2s;
   height: 26px;
   width: 24px;
   font-size: 16px;
@@ -76,7 +79,7 @@ body {
   height: 40px;
   font-size: 18px;
   font-weight: 600;
-  border-radius: 20px;
+  border-radius: 50px;
   background-color: var(--white);
   transition: 0.6s;
 }
@@ -87,7 +90,7 @@ body {
 #contact {
   cursor: pointer;
   padding: 4px 18px;
-  border: 6px solid var(--lightGrey);
+  border: 6px solid rgb(0, 0, 0);
   border-radius: 30px;
   font-size: 18px;
   font-weight: 600;
@@ -99,7 +102,7 @@ body {
   transition: 0.4s;
   border: 6px solid rgb(0, 0, 0);
   padding: 6px 18px;
-  font-size: 19px;
+  font-size: 20px;
 }
 .nav-options {
   transition: 0.2s;
@@ -115,6 +118,7 @@ body {
 #main {
   margin: 140px auto 140px auto;
   grid-template-columns: 280px 280px 280px 280px;
+  grid-template-rows: 280px 280px 280px 280px;
   gap: 20px;
 }
 .grid-items {
@@ -176,26 +180,25 @@ body {
   font-weight: 900;
 }
 /*project.html*/
-.parent-prj-Cont-heading{
+.parent-prj-Cont-heading {
   font-size: 50px;
   font-weight: 600;
 }
-.parent-prj-thumbnail{
-
-width: 1000;
-height: 400px;
-background-color: grey;
-border-radius: 30px;
-
+.parent-prj-thumbnail {
+  width: 1000;
+  height: 400px;
+  background-color: grey;
+  border-radius: 30px;
 }
-#tagLine,.prj-abb {
+#tagLine,
+.prj-abb {
   font-size: 26px;
   font-weight: 600;
 }
-.prj-parent-Cont{
-  margin-top:140px;
+.prj-parent-Cont {
+  margin-top: 140px;
   margin-bottom: 140px;
-  gap:100px;
+  gap: 100px;
 }
 #about {
   font-size: 18px;
@@ -217,10 +220,8 @@ border-radius: 30px;
   border-radius: 30px;
   padding: 6px 14px;
   border: 6px solid var(--lightGrey);
-  transition: 0.4s;
-}
-#SeeMyWork:hover {
   border: 6px solid rgb(0, 0, 0);
+  transition: 0.4s;
 }
 #LearnMore {
   border: 6px solid var(--lightGrey);
@@ -230,6 +231,54 @@ border-radius: 30px;
   transition: 0.4s;
   padding: 8px 16px;
   font-size: 19px;
+}
+/*gallery*/
+#gallery {
+  position: relative;
+  border-radius: 50px;
+}
+.images {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+}
+.gallery-btns {
+  position: absolute;
+  gap: 40px;
+  border-radius: 50px;
+  padding-bottom: 16px;
+  width: 100%;
+  height: 100%;
+  align-items: end;
+  justify-content: center;
+}
+.prev,
+.next {
+  cursor: pointer;
+  transition: 0.6s ease;
+  width: 36px;
+  height: 36px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.prev:hover,
+.next:hover {
+  transition: 0.6s ease;
+  box-shadow: 0px 0px 0px 8px rgb(181, 179, 179);
+}
+.radio-btns {
+  gap: 8px;
+}
+.dot {
+  background-color: rgba(255, 255, 255, 0.6);
+
+  padding: 6px;
+  border-radius: 6px;
+}
+.dot:hover {
+  background-color: rgba(255, 255, 255, 1);
 }
 /*skill*/
 #skill {
@@ -386,7 +435,7 @@ border-radius: 30px;
   background-color: var(--white);
   padding: 6px 8px;
   border-radius: 30px;
-  border: 6px solid rgb(122, 121, 121);
+  border: 6px solid var(--lightGrey);
 }
 .prj-footer-heading:hover {
   transition: 0.4s;
