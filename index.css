@@ -124,11 +124,11 @@ body {
 .grid-items {
   background-color: var(--white);
   border-radius: 50px;
-  transition: 0.7s;
+  transition: 0.8s;
 }
 .grid-items:hover {
-  transition: 0.7s;
-  translate: 1px 7px;
+  transition: 0.8s;
+  translate: -2px 8px;
   box-shadow: var(--gridBoxShd);
 }
 .item1 {
@@ -255,6 +255,7 @@ body {
 .image {
   width: 280px;
   height: 280px;
+  background:cover;
   border-radius: 50px;
 }
 .gallery-btns {
@@ -295,10 +296,10 @@ body {
 }
 /*skill*/
 #skill {
-  padding: 36px 0px;
+  padding: 20px 0px;
 }
 #skillHeading,
-#toolHeading {
+#toolHeading,.inter-heading {
   font-size: 34px;
   font-weight: 700;
 }
@@ -343,6 +344,10 @@ body {
   padding: 20px 0px;
   gap: 30px;
   color: var(--black);
+}
+/*interaction*/
+#interaction{
+  padding:20px 0px ;
 }
 /*socialmedia*/
 #linkedIn,
