@@ -4,19 +4,20 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="flex flex-col">
-      <div class="header flex center">
+    <div class="flex flex-col center">
+      <div id="header" class=" flex center">
         <div id="mode">
           <div id="onOffBtn" class="flex center"></div>
           <div id="modeName">Day</div>
         </div>
-        <div id="navContainer" class="flex ver-center">
-          <a id="home" class="nav-options" href="index.html">Home</a>
-          <a id="blog" class="nav-options">About</a>
-          <a id="resume" class="nav-options" href="assets/Arun[resume].pdf">Resume</a>
-          <a id="projects" class="nav-options">Projects</a>
-          <a id="blog" class="nav-options">Media</a>
+          <div id="navContainer" class="flex ver-center">
+            <a id="home" class="nav-options" href="index.html">Home</a>
+            <a id="blog" class="nav-options">About</a>
+            <a id="resume" class="nav-options" href="assets/Arun[resume].pdf">Resume</a>
+            <a id="projects" class="nav-options">Projects</a>
+            <a id="blog" class="nav-options">Media</a>
         </div>
+        
         <div id="contactParent" class="flex center">
           <a id="contact"  class="flex center" href="mailto:arunprasanthm7@gmail.com">Contact</a>
         </div>
@@ -61,9 +62,6 @@
             </div>
  
         </div>
-          
-         
-          
           </div>
           <div id="skill" class="grid-items item3 flex flex-col ver-center skill-gap">
             <div id="skillHeading">Learned Skills</div>
@@ -110,8 +108,15 @@
               </div>
             </div>
           </div>
-          <div id="interaction" class="grid-items item4 flex hor-center">
+          <div id="interaction" class="grid-items item4 flex flex-col ver-center">
             <div class="inter-heading">Interactions</div>
+            <div class="inter-contents flex flex-col">
+              <div class="inter-cards flex ver-center"><img src="assets/coolHue-CE9FFC-7367F0.png" class="interactions-thumbnail"/><div class="inter-name">Nav-Menu</div><div class="inter-links"><img class="inter-links-icon" src="assets/icons8-external-link.svg"/></div></div>
+              <a href="https://codepen.io/arunprasanthm7/pen/YzOdMGm" target="_blank" class="inter-cards flex ver-center"><img src="assets/night-mode.png" class="interactions-thumbnail"/><div class="inter-name">Night Mode</div><div class="inter-links"><img class="inter-links-icon" src="assets/icons8-external-link.svg"/></div></a>
+              <a href="https://codepen.io/arunprasanthm7/pen/GRXPVNg" target="_blank" class="inter-cards flex ver-center"><img src="assets/slider.png" class="interactions-thumbnail"/><div class="inter-name">Image Slider</div><div class="inter-links"><img class="inter-links-icon" src="assets/icons8-external-link.svg"/></div></a>
+              <a href="https://codepen.io/arunprasanthm7/pen/rNZRdgj" target="_blank" class="inter-cards flex ver-center"><img src="assets/bg-hover.png" class="interactions-thumbnail"/><div class="inter-name">BG-Color Hover</div><div class="inter-links"><img class="inter-links-icon" src="assets/icons8-external-link.svg"/></div></a>
+              <a href="https://codepen.io/arunprasanthm7/pen/jOvJzZg" target="_blank" class="inter-cards flex ver-center"><img src="assets/underline.png" class="interactions-thumbnail"/><div class="inter-name">UnderLine Hover</div><div class="inter-links"><img class="inter-links-icon" src="assets/icons8-external-link.svg"/></div> </a>
+            </div>
           </div>
           <div id="map" class="grid-items item5"></div>
           <div id="project1" class="flex flex-col grid-items item6 ">
@@ -121,12 +126,12 @@
             </div>
               <div>
                 <div class="built">Built with</div>
-                <div class="used-tech"><img class="tech-icon" src="/assets/icons8-javascript (1).svg"/><img class="tech-icon"src="assets/icons8-html-5 (1).svg"/><img class="tech-icon" src="/assets/icons8-css3 (1).svg"/></div>
+                <div class="used-tech"><img class="tech-icon" alt="javascript" title="javascript"  src="assets/icons8-javascript (1).svg"/><img class="tech-icon" alt="html" title="html"  src="assets/icons8-html-5 (1).svg"/><img class="tech-icon" alt="css" title="css"  src="assets/icons8-css3 (1).svg"/></div>
               </div>
-              <img class="prj-thumb-img" src="/assets/projectThumbnail.png"/>
+              <img class="prj-thumb-img" alt="Project Thumbnail" title="Project Thumbnail"  src="assets/projectThumbnail.png"/>
            <div class="flex center">
             <div class="flex flex-col hor-center prj-fot-gap">
-              <a href="index.html" class="parent-prj-footer flex center"><div href="index.html"class="prj-footer-heading"id="view-prj1">View project</div></a>
+              <a href="index.html" class="parent-prj-footer flex center"><div class="prj-footer-heading"id="view-prj1">Live Demo</div></a>
               <a href="project.html" class="parent-prj-footer flex center"><div class="prj-footer-heading"id="about-prj1">About project</div></a>
              </div>
               
@@ -135,7 +140,7 @@
           </div>
           <div id="project2" class="flex flex-col  grid-items item7 ">
             <div>
-              <div class="prj-heading">PROJECT</div>
+              <div class="prj-heading">SMALL-PROJECTS</div>
               <div class="prj-name"></div>
             </div>
           </div>
@@ -145,7 +150,7 @@
             <div class="flex flex-col tool-gap">
               <div class="flex center tool-name-pairing">
                 <div class="tool-border">
-                  <img src="/assets/icons8-figma 1.svg" class="skill-icons" />
+                  <img src="assets/icons8-figma 1.svg" class="skill-icons" />
                 </div>
                 <div class="tools-name">Figma</div>
               </div>
@@ -153,7 +158,7 @@
               <div class="flex center tool-name-pairing">
                 <div class="tool-border">
                   <img
-                    src="/assets/icons8-visual-studio-code-2019 1.svg"
+                    src="assets/icons8-visual-studio-code-2019 1.svg"
                     class="skill-icons"
                   />
                 </div>
@@ -162,31 +167,31 @@
             </div>
           </div>
           <div id="linkedIn" class="grid-items item9 flex center">
-            <img src="/assets/icons8-linkedin.svg" id="linkedInIcon" />
+            <img alt="linkedIn" title="linkedIn" src="assets/icons8-linkedin.svg" id="linkedInIcon" />
             <div></div>
             <a id="arrowBtn"  href="https://www.linkedin.com/in/arunprasanthm/"
             target="_blank">
-              <img class="arrow-icon" src="/assets/icons8-arrow-48.png" />
+              <img class="arrow-icon" src="assets/icons8-arrow-48.png" />
             </a>
           </div>
           <div id="instagram" class="grid-items item10 flex center">
-            <img src="/assets/icons82-instagram.svg" id="instagramIcon" />
+            <img alt="instagram" title="instagram" src="assets/icons82-instagram.svg" id="instagramIcon" />
             <a id="arrowBtn" href="https://www.instagram.com/arundev_7/" target="_blank">
-              <img class="arrow-icon" src="/assets/icons8-arrow-48.png" />
+              <img class="arrow-icon" src="assets/icons8-arrow-48.png" />
             </a>
           </div>
           <div id="gitHub" class="grid-items item11 flex center">
-            <img src="/assets/icons8-github.svg" id="githubIcon" />
+            <img alt="github" title="github" src="assets/icons8-github.svg" id="githubIcon" />
             <a href="https://github.com/arunprasanthm7"
             target="_blank" id="arrowBtn">
-              <img class="arrow-icon" src="/assets/icons8-arrow-48.png" />
+              <img class="arrow-icon" src="assets/icons8-arrow-48.png" />
             </a>
           </div>
           <div id="twitter" class="grid-items item12 flex center">
-            <img src="/assets/icons8-twitter.svg" id="twitterIcon" />
+            <img alt="twitter" title="twitter" src="assets/icons8-twitter.svg" id="twitterIcon" />
             <a  href="https://twitter.com/arunprasanthm7"
             target="_blank" id="arrowBtn">
-              <img class="arrow-icon" src="/assets/icons8-arrow-48.png" />
+              <img class="arrow-icon" src="assets/icons8-arrow-48.png" />
             </a>
           </div>
         </div>
