@@ -878,6 +878,7 @@ height:168px;
 #github {
   padding: 0px;
 }
+
 #bio{
   justify-content: flex-start;
   align-items: flex-start;
@@ -895,7 +896,7 @@ height:168px;
   padding: 30px;
 }
 .js-order{
-  order: 5;
+  order: 4;
 }
 #tool{
   gap:36px;
@@ -917,16 +918,28 @@ height:168px;
 #nightModeCard{
   margin-left: 12px;
 }
+.css{
+  margin-left: 4px;
+}
 .prj-thumb-img{
   width:160px ;
   height:180px ;
 }
 .prj-fot-gap-parent{
   position: relative;
-  bottom: 100px;
-  left:92px;
+  
 }
 .prj-fot-gap{
   position: absolute;
+  bottom: 52px;
+  left:182px;
+}
+#arrowBtn {
+  right: 24px;
+  bottom: 10px;
+}
+#twitterIcon, #githubIcon, #linkedInIcon,#instagramIcon {
+  width: 80px;
+  height: 50px;
 }
 }
