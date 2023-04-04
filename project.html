@@ -1,29 +1,32 @@
 <html>
   <head>
     <title>AP-Arun's Personal Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <link rel="stylesheet" href="index.css" />
   <body>
-    <div class="flex flex-col center">
-      <div id="project-header"  class=" flex center">
+    <div class="flex flex-col justify-center items-center">
+      <div id="project-header"  class=" flex justify-between items-center w-3/4 mt-20 px-5 py-0">
         <div id="mode">
           <div id="onOffBtn" class="flex center"></div>
           <div id="modeName">Day</div>
         </div>
-        <div id="project-navContainer" class="flex ver-center">
-          <a id="home" class="nav-options" href="index.html">Home</a>
-          <a id="ap" class="nav-options">AP</a>
+        <div id="project-navContainer" class="flex items-center gap-1  text-lg font-semibold px-2 py-1 rounded-3xl duration-500">
+          <a id="home" class="w-fit cursor-pointer duration-200 hover:text-gray-800" href="index.html">Home</a>
+          <a class="ap px-4 py-1 w-fit rounded-3xl cursor-pointer duration-200 hover:text-gray-800 ">AP</a>
         </div>
-        <div id="contactParent" class="flex center">
-          <div id="contact" class="flex center">Contact</div>
+        <div id="contactParent" class="flex justify-center items-center h-16 w-28">
+          <div id="contact" class="flex justify-center items-center cursor-pointer px-3 py-1 border-4 border-black text-lg font-semibold rounded-3xl duration-300  hover:duration-300 hover:px-3 hover:py-1.5 hover:text-xl">Contact</div>
         </div>
       </div>
-      <div class="prj-parent-Cont flex flex-col center">
-      <div class="flex flex-col center">
-          <div class="parent-prj-Cont-heading">AP</div>
-          <div class="prj-abb">Arun's personal site</div>
+      <div class="flex flex-col justify-center items-center gap-24 mt-40 mb-40">
+      <div class="flex flex-col justify-center items-center">
+          <div class="text-5xl font-semibold">AP</div>
+          <div class="font-semibold text-2xl">Arun's personal site</div>
       </div>
-      <img src="" alt="project Thumbnail" title="project Thumbnail"  class="parent-prj-thumbnail"></img>
+      <img src="" alt="Project Thumbnail" title="Project Thumbnail"  class="parent-prj-thumbnail"></img>
       <div class="flex flex-col center">
           <div class="parent-tech-tagline">Built and deployed with</div>
           <div class="used-tech-top"><img class="tech-icon" alt="javascript" title="javascript" src="assets/icons8-javascript (1).svg"/><img class="tech-icon" alt="html" title="html"  src="assets/icons8-html-5 (1).svg"/><img class="tech-icon" alt="css" title="css"  src="assets/icons8-css3 (1).svg"/><img class="tech-icon" alt="figma" title="figma"  src="assets/icons8-figma 1.svg"/><img class="tech-icon" alt="VS code" title="VS code"  src="assets/icons8-visual-studio-code-2019 1.svg"/></div>
@@ -32,15 +35,9 @@
     </div>
    
     <style>
-      #navContainer {
-        padding: 0px 4px;
-        width: fit-content;
-        gap: 4px;
-      }
-      #ap {
+    
+      .ap {
         background-color: rgb(201, 197, 197);
-        padding: 4px 18px;
-        border-radius: 20px;
       }
       .tech-icon{
         width:60px;
