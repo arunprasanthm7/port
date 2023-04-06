@@ -3,8 +3,18 @@
   --white: white;
   --lightGrey: rgb(185, 185, 185);
   --black: rgb(0, 0, 0);
+  --toolborder: 1px 1px 8px rgb(212, 209, 209);
 }
-
+.dark-theme {
+  --bg: rgb(19, 17, 17);
+  --white: rgb(35, 33, 33);
+  --black: rgb(255, 255, 255);
+  --toolborder: 0 0 2px black;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
 body {
   background-color: var(--bg);
   font-family: "Inter", sans-serif;
@@ -14,11 +24,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-.dark-theme{
-  --bg: rgb(19, 17, 17);
-  --white: rgb(35, 33, 33);
-  --black: rgb(255, 255, 255);
-}
+
 .flex {
   display: flex;
 }
@@ -50,7 +56,11 @@ body {
   margin-top: 70px;
   padding: 0 10px;
 }
+.nav-active{
+  background-color: rgba(0, 0, 0, 0.2);
 
+  border-radius: 7px;
+}
 #mode {
   cursor: pointer;
   position: relative;
@@ -62,12 +72,12 @@ body {
   background-color: rgb(218, 218, 218);
 }
 
-#light{
+#light {
   position: absolute;
-  top:3;
-  left:3;
-  padding: 6px;
-  border-radius:20px;
+  top: 3;
+  left: 3;
+  padding: 5.8px;
+  border-radius: 20px;
   background-color: rgb(255, 255, 255);
   transform: translateX(0px);
   transition: 0.6s;
@@ -77,14 +87,16 @@ body {
   color: var(--black);
 }
 #navContainer {
-  justify-content: space-evenly;
   width: 460px;
   height: 40px;
   font-size: 18px;
   font-weight: 600;
-  border-radius: 50px;
+  border-radius: 10px;
   background-color: var(--white);
   transition: 0.6s;
+  padding-left: 5px;
+  padding-right: 5px;
+  gap: 23px;
 }
 #project-navContainer {
   color: var(--black);
@@ -102,6 +114,7 @@ body {
   width: fit-content;
   cursor: pointer;
   color: var(--black);
+  padding: 6px;
 }
 .nav-options:hover {
   transition: 0.4s;
@@ -144,7 +157,7 @@ body {
   grid-row: 5/5;
   grid-column: 3/5;
 }
-.item13{
+.item13 {
   grid-row: 2/2;
   grid-column: 4/4;
 }
@@ -155,34 +168,31 @@ body {
   padding: 0px 30px;
   overflow: hidden;
 }
-.main-image{
+.main-image {
   position: absolute;
-  top:-130;
+  top: -130;
   right: -130;
   background-color: #f09433;
-  width:220px;
+  width: 220px;
   height: 220px;
-  border-radius:190px;
+  border-radius: 190px;
   transition: 0.2s;
 }
-#bio:hover .main-image{
-  top:-28;
-  right:-28;
+#bio:hover .main-image {
+  top: -28;
+  right: -28;
   transition: 0.2s;
 }
 #name,
 #profName,
 #about,
-#skill {
+#skill,
+#techtips,
+#githubView {
   color: var(--black);
 }
-/* #skillList,.tool-used-lists{
-  gap:10px;
-  grid-template-columns: repeat(3,auto);
-  grid-template-rows: repeat(2,auto);
-} */
-.tool-used-lists,.learned-skill-lists{
-  grid-template-columns: repeat(2, 50px);
+.learned-skill-lists {
+  grid-template-columns: repeat(4, 50px);
   grid-template-rows: repeat(3, 50px);
   gap: 10px;
 }
@@ -203,7 +213,7 @@ body {
   font-weight: 600;
   opacity: 0.5;
 }
-#about {
+#bioAbout {
   font-size: 18px;
   width: 480px;
   text-align: left;
@@ -212,7 +222,6 @@ body {
 .gap-bio {
   gap: 30px;
 }
-
 
 /*gallery*/
 #slider {
@@ -276,16 +285,26 @@ body {
 .dot:hover {
   background-color: rgba(255, 255, 255, 1);
 }
+
 /*skill*/
 #skill {
   padding: 30px 30px;
 }
+.skill-name {
+  cursor: pointer;
+  font-size: 14px;
+  color: rgb(101, 101, 101);
+}
+.skill-name:hover {
+  color: rgb(180, 177, 177);
+}
 #skillHeading,
 #toolHeading,
 .inter-heading,
-#techTips-heading,
+.techtips-heading,
 .proj2-heading,
-#githubView-heading {
+#githubView-heading 
+{
   font-size: 22px;
   font-weight: 600;
   opacity: 0.5;
@@ -296,91 +315,175 @@ body {
 }
 
 .skill-icons {
+  width: 32px;
+  height: 32px;
+}
+.tool-icons {
   width: 36px;
   height: 36px;
-  
 }
 .skill-gap,
 .tool-gap {
   gap: 24px;
 }
-
-.tool-border,.icon-border {
-  border-radius: 24px;
+.icon-border {
+  border-radius: 8px;
+  padding: 8.5px;
+}
+/* .h5:hover  .h5-icon{
   box-shadow: 1px 1px 8px rgb(212, 209, 209);
-  padding:6px;
+} */
+.icon-border:hover {
+  box-shadow: 1px 1px 8px rgb(212, 209, 209);
+}
+.tool-border {
+  border-radius: 24px;
+  box-shadow: var(--toolborder);
+  padding: 6px;
 }
 /*github*/
 /* #githubView{
 
 } */
-/*techtips*/
-#techtips,#githubView{
-  padding:20px 0px 20px 0px;
+.year-parent {
+  gap: 10px;
 }
-#techTips-heading,#githubView-heading {
+#gitEmbed {
+  width: 450px;
+  height: 200px;
+}
+/*techtips*/
+
+#techtips,
+#githubView {
+  padding: 20px;
+  gap: 10px;
+ 
+}
+#techtips-heading,
+#githubView-heading {
   padding: 20px 30px;
-  color: var(--black);
+}
+.techtips-intro {
+  width: 240px;
+  opacity: 0.5;
+}
+.techtips-content {
+  gap: 110px;
+  justify-content: space-between;
+ 
 }
 /*tool*/
+.tool-used-lists {
+  padding: 0px 147px;
+  justify-content: space-evenly;
+}
 #tool {
   padding: 20px 0px;
-  gap: 16px;
+  gap: 30px;
   color: var(--black);
 }
-/* .tool-1 {
-  transform: translate(-39px, 10px);
-  transition: 0.6s;
+.tool-1,
+.skill-1 {
+  transform: translate(-87px, 69px);
+  transition: 0.4s;
 }
-.tool-2 {
-  transform: translate(-39px, 10px);
-  transition: 0.6s;
+.tool-2,
+.skill-2 {
+  transform: translate(-34px, 32px);
+  transition: 0.4s;
 }
-.tool-3 {
-  transform: translate(42px, 72px);
-  transition: 0.6s;
+.tool-3,
+.skill-3 {
+  transform: translate(-67px, -79px);
+  transition: 0.4s;
 }
-.tool-4 {
-  transform: translate(-57px, 10px);
-  transition: 0.6s;
+.tool-4,
+.skill-4 {
+  transform: translate(17px, -61px);
+  transition: 0.4s;
 }
-.tool-5 {
-  transform: translate(66px, -51px);
-  transition: 0.6s;
+.tool-5,
+.skill-5 {
+  transform: translate(-74px, -70px);
+  transition: 0.4s;
 }
 .tool-6 {
-  transform: translate(41px, 11px);
-  transition: 0.6s;
-} */
-/* .tool-used-lists {
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(3, auto);
-  gap: 10px;
-} */
-/* #tool:hover .tool-1 {
-  transform: translate(0, 0);
-  transition: 0.6s;
+  transform: translate(-9px, -205px);
+  transition: 0.4s;
+}
+.tool-7 {
+  transform: translate(-23px, -151px);
+  transition: 0.4s;
+}
+.tool-8 {
+  transform: translate(59px, -289px);
+  transition: 0.4s;
+}
+.tool-9 {
+  transform: translate(32px, -247px);
+  transition: 0.4s;
+}
+.tool-10 {
+  transform: translate(33px, -435px);
+  transition: 0.4s;
+}
+.tool-11 {
+  transform: translate(71px, -380px);
+  transition: 0.4s;
+}
+.tool-12 {
+  transform: translate(-21px, -543px);
+  transition: 0.4s;
+}
+#tool:hover .tool-1 {
+  transform: translate(-67px, 17px);
+  transition: 0.4s;
 }
 #tool:hover .tool-2 {
-  transform: translate(0, 0);
-  transition: 0.6s;
+  transform: translate(-9px, -13px);
+  transition: 0.4s;
 }
 #tool:hover .tool-3 {
-  transform: translate(0, 0);
-  transition: 0.6s;
+  transform: translate(-21px, -111px);
+  transition: 0.4s;
 }
 #tool:hover .tool-4 {
-  transform: translate(0, 0);
-  transition: 0.6s;
+  transform: translate(-34px, -64px);
+  transition: 0.4s;
 }
 #tool:hover .tool-5 {
-  transform: translate(0, 0);
-  transition: 0.6s;
+  transform: translate(-87px, -123px);
+  transition: 0.4s;
 }
 #tool:hover .tool-6 {
-  transform: translate(0, 0);
-  transition: 0.6s;
-} */
+  transform: translate(17px, -157px);
+  transition: 0.4s;
+}
+#tool:hover .tool-7 {
+  transform: translate(-74px, -166px);
+  transition: 0.4s;
+}
+#tool:hover .tool-8 {
+  transform: translate(71px, -236px);
+  transition: 0.4s;
+}
+#tool:hover .tool-9 {
+  transform: translate(-23px, -247px);
+  transition: 0.4s;
+}
+#tool:hover .tool-10 {
+  transform: translate(59px, -385px);
+  transition: 0.4s;
+}
+#tool:hover .tool-11 {
+  transform: translate(32px, -343px);
+  transition: 0.4s;
+}
+#tool:hover .tool-12 {
+  transform: translate(34px, -531px);
+  transition: 0.4s;
+}
 
 /*interaction*/
 #interaction {
@@ -390,19 +493,19 @@ body {
   display: flex;
   flex-direction: column;
 }
-#linkedIn{
+#linkedIn {
   background-color: rgb(2, 136, 209);
 }
 #twitter {
-  gap:8px;
+  gap: 8px;
   background-color: rgb(3, 141, 255);
 }
 #github {
-  gap:10px;
+  gap: 10px;
   background-color: rgb(0, 0, 0);
 }
 #instagram {
-  gap:10px;
+  gap: 10px;
   padding: 110px 0px;
   background: #f09433;
   background: linear-gradient(
@@ -418,7 +521,7 @@ body {
 #github {
   padding: 100px 0px;
 }
- #instagramIcon {
+#instagramIcon {
   width: 60px;
   height: 60px;
   transition: 0.6s;
@@ -459,13 +562,12 @@ body {
   background: url("assets/projectBG.jpg");
   background-size: cover;
   position: relative;
- overflow: hidden;
+  overflow: hidden;
 }
 .proj1-main {
-  padding:24px;
-  gap:20px;
-
- }
+  padding: 24px;
+  gap: 20px;
+}
 .proj1-heading,
 .built {
   font-size: 22px;
@@ -484,16 +586,20 @@ body {
   bottom: 0;
   width: 100%;
   height: 75%;
-  background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.97) 42%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    360deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.97) 42%,
+    rgba(0, 0, 0, 0) 100%
+  );
   border-radius: 16px;
-
 }
-#project1:hover .proj1-main{
+#project1:hover .proj1-main {
   transform: translateY(0px);
   transition: 0.6s;
 }
 
-.proj1-main{
+.proj1-main {
   transform: translateY(110px);
   transition: 0.6s;
 }
@@ -504,28 +610,35 @@ body {
   color: rgb(0, 0, 0);
   padding: 8px 48px;
   border-radius: 20px;
- 
 }
 #projBtn1 {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
-#projBtn2 {
+#techtipsBtn {
+  width: fit-content;
+  padding: 8px 38px;
+  border-radius: 20px;
+}
+#projBtn2,
+#techtipsBtn {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   border: 1px solid white;
+}
+#techtipsBtn {
+  align-self: center;
 }
 .proj1-tech-icon {
   width: 34px;
   height: 34px;
 }
-.proj1-tech-icon-js{
+.proj1-tech-icon-js {
   width: 37px;
   height: 37px;
 }
 .proj1-btns-parent {
   gap: 10px;
-  
 }
 
 a {
@@ -541,6 +654,7 @@ a {
 .inter-contents,
 .proj2-contents {
   gap: 16px;
+  overflow-y: scroll;
 }
 .inter-gap {
   gap: 6px;
@@ -552,27 +666,43 @@ a {
   border-radius: 8px;
   font-weight: 500;
 }
+.inter-name-last,
+.proj2-name-last {
+  margin-bottom: 50px;
+}
 .inter-name,
 .proj2-name {
   font-size: 14px;
-  
 }
-#blur{
-
+#blur {
 }
 #interBtn,
 #proj2Btn {
   cursor: pointer;
   position: absolute;
-  bottom: 30;
-  left: 16px;
+  bottom: 13;
   background-color: black;
   color: white;
   padding: 10px 42px;
   border-radius: 20px;
 }
-#proj2Btn{
-  padding: 10px 42px; 
+#interBtn {
+  left: 18px;
+}
+#proj2Btn {
+  left: 15px;
+}
+.right-arrow {
+  transform: translateX(4px);
+  transition: 0.4s;
+}
+#proj2Btn:hover .right-arrow,
+#projBtn1:hover .right-arrow,
+#projBtn2:hover .right-arrow,
+#interBtn:hover .right-arrow,
+#techtipsBtn:hover .right-arrow {
+  transform: translateX(12px);
+  transition: 0.4s;
 }
 @media screen and (min-width: 1240px) {
   #main {

@@ -20,11 +20,11 @@
       <div id="header" class="flex ver-center">
 
         <div id="navContainer" class="flex ver-center">
-          <a id="home" class="nav-options" href="index.html">Home</a>
-          <a id="blog" class="nav-options">About</a>
-          <a id="resume" class="nav-options" href="assets/Arun[resume].pdf">Resume</a>
-          <a id="projects" class="nav-options">Projects</a>
-          <a id="blog" class="nav-options">Media</a>
+          <a id="home" class="nav-options nav-active" href="index.html">Home</a>
+          <a id="about" class="nav-options ">About</a>
+          <a id="resume" class="nav-options " href="assets/Arun[resume].pdf">Resume</a>
+          <a id="projects" class="nav-options ">Projects</a>
+          <a id="blog" class="nav-options ">Media</a>
         </div>
         <a href="mailto:arunprasanthm7@gmail.com" id="mailID">arunprasanthm7@gmail.com</a>
 
@@ -36,7 +36,7 @@
               <div id="name">Arun Prasanth</div>
               <div id="profName">Self-taught front-end developer</div>
             </div>
-            <div id="about">
+            <div id="bioAbout">
               Hey! I'm Arun, and my goal is to work at a company where I can
               deliver business value while leveling up my skills as a
               developer.
@@ -73,27 +73,33 @@
             <div id="skillHeading">Learned Skills</div>
             <div  class="grid center learned-skill-lists">
              
-                <div class="icon-border">
+                <div class="icon-border h5-icon">
                   <img src="assets/icons8-html-5 (1).svg" class="skill-icons" />
                 </div>
-                <div class="icon-border">
-                  <img src="assets/icons8-css3 (1).svg" class="skill-icons" />
-                </div>
-                <div class="icon-border">
-                  <img
-                    src="assets/icons8-javascript (1).svg"
-                    class="skill-icons"
-                    />
-                </div>  
-                <div class="icon-border">
-                  <img src="assets/react.svg" class="skill-icons" />
-                </div>
-                <div class="icon-border">
+                <div class="skill-name h5">Html</div>
+                <div class="icon-border ">
                   <img
                     src="assets/icons8-tailwindcss.svg"
                     class="skill-icons"
                     />
                 </div> 
+                <div class="skill-name">Tailwind</div>
+                <div class="icon-border tl">
+                  <img src="assets/icons8-css3 (1).svg" class="skill-icons " />
+                </div>
+                <div class="skill-name">Css</div>
+                
+                <div class="icon-border c3">
+                  <img src="assets/react.svg" class="skill-icons " />
+                </div>
+                <div class="skill-name">React</div>
+                <div class="icon-border rt">
+                  <img
+                    src="assets/icons8-javascript (1).svg"
+                    class="skill-icons "
+                    />
+                </div> 
+                <div class="skill-name j6">Javascript</div> 
             </div>
           </div>
           <div id="interaction" class="grid-items item4 flex flex-col
@@ -111,15 +117,26 @@
                 <div class="inter-name">BG-color Hover</div>
               </div>
               <div class="flex flex-col inter-gap">
-                <img  id="blur"class="inter-thumbnail" src="assets/underline.png"/>
-                <div class="trans-shadow"></div>
+                <img  class="inter-thumbnail" src="assets/underline.png"/>
+                <div class="inter-name">Underline Hover</div>
+              </div>
+              <div class="flex flex-col inter-gap">
+                <img  class="inter-thumbnail" src="assets/underline.png"/>
+                <div class="inter-name inter-name-last">DarkMode</div>
               </div>
 
             </div>
-            <div id="interBtn" class="flex center"><div>See all Interactions -></div></div>
+            <div id="interBtn" class="flex center"><div class="flex">See all Interactions <div class="right-arrow">-></div></div></div>
           </div>
-          <div id="githubView" class="grid-items item5">
+          <div id="githubView" class="grid-items item5 flex flex-col">
             <div id="githubView-heading">GitHub</div>
+            <div class="githubView-contents flex flex-col">    
+                  
+              <!-- <div class="githubView-year flex flex-col ">
+                <div class="flex year-parent"><div>2022</div><div>2023</div></div>
+                <img width="480px" height="200px" src="assets/github-view1.png"/>
+              </div> -->
+            </div>
           </div>
           <div id="project1" class="flex flex-col grid-items item6 ">
             <div class="project1-back-shadow flex flex-col ">
@@ -143,8 +160,8 @@
               </div>
 
               <div class="flex flex-col hor-center proj1-btns-parent">
-                <a href="index.html" id="projBtn1" class="flex center"><div>Demo -></div> </a>
-                <a href="project.html" id="projBtn2" class="flex center"><div>About Project -></div></a>
+                <a href="index.html" id="projBtn1" class="flex center"><div class="flex">Live Demo<div class="right-arrow">-></div></div> </a>
+                <a href="project.html" id="projBtn2" class="flex center"><div class="flex">About Project<div class="right-arrow">-></div></div></a>
               </div>
             </div>
 
@@ -162,46 +179,82 @@
                   src="/assets/coolHue-90F7EC-32CCBC.png" />
                 <div class="proj2-name">ScoreBoard</div>
               </div>
-              <div class="flex flex-col">
-                <img  id="blur" class="proj2-thumbnail "
+              <div class="flex flex-col inter-gap">
+                <img   class="proj2-thumbnail " src="/assets/coolHue-CE9FFC-7367F0.png"
                   />
+                  <div class="proj2-name">QRcode</div>
               </div>
-              <div id="proj2Btn"  class="flex center"><div>See all mini projects -></div></div>
+              <div class="flex flex-col inter-gap">
+                <img   class="proj2-thumbnail " src="/assets/coolHue-ABDCFF-0396FF.png"
+                  />
+                  <div class="proj2-name proj2-name-last">Unit Conversion</div>
+              </div>
+              <div id="proj2Btn"  class="flex center"><div class="flex">See all mini projects <div class="right-arrow">-></div></div></div>
             </div>
 
 
           </div>
-          <div id="tool" class="grid-items item8 flex flex-col ver-center">
+          <div id="tool" class="grid-items item8 flex flex-col ">
             <div id="toolHeading">Tools I Use</div>
 
             <div class="tool-used-lists grid">
               <div class="tool-border tool-1">
-                <img src="assets/icons8-figma 1.svg" class="skill-icons" />
+                <img src="assets/icons8-figma 1.svg" class="tool-icons" />
               </div>
               <div class="tool-border tool-2">
                 <img src="assets/icons8-visual-studio-code-2019 1.svg"
-                  class="skill-icons"/>
+                  class="tool-icons"/>
               </div>
               <div class="tool-border tool-3">
                 <img src="assets/discord-v2-svgrepo-com.svg"
-                  class="skill-icons"/>
+                  class="tool-icons"/>
               </div>
               <div class="tool-border tool-4">
                 <img src="assets/icons8-medium.svg"
-                  class="skill-icons"/>
+                  class="tool-icons"/>
               </div>
               <div class="tool-border tool-5">
                 <img src="assets/icons8-notion.svg"
-                  class="skill-icons"/>
+                  class="tool-icons"/>
               </div>
               <div class="tool-border tool-6">
                 <img src="assets/logo-vercel-svgrepo-com 1.svg"
-                  class="skill-icons"/>
+                  class="tool-icons"/>
+              </div>
+              <div class="tool-border tool-7">
+                <img src="assets/netlify-icon-logo.png"
+                  class="tool-icons"/>
+              </div>
+              <div class="tool-border tool-8">
+                <img src="assets/scrimba.png"
+                  class="tool-icons"/>
+              </div>
+              <div class="tool-border tool-9">
+                <img src="assets/icons8-hashnode.svg"
+                  class="tool-icons"/>
+              </div>
+              <div class="tool-border tool-10">
+                <img src="assets/icons8-codepen.svg"
+                  class="tool-icons"/>
+              </div>
+              <div class="tool-border tool-11">
+                <img src="assets/peerlist.png"
+                  class="tool-icons"/>
+              </div>
+              <div class="tool-border tool-12">
+                <img src="assets/icons8-notion.svg"
+                  class="tool-icons"/>
               </div>
             </div>
           </div>
-          <div id="techTips" class="grid-items item13">
-            <div id="techTips-heading">Tech-Tips</div>
+          <div id="techtips" class="grid-items item13 flex flex-col">
+            <div class="techtips-heading">Tech-Tips</div>
+            <div class="flex flex-col techtips-content">
+              <div class="techtips-intro">
+                where I can deliver business value while leveling up my skills as a developer.
+              </div>
+              <div id="techtipsBtn" class="flex">See more<div class="right-arrow">-></div></div>
+            </div>
           </div>
           <div id="linkedIn" class="social-media-box grid-items item9 flex
             center">
