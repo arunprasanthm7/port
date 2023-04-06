@@ -54,6 +54,7 @@ function currentSlide(n) {
   let about=document.getElementById('about');
   let home=document.getElementById('home');
   let projects=document.getElementById('projects');
+  let media=document.getElementById('media');
   //cardElements
   let bio=document.getElementById('bio')
   let slider=document.getElementById('slider');
@@ -85,13 +86,13 @@ function currentSlide(n) {
     gitHub.style.gridArea='2/1/2/3';
     project1.style.gridArea='3/2/5/2';
     project2.style.gridArea='3/3/5/3';
-    interaction.style.opacity='0.2';
-    project1.style.opacity='0.2';
-    project2.style.opacity='0.2';
-    githubView.style.opacity='0.2';
-    techtips.style.opacity='0.2';
-    tool.style.opacity='0.2';
-    skill.style.opacity='0.2';
+    interaction.style.opacity='0.1';
+    project1.style.opacity='0.1';
+    project2.style.opacity='0.1';
+    githubView.style.opacity='0.1';
+    techtips.style.opacity='0.1';
+    tool.style.opacity='0.1';
+    skill.style.opacity='0.1';
     linkedIn.style.opacity='1';
     instagram.style.opacity='1';
     slider.style.opacity='1';
@@ -100,6 +101,7 @@ function currentSlide(n) {
   projects.addEventListener('click',()=>{
     about.classList.remove('nav-active');
     home.classList.remove('nav-active');
+    media.classList.remove('nav-active');
     projects.classList.add('nav-active');
     bio.style.gridArea='1/3/1/5';
     slider.style.gridArea='4/2/4/2';
@@ -114,15 +116,45 @@ function currentSlide(n) {
     twitter.style.gridArea='3/3/3/5';
     linkedIn.style.gridArea='4/3/4/3';
     gitHub.style.gridArea='3/1/3/3';
-    interaction.style.opacity='0.2';
-    slider.style.opacity='0.2';
-    githubView.style.opacity='0.2';
-    techtips.style.opacity='0.2';
-    linkedIn.style.opacity='0.2';
-    instagram.style.opacity='0.2';
+    interaction.style.opacity='0.1';
+    slider.style.opacity='0.1';
+    githubView.style.opacity='0.1';
+    techtips.style.opacity='0.1';
+    linkedIn.style.opacity='0.1';
+    instagram.style.opacity='0.1';
     tool.style.opacity='1';
     skill.style.opacity='1';
     project1.style.opacity='1';
     project2.style.opacity='1';
+    bio.style.opacity='1';
   })
-  media
+  media.addEventListener('click',()=>{
+    about.classList.remove('nav-active');
+    home.classList.remove('nav-active');
+    projects.classList.remove('nav-active');
+    media.classList.add('nav-active');
+    bio.style.gridArea='4/3/4/5';
+    slider.style.gridArea='1/3/1/3';
+    skill.style.gridArea='3/3/3/3';
+    tool.style.gridArea='5/4/5/4';
+    techtips.style.gridArea='5/3/5/3';
+    githubView.style.gridArea='5/1/5/3';
+    interaction.style.gridArea='2/4/4/4';
+    project1.style.gridArea='3/1/5/1';
+    project2.style.gridArea='3/2/5/2';
+    instagram.style.gridArea='2/1/2/1';
+    twitter.style.gridArea='1/1/1/3';
+    linkedIn.style.gridArea='1/4/1/4';
+    gitHub.style.gridArea='2/2/2/4'; 
+    techtips.style.opacity='0.1';
+    githubView.style.opacity='0.1';
+    interaction.style.opacity='0.1';
+    project1.style.opacity='0.1';
+    project2.style.opacity='0.1';
+    skill.style.opacity='0.1';
+    tool.style.opacity='0.1';
+    bio.style.opacity='0.1';
+    instagram.style.opacity='1';
+    slider.style.opacity='1';
+    linkedIn.style.opacity='1';
+  })
