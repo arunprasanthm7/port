@@ -58,7 +58,6 @@ body {
 }
 .nav-active{
   background-color: rgba(0, 0, 0, 0.2);
-
   border-radius: 7px;
 }
 #mode {
@@ -345,12 +344,9 @@ body {
 /* #githubView{
 
 } */
-.year-parent {
-  gap: 10px;
-}
-#gitEmbed {
-  width: 450px;
-  height: 200px;
+#spotify-artwork{
+width:10px;
+height: 160px;
 }
 /*techtips*/
 
@@ -488,6 +484,13 @@ body {
 /*interaction*/
 #interaction {
   padding: 20px 0px;
+}
+.link-icon{
+  width: 20px;
+  height: 20px;
+}
+.link-name-parent{
+  justify-content: space-between;
 }
 .social-media-box {
   display: flex;
@@ -702,6 +705,25 @@ a {
   transform: translateX(12px);
   transition: 0.4s;
 }
+.credit{
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+.dev-name{
+  font-size: 14px;
+  font-weight: 500;
+}
+.footer{
+  justify-content: space-around;
+margin-bottom: 70px;
+}
+.mail-id{
+  font-size: 14px;
+  font-weight: 500;
+  color:black;
+}
+
 @media screen and (min-width: 1240px) {
   #main {
     margin: 140px auto 140px auto;
