@@ -68,7 +68,7 @@ body {
   border-radius: 20px;
   transition: 0.6s;
   transform: translate(1000%, 80%);
-  background-color: rgb(218, 218, 218);
+  background-color: rgb(171, 170, 170);
 }
 
 #light {
@@ -217,6 +217,7 @@ body {
   width: 480px;
   text-align: left;
   opacity: 0.5;
+  color:var(--black)
 }
 .gap-bio {
   gap: 30px;
@@ -329,10 +330,10 @@ body {
   border-radius: 8px;
   padding: 8.5px;
 }
-/* .h5:hover  .h5-icon{
+/* .h5:hover #h5-icon{
   box-shadow: 1px 1px 8px rgb(212, 209, 209);
 } */
-.icon-border:hover {
+.icon-border {
   box-shadow: 1px 1px 8px rgb(212, 209, 209);
 }
 .tool-border {
@@ -371,15 +372,19 @@ height: 160px;
 }
 /*tool*/
 .tool-used-lists {
-  padding: 0px 147px;
-  justify-content: space-evenly;
+  /* padding: 0px 147px;
+  justify-content: space-evenly; */
+  
+  grid-template-columns: repeat(4,auto);
+  grid-template-rows: repeat(3,auto);
+  gap: 10px;
 }
 #tool {
   padding: 20px 0px;
-  gap: 30px;
+  justify-content: space-around;
   color: var(--black);
 }
-.tool-1,
+/* .tool-1,
 .skill-1 {
   transform: translate(-87px, 69px);
   transition: 0.4s;
@@ -431,8 +436,8 @@ height: 160px;
 .tool-12 {
   transform: translate(-21px, -543px);
   transition: 0.4s;
-}
-#tool:hover .tool-1 {
+} */
+/* #tool:hover .tool-1 {
   transform: translate(-67px, 17px);
   transition: 0.4s;
 }
@@ -479,7 +484,7 @@ height: 160px;
 #tool:hover .tool-12 {
   transform: translate(34px, -531px);
   transition: 0.4s;
-}
+} */
 
 /*interaction*/
 #interaction {
@@ -536,11 +541,11 @@ height: 160px;
   width: 80px;
   height: 80px;
 }
-.social-media-box:hover .icon-rotate {
+.social-media-box:hover > .icon-rotate {
   transform: rotate(-20deg) translateY(-16px);
   transition: 0.6s;
 }
-.social-media-box:hover #socialMediaBtn {
+.social-media-box:hover > #socialMediaBtn {
   font-size: 14px;
   font-weight: 600;
   color: white;
@@ -667,15 +672,11 @@ a {
   border-radius: 8px;
   font-weight: 500;
 }
-.inter-name-last,
-.proj2-name-last {
-  margin-bottom: 50px;
-}
+
 .inter-name,
 .proj2-name {
   font-size: 14px;
-}
-#blur {
+  opacity: 0.7;
 }
 #interBtn,
 #proj2Btn {
@@ -705,18 +706,16 @@ a {
   transform: translateX(12px);
   transition: 0.4s;
 }
-.credit{
+.credit,.dev-name{
   font-size: 14px;
   font-weight: 600;
+  font-weight: 500;
   margin-right: 8px;
 }
-.dev-name{
-  font-size: 14px;
-  font-weight: 500;
-}
 .footer{
-  justify-content: space-around;
+justify-self:space-around;
 margin-bottom: 70px;
+
 }
 .mail-id{
   font-size: 14px;
