@@ -3,13 +3,17 @@
   --white: white;
   --lightGrey: rgb(185, 185, 185);
   --black: rgb(0, 0, 0);
-  --toolborder: 1px 1px 8px rgb(212, 209, 209);
+  --iconBorder:1px solid rgba(0, 0, 0, 0.08);
+  --projectTab: 1px 1px 4px 2px #efe5e5;
+  --projectTabbottom: 1px solid #efe5e5;
 }
 .dark-theme {
   --bg: rgb(19, 17, 17);
   --white: rgb(35, 33, 33);
   --black: rgb(255, 255, 255);
-  --toolborder: 0 0 2px black;
+  --iconBorder:1px solid rgba(255,255,255 , 0.08);
+  --projectTab: 1px 1px 4px 2px  #131212;
+  --projectTabbottom: 1px solid #131212;
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -86,16 +90,16 @@ body {
   color: var(--black);
 }
 #navContainer {
-  width: 460px;
+  width: 320px;
   height: 40px;
   font-size: 18px;
-  font-weight: 600;
+  /* font-weight: 600; */
   border-radius: 10px;
   background-color: var(--white);
   transition: 0.6s;
   padding-left: 5px;
   padding-right: 5px;
-  gap: 23px;
+  gap: 13px;
 }
 #project-navContainer {
   color: var(--black);
@@ -354,7 +358,7 @@ body {
   width:42px;
   height:80px;
   border-radius: 6px;
-  box-shadow: 1px 1px 4px  #DFDFDF;
+  box-shadow:var(--projectTab);
   transition:0.4s;
 }
 #mini-live-btn,#mini-source-btn{
@@ -364,7 +368,7 @@ body {
  
 }
 #mini-live-btn{
-  border-bottom: 1px solid #ece6e6;
+  border-bottom:  var(--projectTabbottom);
   border-top-left-radius:6px ;
   border-top-right-radius:6px ;
 }
@@ -394,12 +398,11 @@ background-color: #F3F3F3;
 /* .h5:hover #h5-icon{
   box-shadow: 1px 1px 8px rgb(212, 209, 209);
 } */
-.icon-border {
-  box-shadow: 1px 1px 8px rgb(212, 209, 209);
+.icon-border,.tool-border {
+  border:  var(--iconBorder);
 }
 .tool-border {
   border-radius: 24px;
-  box-shadow: var(--toolborder);
   padding: 6px;
 }
 /*github*/
@@ -449,16 +452,31 @@ height: 160px;
 #interaction {
   padding: 20px 0px;
 }
+#interaction  a{
+  color:black
+}
 .inter-external-link{
   width: 20px;
   height: 20px;
   visibility: hidden;
+  transition: 0.1s;
+}
+/* #interaction:hover  .link-name-parent{
+  filter: blur(2px);
+} */
+li:hover ul{
+  filter: blur(2px);
   transition: 0.2s;
 }
-.inter-name:hover ~ .inter-external-link{
+li:hover ul:hover {
+  filter: blur(0px);
+  transition: 0.2s;
+}
+ul:hover  .inter-external-link{
   visibility: visible;
   transition: 0.2s;
 }
+
 .social-media-box {
   display: flex;
   flex-direction: column;
@@ -494,29 +512,29 @@ height: 160px;
 #instagramIcon {
   width: 60px;
   height: 60px;
-  transition: 0.6s;
+  transition: 0.2s;
 }
 #twitterIcon,
 #githubIcon,
 #linkedInIcon {
-  transition: 0.6s;
+  transition: 0.2s;
   width: 80px;
   height: 80px;
 }
 .social-media-box:hover > .icon-rotate {
   transform: rotate(-20deg) translateY(-16px);
-  transition: 0.6s;
+  transition: 0.2s;
 }
 .social-media-box:hover > #socialMediaBtn {
   font-size: 14px;
   font-weight: 600;
   color: white;
   transform: translateY(-10px);
-  transition: 0.6s;
+  transition: 0.2s;
 }
 #socialMediaBtn {
   font-size: 0px;
-  transition: 0.6s;
+  transition: 0.2s;
 }
 #socialMediaBtn:hover {
   cursor: pointer;
@@ -525,14 +543,15 @@ height: 160px;
   padding: 8px 18px;
 }
 .icon-rotate {
-  transition: 0.6s;
+  transition: 0.2s;
 }
 #project {
   justify-content: end;
-  background: url("assets/projectBG.jpg");
+  /* background: url("assets/projectBG.jpg");
   background-size: cover;
-  position: relative;
+  position: relative; */
   overflow: hidden;
+  background-color: rgb(21, 21, 21);
 }
 .proj1-main {
   padding: 24px;
@@ -551,7 +570,7 @@ height: 160px;
   font-weight: 600;
   color: white;
 }
-.project1-back-shadow {
+/* .project1-back-shadow {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -563,7 +582,7 @@ height: 160px;
     rgba(0, 0, 0, 0) 100%
   );
   border-radius: 16px;
-}
+} */
 #project:hover .proj1-main {
   transform: translateY(0px);
   transition: 0.6s;
@@ -619,6 +638,7 @@ a {
   gap: 14px;
   padding: 30px 24px;
 }
+
 .mini-projects:hover > .mini-projects-thumbnail{
   bottom:0px;
   right:0px;
@@ -675,20 +695,10 @@ a {
   font-size: 14px;
   opacity: 0.7;
   cursor: pointer;
+  margin-right: 4px;
 }
 
-#interBtn {
-  cursor: pointer;
-  position: absolute;
-  bottom: 13;
-  background-color: black;
-  color: white;
-  padding: 10px 42px;
-  border-radius: 20px;
-}
-#interBtn {
-  left: 18px;
-}
+
 #proj2Btn {
   left: 15px;
 }
