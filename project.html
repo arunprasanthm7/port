@@ -13,8 +13,8 @@
       <div id="projectHeader" class="flex ver-center">
 
         <div id="projectNavContainer" class="flex ver-center">
-          <a id="projHome" class="nav-options" href="index.html">Home</a>
-          <a id="about" class="nav-options proj-nav-active">AP</a>
+          <a id="Home" class="nav-options" href="index.html">Home</a>
+          <a id="about" class="nav-options nav-active">AP</a>
          
         </div>
         <a href="mailto:arunprasanthm7@gmail.com" id="mailID">arunprasanthm7@gmail.com</a>
@@ -26,9 +26,13 @@
           <div class="font-semibold text-2xl proj-title">Arun's personal site</div>
       </div>
       <img src="" alt="Project Thumbnail" title="Project Thumbnail"  class="parent-prj-thumbnail"></img>
-      <div class="flex flex-col center">
+      <div class="flex flex-col center gap-4">
+         
           <div class="parent-tech-tagline">Built and deployed with</div>
-          <div class="used-tech-top flex"><img class="tech-icon" alt="javascript" title="javascript" src="assets/icons8-javascript (1).svg"/><img class="tech-icon" alt="html" title="html"  src="assets/icons8-html-5 (1).svg"/><img class="tech-icon" alt="css" title="css"  src="assets/icons8-css3 (1).svg"/><img class="tech-icon" alt="figma" title="figma"  src="assets/icons8-figma 1.svg"/><img class="tech-icon" alt="VS code" title="VS code"  src="assets/icons8-visual-studio-code-2019 1.svg"/></div>
+          <div class="used-tech-top flex"><img class="tech-icon" alt="javascript" title="javascript" src="assets/icons8-javascript (1).svg"/><img class="tech-icon" alt="html" title="html"  src="assets/icons8-html-5 (1).svg"/><img class="tech-icon" alt="css" title="css"  src="assets/icons8-css3 (1).svg"/><img class="tech-icon" alt="figma" title="figma"  src="assets/icons8-figma 1.svg"/><img class="tech-icon" alt="VS code" title="VS code"  src="assets/icons8-visual-studio-code-2019 1.svg"/><img class="tech-icon" alt="VS code" title="VS code"  src="assets/logo-vercel-svgrepo-com 1.svg"/></div>
+          <div class="decsribe-project w-[800px] opacity-70">I set out to build a portfolio site from learning how to code - I had no projects, no blog posts or other content, just vibes. I wanted to build something which could grow with me as a developer; accommodate new projects, hobbies, technologies and ideas - while also showcasing my current ability and attention to detail. I have a long list of things I want to build and add to the site, but I hope you enjoy the site in its current format.
+
+            Additionally, I will be creating a longer form project write up outlining some of my decisions, solutions to challenges I faced, lessons learnt, as well as what I'll be adding to the site.</div>
       </div>
       </div>
     </div>
@@ -39,27 +43,19 @@
   width: 1024px;
   margin-top: 70px; 
       }
-  #projHome{
-      border-radius: 7px;
-      padding: 2px 8px;
-  }
-  #projHome:hover{
-    background-color: rgba(0, 0, 0, 0.2);
-  }
   .proj-title,.parent-tech-tagline{
     color: var(--black);
   }
   #projectNavContainer{
-  width: fit-content;
-  height: 40px;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 10px;
+    width:fit-content;
+  height:fit-content;
+  font-size: 14px;
+  border-radius: 30px;
   background-color: var(--white);
-  color:var(--black);
   transition: 0.6s;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 4px;
+  gap: 13px;
+  border:var(--border);
   gap: 8px;
     }
     .proj-nav-active{
@@ -71,8 +67,8 @@
         background-color: rgb(201, 197, 197);
       }
       .tech-icon{
-        width:60px;
-        height: 60px; 
+        width:40px;
+        height: 40px; 
        }
        .parent-tech-tagline{
         font-size:28px;

@@ -100,10 +100,19 @@ function currentSlide(n) {
   let twitter= document.getElementById('twitter');
   let gitHub= document.getElementById('gitHub');
   let linkedIn=document.getElementById('linkedIn');
+  home.addEventListener("click",()=>{
+   about.style.color='rgba(0,0,0,0.5)';
+   media.style.color='rgba(0,0,0,0.5)';
+   projects.style.color='rgba(0,0,0,0.5)';
+   
+  })
   about.addEventListener("click",()=>{
     about.classList.add('nav-active');
     home.classList.remove('nav-active');
     projects.classList.remove('nav-active');
+    // home.style.color='var(--darkNavColor)';
+    // media.style.color='var(--darkNavColor)';
+    // projects.style.color='var(--darkNavColor)';
     bio.style.gridArea='1/1/1/3';
     slider.style.gridArea='1/3/1/3';
     resume.style.gridArea='1/4/1/4'
@@ -141,6 +150,9 @@ function currentSlide(n) {
     home.classList.remove('nav-active');
     media.classList.remove('nav-active');
     projects.classList.add('nav-active');
+    // home.style.color='rgba(0,0,0,0.5)';
+    // media.style.color='rgba(0,0,0,0.5)';
+    // about.style.color='rgba(0,0,0,0.5)';
     bio.style.gridArea='1/3/1/5';
     slider.style.gridArea='5/2/5/2';
     skill.style.gridArea='3/3/3/3';
@@ -180,6 +192,9 @@ function currentSlide(n) {
     home.classList.remove('nav-active');
     projects.classList.remove('nav-active');
     media.classList.add('nav-active');
+    // home.style.color='rgba(0,0,0,0.5)';
+    // project.style.color='rgba(0,0,0,0.5)';
+    // about.style.color='rgba(0,0,0,0.5)';
     bio.style.gridArea='5/2/5/4';
     slider.style.gridArea='1/3/1/3';
     skill.style.gridArea='4/4/4/4';
