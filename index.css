@@ -4,7 +4,7 @@
   --lightGrey: rgb(185, 185, 185);
   --black: rgb(0, 0, 0);
   --iconBorder:1px solid rgba(0, 0, 0, 0.08);
-  --projectTab: 1px 1px 4px 2px #efe5e5;
+  --projectTab: 1px  solid #efe5e5;
   --projectTabbottom: 1px solid #efe5e5;
   --tabbg:#F3F3F3;
 }
@@ -13,7 +13,7 @@
   --white: rgb(35, 33, 33);
   --black: rgb(255, 255, 255);
   --iconBorder:1px solid rgba(255,255,255 , 0.08);
-  --projectTab: 1px 1px 4px 2px  #131212;
+  --projectTab: 1px solid  #131212;
   --projectTabbottom: 1px solid #131212;
   --tabbg:#313131;
 }
@@ -361,7 +361,7 @@ body {
   width:42px;
   height:80px;
   border-radius: 6px;
-  box-shadow:var(--projectTab);
+  border:var(--projectTab);
   transition:0.4s;
 }
 .mini-live-btn,.mini-source-btn{
