@@ -58,7 +58,7 @@ body {
 }
 #header {
   justify-content: space-between;
-  width: 1200px;
+  width: 1190px;
   margin-top: 70px;
   padding: 0 10px;
 }
@@ -68,8 +68,9 @@ body {
 }
 #mode {
   cursor: pointer;
-  transition: 0.6s;
-  transform: translate(3500%,200%);
+  position: absolute;
+  top:40px;
+  right:40px;
   
 }
 
@@ -460,6 +461,8 @@ height: 160px;
   height: 20px;
   visibility: hidden;
   transition: 0.1s;
+  color:var(--black);
+  
 }
 /* #interaction:hover  .link-name-parent{
   filter: blur(2px);
@@ -734,56 +737,3 @@ color: var(--black);
 
 }
 
-@media screen and (min-width: 1240px) {
-  #main {
-    margin: 140px auto 140px auto;
-    grid-template-columns: repeat(4, 280px);
-    grid-template-rows: repeat(5, 280px);
-    gap: 20px;
-  }
-}
-@media screen and (max-width: 1239px) {
-  #main {
-    margin: 140px auto 140px auto;
-    grid-template-columns: repeat(4, 234px);
-    grid-template-rows: repeat(5, 234px);
-    gap: 20px;
-  }
-  #mode {
-    transform: translate(800%, 80%);
-  }
-  #header {
-    width: 1000px;
-  }
-  #slider,
-  .slide,
-  .image {
-    width: 234px;
-    height: 234px;
-  }
-  .inter-thumbnail,
-  .mini-projects-thumbnail {
-    width: 186px;
-    height: 100px;
-  }
-  #about {
-    width: 435px;
-  }
-  .gallery-btns {
-    gap: 26px;
-  }
-  #interBtn {
-    padding: 12px 26px;
-  }
-
-  .skill-icons {
-    width: 30px;
-    height: 30px;
-  }
-  #projBtn1 {
-    padding: 8px 24px;
-  }
-}
-.mini-proj-bg{
-  background-color: #f09433;
-}
