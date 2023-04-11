@@ -63,8 +63,8 @@ body {
   padding: 0 10px;
 }
 .nav-active{
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
 }
 #mode {
   cursor: pointer;
@@ -84,19 +84,17 @@ body {
   transition: 0.6s;
 } */
 #mailID {
-  font-size: large;
+  font-size: 14px;
   color: var(--black);
 }
 #navContainer {
-  width: 320px;
-  height: 40px;
-  font-size: 18px;
-  /* font-weight: 600; */
-  border-radius: 10px;
+  width:fit-content;
+  height:fit-content;
+  font-size: 14px;
+  border-radius: 30px;
   background-color: var(--white);
   transition: 0.6s;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 4px;
   gap: 13px;
 }
 #project-navContainer {
@@ -195,7 +193,6 @@ body {
 .item18{
   grid-row: 5/5;
   grid-column: 4/4; 
-  background-color: #f09433;
 }
 /*bio*/
 #bio {
@@ -491,6 +488,9 @@ ul:hover  .inter-external-link{
   gap: 8px;
   background-color: rgb(3, 141, 255);
 }
+#resume{
+  background-color: rgb(0, 0, 0);
+}
 #github {
   gap: 10px;
   background-color: rgb(0, 0, 0);
@@ -519,7 +519,8 @@ ul:hover  .inter-external-link{
 }
 #twitterIcon,
 #githubIcon,
-#linkedInIcon {
+#linkedInIcon,
+#resumeIcon {
   transition: 0.2s;
   width: 80px;
   height: 80px;
@@ -592,7 +593,7 @@ ul:hover  .inter-external-link{
 }
 
 .proj1-main {
-  transform: translateY(110px);
+  transform: translateY(130px);
   transition: 0.6s;
 }
 
