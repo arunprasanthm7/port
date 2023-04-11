@@ -6,6 +6,7 @@
   --iconBorder:1px solid rgba(0, 0, 0, 0.08);
   --projectTab: 1px 1px 4px 2px #efe5e5;
   --projectTabbottom: 1px solid #efe5e5;
+  --tabbg:#F3F3F3;
 }
 .dark-theme {
   --bg: rgb(19, 17, 17);
@@ -14,6 +15,7 @@
   --iconBorder:1px solid rgba(255,255,255 , 0.08);
   --projectTab: 1px 1px 4px 2px  #131212;
   --projectTabbottom: 1px solid #131212;
+  --tabbg:#313131;
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -66,16 +68,12 @@ body {
 }
 #mode {
   cursor: pointer;
-  position: relative;
-  height: 34px;
-  width: 70px;
-  border-radius: 20px;
   transition: 0.6s;
-  transform: translate(1000%, 80%);
-  background-color: rgb(171, 170, 170);
+  transform: translate(3500%,200%);
+  
 }
 
-#light {
+/* #light {
   position: absolute;
   top: 3;
   left: 3;
@@ -84,7 +82,7 @@ body {
   background-color: rgb(255, 255, 255);
   transform: translateX(0px);
   transition: 0.6s;
-}
+} */
 #mailID {
   font-size: large;
   color: var(--black);
@@ -174,25 +172,30 @@ body {
   grid-column: 4/4;
 }
 .item9{
-  grid-row: 4/4;
+  grid-row: 5/5;
   grid-column: 2/2;
 }
 .item10{
-  grid-row: 4/4;
+  grid-row: 5/5;
   grid-column: 3/3;
 }
 
 .item11 {
   grid-row: 5/5;
-  grid-column: 1/3;
+  grid-column: 1/1;
 }
 .item12 {
-  grid-row: 5/5;
-  grid-column: 3/5;
+  grid-row: 4/4;
+  grid-column: 2/4;
 }
 .item13 {
   grid-row: 2/2;
   grid-column: 1/1;
+}
+.item18{
+  grid-row: 5/5;
+  grid-column: 4/4; 
+  background-color: #f09433;
 }
 /*bio*/
 #bio {
@@ -361,23 +364,23 @@ body {
   box-shadow:var(--projectTab);
   transition:0.4s;
 }
-#mini-live-btn,#mini-source-btn{
+.mini-live-btn,.mini-source-btn{
   width:42px;
   height:40px;
   padding: 10px;
  
 }
-#mini-live-btn{
+.mini-live-btn{
   border-bottom:  var(--projectTabbottom);
   border-top-left-radius:6px ;
   border-top-right-radius:6px ;
 }
-#mini-source-btn{
+.mini-source-btn{
   border-bottom-left-radius:6px ;
   border-bottom-right-radius:6px ;
 }
-#mini-live-btn:hover,#mini-source-btn:hover{
-background-color: #F3F3F3;
+.mini-live-btn:hover,.mini-source-btn:hover{
+background-color:var(--tabbg);
 }
 .skill-icons {
   width: 32px;
@@ -612,9 +615,8 @@ ul:hover  .inter-external-link{
 }
 #projBtn2,
 #techtipsBtn {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  border: 1px solid white;
+  background-color: var(--black);
+  color: var(--white)
 }
 .proj1-tech-icon {
   width: 34px;
@@ -674,6 +676,7 @@ a {
 }
 .inter-contents {
   gap: 16px;
+  cursor:;
   overflow-y: scroll;
 }
 .inter-gap {
@@ -696,6 +699,7 @@ a {
   opacity: 0.7;
   cursor: pointer;
   margin-right: 4px;
+  color: var(--black);
 }
 
 
