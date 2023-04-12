@@ -204,12 +204,12 @@ body {
 }
 .main-image-bg{
   position: absolute;
-  top: -180;
-  right: -180;
+  top: -140;
+  right: -150;
   /* background-color: #f09433; */
   background:fixed;
-  width: 267px;
-  height: 267px;
+  width: 200px;
+  height: 200px;
   border-radius: 567px;
   transition: 0.2s;
  overflow: hidden;
@@ -217,15 +217,15 @@ body {
 .main-image {
   /* background-color: #f09433; */
   background:fixed;
-  width: 267px;
-  height: 267px;
+  width: 200px;
+  height: 200px;
   border-radius: 267px;
   transition: 0.2s;
  scale:1.2;
 }
 #bio:hover .main-image-bg {
-  top: -16;
-  right: -34;
+  top: 10;
+  right: 10;
   transition: 0.2s;
 }
 #name,
@@ -764,6 +764,7 @@ a {
   #bioAbout{
     width:420px;
   }
+
   .footer {
     width: 1012px;
   }
