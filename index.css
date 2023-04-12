@@ -212,19 +212,31 @@ body {
   padding: 0px 30px;
   overflow: hidden;
 }
-.main-image {
+.main-image-bg{
   position: absolute;
-  top: -130;
-  right: -130;
-  background-color: #f09433;
-  width: 220px;
-  height: 220px;
-  border-radius: 190px;
+  top: -180;
+  right: -180;
+  /* background-color: #f09433; */
+  background:fixed;
+  width: 267px;
+  height: 267px;
+  border-radius: 567px;
   transition: 0.2s;
+ overflow: hidden;
 }
-#bio:hover .main-image {
-  top: -28;
-  right: -28;
+.main-image {
+ 
+  /* background-color: #f09433; */
+  background:fixed;
+  width: 267px;
+  height: 267px;
+  border-radius: 267px;
+  transition: 0.2s;
+ scale:1.2;
+}
+#bio:hover .main-image-bg {
+  top: -16;
+  right: -34;
   transition: 0.2s;
 }
 #name,
@@ -988,9 +1000,9 @@ a {
 
 @media screen and (max-width: 549px){
   #main {
-    margin: 60px auto 140px auto;
+    margin: 60px auto 60px auto;
     grid-template-columns: repeat(1, 300px);
-    grid-template-rows: repeat(18,300px);
+    grid-template-rows: repeat(14,300px);
     gap: 12px;
   }
   #slider,
@@ -1098,18 +1110,24 @@ li:hover ul {
   .item8 {
     grid-area:4/1/4/1 ;
   }
-  .item9 {
+  .item9, .item18,.item10, .item11, .item12 {
     grid-area:14/1/14/1 ;
+    width: 140px;
+    height: 140px;
   }
-  .item10 {
-    grid-area:15/1/15/1 ;
-  }
-  .item11 {
-    grid-area:17/1/17/1 ;
+  #instagram,#github,#twitter{
+    padding: 0;
   }
   .item12 {
-    grid-area:16/1/16/1 ;
+   transform: translate(160px,0px);
   }
+  .item9 {
+    transform: translate(0px,160px);
+  }
+  .item10 {
+    transform: translate(160px,160px);
+  }
+  
   .item13 {
     grid-area:5/1/5/1 ;
   }
@@ -1125,11 +1143,66 @@ li:hover ul {
   .item17 {
     grid-area:9/1/9/1 ;
   }
-  .item18 {
-    grid-area:18/1/18/1 ;
+  .item18{
+    grid-area: 15/1/15/1;
+    width:300px
   }
+  #twitterIcon, #githubIcon, #linkedInIcon, #resumeIcon {
+    transition: 0.2s;
+    width: 60px;
+    height: 60px;
+}
+  #instagramIcon {
+    width: 40px;
+    height: 40px;
+    transition: 0.2s;
+    transform: translateY(10px);
+    margin-bottom: 8px;
+}
+#twitter,#github{
+  gap:0px;
+}
 
-
-
+#githubIcon{
+  transform: translateY(-5px);
+  gap:0px;
+}
+.social-media-box:hover > .icon-rotate {
+  transform: rotate(0deg) translateY(0px);
+  transition: 0.2s;
+}
+.icon-rotate {
+  transform: rotate(0deg) translateY(0px);
+  transition: 0.2s;
+}
+#socialMediaBtn {
+  font-size: 10px;
+  font-weight: 500;
+  color: white;
+  transform: translateY(0px);
+  transition: 0.2s;
+}
+.social-media-box:hover > #socialMediaBtn {
+  font-size: 10px;
+  font-weight: 500;
+  color: white;
+  transform: translateY(0px);
+  transition: 0.2s;
+}
+#socialMediaBtn {
+  cursor: pointer;
+  background-color: rgb(43, 43, 43);
+  border-radius: 20px;
+  padding: 3px 6px;
+}
+#socialMediaBtn:hover {
+  cursor: pointer;
+  background-color: rgb(43, 43, 43);
+  border-radius: 20px;
+  padding: 8px 8px;
+}
+.social-media-box{
+  
+}
 
 }
