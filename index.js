@@ -81,7 +81,7 @@ function currentSlide(n) {
   let about=document.getElementById('about');
   let home=document.getElementById('home');
   let projects=document.getElementById('projects');
-  let media=document.getElementById('media');
+  let social=document.getElementById('social');
   //cardElements
   let bio=document.getElementById('bio')
   let slider=document.getElementById('slider');
@@ -110,6 +110,7 @@ function currentSlide(n) {
     about.classList.add('nav-active');
     home.classList.remove('nav-active');
     projects.classList.remove('nav-active');
+    social.classList.remove('nav-active');
     // home.style.color='var(--darkNavColor)';
     // media.style.color='var(--darkNavColor)';
     // projects.style.color='var(--darkNavColor)';
@@ -148,7 +149,7 @@ function currentSlide(n) {
   projects.addEventListener('click',()=>{
     about.classList.remove('nav-active');
     home.classList.remove('nav-active');
-    media.classList.remove('nav-active');
+    social.classList.remove('nav-active');
     projects.classList.add('nav-active');
     // home.style.color='rgba(0,0,0,0.5)';
     // media.style.color='rgba(0,0,0,0.5)';
@@ -187,11 +188,11 @@ function currentSlide(n) {
     miniProject5.style.opacity='1';
     
   })
-  media.addEventListener('click',()=>{
+  social.addEventListener('click',()=>{
     about.classList.remove('nav-active');
     home.classList.remove('nav-active');
     projects.classList.remove('nav-active');
-    media.classList.add('nav-active');
+    social.classList.add('nav-active');
     // home.style.color='rgba(0,0,0,0.5)';
     // project.style.color='rgba(0,0,0,0.5)';
     // about.style.color='rgba(0,0,0,0.5)';

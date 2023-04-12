@@ -21,8 +21,13 @@
   /* --border:1px solid grey; */
 }
 ::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
+  width: 4px;
+  border-radius:20px;
+  background-color: #c9c6c6;
+}
+::-webkit-scrollbar-thumb{
+  border-radius:20px;
+  background-color: #464444;
 }
 body {
   background-color: var(--bg);
@@ -383,11 +388,11 @@ body {
 /* .skill-icons {
   width: 32px;
   height: 32px;
-}
+}*/
 .tool-icons {
-  width: 36px;
-  height: 36px;
-} */
+  width: 32px;
+  height: 32px;
+} 
 .skill-gap,
 .tool-gap {
   gap: 24px;
@@ -676,7 +681,7 @@ a {
 }
 .inter-contents {
   gap: 16px;
-  cursor: ;
+  padding-right: 8px;
   overflow-y: scroll;
 }
 .inter-gap {
@@ -743,6 +748,7 @@ a {
     margin-top: 70px;
     padding: 0 10px;
   }
+
 }
 @media screen and (max-width: 1239px) {
   #main {
@@ -753,6 +759,9 @@ a {
   }
   #header {
     width: 1040px;
+  }
+  #bioAbout{
+    width:420px;
   }
   .footer {
     width: 1012px;
@@ -767,18 +776,30 @@ a {
     grid-template-rows: repeat(3, 40px);
     gap: 10px;
   }
+  .tool-icons {
+    width: 24px;
+    height: 24px;
+  } 
+  #skill {
+    padding:30px 20px;
+   
+}
+.skill-gap{
+  gap:16px;
+}
+.learned-skill-lists {
+  gap: 12px;
+}
+  .tool-used-lists {
+    gap: 6px;
+}
   .icon-border {
     border-radius: 8px;
-    padding: 5.5px;
-  }
-  .tool-used-lists {
-    grid-template-columns: repeat(4, 38px);
-    grid-template-rows: repeat(3, 38px);
-    gap: 10px;
+    padding: 5px;
   }
   .tool-border {
-    border-radius: 34px;
-    padding: 4px;
+    border-radius: 30px;
+    padding:10px;
   }
   #techtipsBtn {
     align-self: center;
@@ -812,6 +833,13 @@ a {
   .mini-projects {
     gap: 8px;
   }
+  #projBtn1, #projBtn2 {
+    padding: 8px;
+}
+.proj1-main {
+  transform: translateY(127px);
+}
+
 }
 @media screen and (max-width: 1100px) {
   #main {
@@ -822,6 +850,10 @@ a {
   }
   #header {
     width: 770px;
+  }
+  .mini-projects-thumbnail {
+    width: 202px;
+    height: 132px;
   }
   .footer {
     width: 730px;
@@ -957,14 +989,14 @@ a {
 @media screen and (max-width: 549px){
   #main {
     margin: 60px auto 140px auto;
-    grid-template-columns: repeat(1, 360px);
-    grid-template-rows: repeat(18, 360px);
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(18,300px);
     gap: 12px;
   }
   #slider,
   .image {
-    width: 360px;
-    height: 360px;
+    width: 300px;
+    height: 300px;
   }
   #header {
     width: 400px;
@@ -972,8 +1004,63 @@ a {
     flex-direction: column;
     gap:40px;
   }
+  #name {
+    font-size: 26px;
+    font-weight:800;
+}
+#profName {
+  font-size: 14px;
+  font-weight: 600;
+}
+#bioAbout {
+  font-size: 14px;
+  width: 240px;
+  text-align: left;
+  opacity: 0.5;
+  color: var(--black);
+}
+.learned-skill-lists {
+  grid-template-columns: repeat(4, 46px);
+  grid-template-rows: repeat(3, 46px);
+  gap: 10px;
+}
+.tool-used-lists {
+  grid-template-columns: repeat(4,44px);
+  grid-template-rows: repeat(3, 44px);
+  gap: 10px;
+}
+.skill-gap{
+  gap:24px;
+}
+.tool-icons {
+  width: 32px;
+  height: 32px;
+} 
+.tool-border{
+  padding: 6px;
+}
+.techtips-intro {
+  font-size: 16px;
+  line-height: 27px;
+  opacity: 0.5;
+}
+#techtips{
+  padding: 33px;
+  gap: 20px;
+}
+.techtips-content {
+  gap: 30px;
+}
+ .mini-projects {
+  gap: 14px;
+  padding: 40px;
+}
+.mini-projects-thumbnail {
+  width: 232px;
+  height: 152px;
+}
   .footer {
-    width: 360px;
+    width: 300px;
   }
   .item1 {
     grid-area:1/1/1/1 ;
