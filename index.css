@@ -116,10 +116,7 @@ body {
   opacity: 0.6;
   padding: 6px 16px;
 }
-/* .nav-options:hover {
-  transition: 0.4s;
-  color: rgba(0, 0, 0,0.6);
-} */
+
 .grid-items {
   background-color: var(--white);
   border-radius: 16px;
@@ -995,6 +992,7 @@ a {
     grid-template-rows: repeat(14,300px);
     gap: 12px;
   }
+ 
   #slider,
   .image {
     width: 300px;
@@ -1018,6 +1016,18 @@ a {
   font-size: 14px;
   font-weight: 600;
 }
+#bio{
+  overflow: visible;
+  padding: 90px 30px 30px;
+}
+#name {
+  width: 180px;
+}
+.main-image-bg {
+  top: -49px;
+  right: -65px;
+}
+
 #bioAbout {
   font-size: 14px;
   width: 240px;
@@ -1078,6 +1088,7 @@ li:hover ul {
   }
   .item1 {
     grid-area:1/1/1/1 ;
+   
   }
   .item2 {
     grid-area:2/1/2/1 ;
@@ -1191,8 +1202,6 @@ li:hover ul {
   border-radius: 20px;
   padding: 8px 8px;
 }
-.social-media-box{
-  
-}
+
 
 }
