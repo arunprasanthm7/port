@@ -1063,6 +1063,14 @@ a {
   width: 232px;
   height: 152px;
 }
+li:hover ul {
+  filter: blur(0px);
+
+}
+.inter-external-link {
+  visibility: visible;
+  
+}
   .footer {
     width: 300px;
   }
