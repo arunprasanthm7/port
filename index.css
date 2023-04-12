@@ -82,16 +82,6 @@ body {
   right: 40px;
 }
 
-/* #light {
-  position: absolute;
-  top: 3;
-  left: 3;
-  padding: 5.8px;
-  border-radius: 20px;
-  background-color: rgb(255, 255, 255);
-  transform: translateX(0px);
-  transition: 0.6s;
-} */
 #mailID {
   font-size: 14px;
   color: var(--black);
@@ -225,7 +215,6 @@ body {
  overflow: hidden;
 }
 .main-image {
- 
   /* background-color: #f09433; */
   background:fixed;
   width: 267px;
