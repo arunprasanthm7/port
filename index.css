@@ -1025,7 +1025,7 @@ a {
 }
 .main-image-bg {
   top: -49px;
-  right: -65px;
+  right: -17px;
 }
 
 #bioAbout {
@@ -1205,3 +1205,12 @@ li:hover ul {
 
 
 }
+@media screen and (max-width:1100px) 
+{
+  #projectHeader{
+   width: 800px;
+  }
+  #projectHeader {
+        width: 800px;
+}
+ }

@@ -1,4 +1,4 @@
-<html>
+<Doctype! html>
   <head>
     <title>AP-Arun's Personal Site</title>
   <meta charset="UTF-8">
@@ -30,9 +30,9 @@
          
           <div class="parent-tech-tagline">Built and deployed with</div>
           <div class="used-tech-top flex"><img class="tech-icon" alt="javascript" title="javascript" src="assets/icons8-javascript (1).svg"/><img class="tech-icon" alt="html" title="html"  src="assets/icons8-html-5 (1).svg"/><img class="tech-icon" alt="css" title="css"  src="assets/icons8-css3 (1).svg"/><img class="tech-icon" alt="figma" title="figma"  src="assets/icons8-figma 1.svg"/><img class="tech-icon" alt="VS code" title="VS code"  src="assets/icons8-visual-studio-code-2019 1.svg"/><img class="tech-icon" alt="VS code" title="VS code"  src="assets/logo-vercel-svgrepo-com 1.svg"/></div>
-          <div class="decsribe-project w-[800px] opacity-70">I set out to build a portfolio site from learning how to code - I had no projects, no blog posts or other content, just vibes. I wanted to build something which could grow with me as a developer; accommodate new projects, hobbies, technologies and ideas - while also showcasing my current ability and attention to detail. I have a long list of things I want to build and add to the site, but I hope you enjoy the site in its current format.
+          <div class="decsribe-project w-[800px] opacity-70">I set out to build a portfolio site by learning how to code. I wanted to build something which could grow with me as a developer; accommodate new projects, hobbies, technologies and ideas - while also showcasing my current ability and attention to detail. I have a long list of things I want to build and add to the site, but I hope you enjoy the site in its current format.
 
-            Additionally, I will be creating a longer form project write up outlining some of my decisions, solutions to challenges I faced, lessons learnt, as well as what I'll be adding to the site.</div>
+            Additionally, I will be creating a longer form project write-up outlining some of my decisions, solutions to challenges I faced, lessons learnt, as well as what I'll be adding to the site.</div>
       </div>
       </div>
     </div>
@@ -77,6 +77,26 @@
        .used-tech-top{
         margin-top: 10px;
        }
+       @media screen and (max-width:1100px) 
+{
+  .parent-prj-thumbnail, #projectHeader{
+   width: 800px;
+  }
+ }
+ @media screen and (max-width:870px) 
+{
+  .parent-prj-thumbnail, #projectHeader, .decsribe-project{
+   width: 500px;
+  }
+
+ }
+ @media screen and (max-width:550px) 
+{
+  .parent-prj-thumbnail, #projectHeader,.decsribe-project{
+   width: 300px;
+  }
+ 
+ }
     </style>
     <script src="index.js"></script>
   </body>
