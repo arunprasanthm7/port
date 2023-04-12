@@ -101,7 +101,7 @@ let instagram = document.getElementById('instagram');
 let twitter = document.getElementById('twitter');
 let gitHub = document.getElementById('gitHub');
 let linkedIn = document.getElementById('linkedIn');
-let mainImage=document.getElementById('mainImage');
+let mainImage = document.getElementById('mainImage');
 //media-query
 let xlarge = window.matchMedia("(min-width:1240px");
 let large = window.matchMedia("(max-width:1239px");
@@ -114,7 +114,7 @@ about.addEventListener("click", () => {
   home.classList.remove('nav-active');
   projects.classList.remove('nav-active');
   social.classList.remove('nav-active');
- 
+
 
   if (xlarge.matches || large.matches) {
     bio.style.gridArea = '1/1/1/3';
@@ -223,7 +223,7 @@ about.addEventListener("click", () => {
     bio.style.opacity = '1';
   }
   if (small.matches) {
-    mainImage.style.visibility='visible';
+    mainImage.style.visibility = 'visible';
     main.style.gridTemplateColumns = 'repeat(1,300px)';
     main.style.gridTemplaterows = 'repeat(14,300px)';
     bio.style.gridArea = '1/1/1/1';
@@ -265,7 +265,7 @@ projects.addEventListener('click', () => {
   home.classList.remove('nav-active');
   social.classList.remove('nav-active');
   projects.classList.add('nav-active');
- 
+
   if (xlarge.matches || large.matches) {
     bio.style.gridArea = '1/3/1/5';
     slider.style.gridArea = '5/2/5/2';
@@ -373,7 +373,7 @@ projects.addEventListener('click', () => {
     miniProject5.style.opacity = '1';
   }
   if (small.matches) {
-    mainImage.style.visibility='hidden';
+    mainImage.style.visibility = 'hidden';
     main.style.gridTemplateColumns = 'repeat(1,300px)';
     main.style.gridTemplaterows = 'repeat(13,300px)';
     bio.style.gridArea = '7/1/7/1';

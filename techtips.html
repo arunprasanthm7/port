@@ -6,28 +6,95 @@
   <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class=" flex gap-72 font-sans mb-20">
+    <div class="post-parent-cont flex gap-72 font-sans mb-20 ">
       
-      <a href="index.html" title="home"  class="sticky left-12 top-10  opacity-70 text-base  h-fit hover:opacity-100">← Back to home</a>
-      <div class="flex flex-col gap-7 justify-center">
+      <a href="index.html" title="home"  class="back-to-home sticky left-12 top-10  opacity-70 text-base  h-fit hover:opacity-100">← Back to home</a>
+      <div class="flex flex-col gap-7 justify-start">
         <div class=" text-5xl font-semibold mt-20 tracking-tighter">Tech tips</div>
-        <div class="opacity-50 text-base">Hi, Learning is an endless process.Sharing my technical knowledge with all that I have learnt and am learning!</div>
-        <div id="techGallery" class=" relative flex flex-col justify-center items-center gap-4 ">
-                <img class=" w-[723px] h-[415px] border border-[#dedcdc]" src="assets/Screenshot 2023-03-31 175238.png" />
-                <img class=" w-[723px] h-[415px] border border-[#dedcdc]" src="assets/Flex[1].jpg" />
-                <img class=" w-[723px] h-[415px] border border-[#dedcdc]" src="assets/Flex[2].jpg" />
-                <img class=" w-[723px] h-[415px] border border-[#dedcdc]" src="assets/Flex[3].jpg" />
-                <img class=" w-[723px] h-[415px] border border-[#dedcdc]" src="assets/Flex[4].jpg" />
-                <img class=" w-[723px] h-[415px] border border-[#dedcdc]" src="assets/Flex[5].jpg" />
-                <img class=" w-[723px] h-[415px] border border-[#dedcdc]" src="assets/Flex[6].jpg" />   
-                <img class=" w-[723px] h-[415px] border border-[#dedcdc]" src="assets/var variables pt-1.jpg" />
-                <img class=" w-[723px] h-[415px] border border-[#dedcdc]" src="assets/var variables pt-2.jpg" />
-                <img class=" w-[723px] h-[415px] border border-[#dedcdc]" src="assets/var variables pt-3.jpg" />
-                <img class=" w-[723px] h-[415px] border border-[#dedcdc]" src="assets/var variables pt-4.jpg" />  
+        <div class="post-intro opacity-50 text-base">Hi, Learning is an endless process.Sharing my technical knowledge with all that I have learnt and am learning!</div>
+        <div id="techGallery" class=" relative flex flex-col  gap-4 ">
+                <img class="post w-[723px] h-[415px] border border-[#dedcdc]" src="assets/Screenshot 2023-03-31 175238.png" />
+                <img class="post w-[723px] h-[415px] border border-[#dedcdc]" src="assets/Flex[1].jpg" />
+                <img class="post w-[723px] h-[415px] border border-[#dedcdc]" src="assets/Flex[2].jpg" />
+                <img class="post w-[723px] h-[415px] border border-[#dedcdc]" src="assets/Flex[3].jpg" />
+                <img class="post w-[723px] h-[415px] border border-[#dedcdc]" src="assets/Flex[4].jpg" />
+                <img class="post w-[723px] h-[415px] border border-[#dedcdc]" src="assets/Flex[5].jpg" />
+                <img class="post w-[723px] h-[415px] border border-[#dedcdc]" src="assets/Flex[6].jpg" />   
+                <img class="post w-[723px] h-[415px] border border-[#dedcdc]" src="assets/var variables pt-1.jpg" />
+                <img class="post w-[723px] h-[415px] border border-[#dedcdc]" src="assets/var variables pt-2.jpg" />
+                <img class="post w-[723px] h-[415px] border border-[#dedcdc]" src="assets/var variables pt-3.jpg" />
+                <img class="post w-[723px] h-[415px] border border-[#dedcdc]" src="assets/var variables pt-4.jpg" />  
       </div>
       </div>
     </div>
     <style>
+      @media screen and (max-width:1280px){
+.post-parent-cont{
+  gap:180px;
+}
+      }
+@media screen and (max-width:1100px){
+.post-parent-cont{
+  gap:120px;
+}
+.post{
+width: 523px;
+height: 300px;
+}
+.post-intro{
+        width: 523px;
+      }
+      }
+@media screen and (max-width:800px){
+.post-parent-cont{
+  gap:90px;
+}
+.post{
+width: 423px;
+height: 280px;
+}
+.post-intro{
+        width: 423px;
+      }
+      }
+      @media screen and (max-width:640px){
+.post-parent-cont{
+  gap:70px;
+  justify-content: center;
+  align-items: center;
+}
+.post{
+width: 370px;
+height: 280px;
+}
+.post-intro{
+        width: 370px;
+      }
+      .back-to-home{
+        position:absolute;
+        top:10px;
+        left:10px;
+      }
+      }
+      @media screen and (max-width:400px){
+.post-parent-cont{
+  gap:70px;
+  justify-content: center;
+  align-items: center;
+}
+.post{
+width: 270px;
+height: 170px;
+}
+.post-intro{
+        width: 270px;
+      }
+      .back-to-home{
+        position:absolute;
+        top:10px;
+        left:10px;
+      }
+      }
     </style>
   </body>
 </html>
