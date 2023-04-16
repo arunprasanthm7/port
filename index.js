@@ -109,6 +109,164 @@ let xmedium = window.matchMedia("(max-width:1100px");
 let medium = window.matchMedia("(max-width:820px");
 let small = window.matchMedia("(max-width:549px");
 // })
+home.addEventListener('click',()=>{
+  home.classList.add('nav-active');
+  about.classList.remove('nav-active');
+  projects.classList.remove('nav-active');
+  social.classList.remove('nav-active');
+  if (xlarge.matches || large.matches) {
+    bio.style.gridArea = '1/1/1/3';
+    slider.style.gridArea = '1/3/1/3';
+    resume.style.gridArea = '5/4/5/4'
+    skill.style.gridArea = '1/4/1/4';
+    linkedIn.style.gridArea = '5/2/5/2';
+    tool.style.gridArea = '2/4/2/4';
+    techtips.style.gridArea = '2/1/2/1';
+    interaction.style.gridArea = '3/1/5/1';
+    instagram.style.gridArea = '5/3/5/3';
+    twitter.style.gridArea = '4/2/4/4';
+    gitHub.style.gridArea = '5/1/5/1';
+    miniProject1.style.gridArea = '3/3/3/3';
+    miniProject2.style.gridArea = '2/2/2/2';
+    miniProject3.style.gridArea = '2/3/2/3';
+    miniProject4.style.gridArea = '3/2/3/2';
+    miniProject5.style.gridArea = '3/4/3/4';
+    project.style.gridArea = '4/4/4/4';
+    interaction.style.opacity = '1';
+    project.style.opacity = '1';
+    miniProject1.style.opacity = '1';
+    miniProject2.style.opacity = '1';
+    miniProject3.style.opacity = '1';
+    miniProject4.style.opacity = '1';
+    miniProject5.style.opacity = '1';
+    techtips.style.opacity = '1';
+    tool.style.opacity = '1';
+    skill.style.opacity = '1';
+    linkedIn.style.opacity = '1';
+    instagram.style.opacity = '1';
+    slider.style.opacity = '1';
+    resume.style.opacity = '1';
+    bio.style.opacity = '1';
+  }
+  if (xmedium.matches) {
+    main.style.gridTemplateColumns = 'repeat(3,240px)';
+    main.style.gridTemplaterows = 'repeat(7,240px)';
+    bio.style.gridArea = '1/1/1/3';
+    slider.style.gridArea = '1/3/1/3';
+    resume.style.gridArea = '7/3/7/3'
+    skill.style.gridArea = '2/2/2/2';
+    linkedIn.style.gridArea = '6/2/6/2';
+    tool.style.gridArea = '2/1/2/1';
+    techtips.style.gridArea = '2/3/2/3';
+    interaction.style.gridArea = '3/1/5/1';
+    instagram.style.gridArea = '6/3/6/3';
+    twitter.style.gridArea = '5/3/5/5';
+    gitHub.style.gridArea = '7/1/7/3';
+    miniProject1.style.gridArea = '3/1/3/1';
+    miniProject2.style.gridArea = '3/2/3/2';
+    miniProject3.style.gridArea = '3/3/3/3';
+    miniProject4.style.gridArea = '4/1/4/1';
+    miniProject5.style.gridArea = '4/2/4/2';
+    project.style.gridArea = '4/3/4/3';
+    interaction.style.opacity = '1';
+    project.style.opacity = '1';
+    miniProject1.style.opacity = '1';
+    miniProject2.style.opacity = '1';
+    miniProject3.style.opacity = '1';
+    miniProject4.style.opacity = '1';
+    miniProject5.style.opacity = '1';
+    techtips.style.opacity = '1';
+    tool.style.opacity = '1';
+    skill.style.opacity = '1';
+    twitter.style.opacity = '1';
+    gitHub.style.opacity = '1';
+    linkedIn.style.opacity = '1';
+    instagram.style.opacity = '1';
+    slider.style.opacity = '1';
+    resume.style.opacity = '1';
+    bio.style.opacity = '1';
+  }
+  if (medium.matches) {
+    main.style.gridTemplateColumns = 'repeat(2,240px)';
+    main.style.gridTemplaterows = 'repeat(10,240px)';
+    bio.style.gridArea = '1/1/1/3';
+    slider.style.gridArea = '2/1/2/1';
+    resume.style.gridArea = '10/2/10/2'
+    skill.style.gridArea = '2/2/2/2';
+    linkedIn.style.gridArea = '7/2/7/2';
+    tool.style.gridArea = '3/1/3/1';
+    techtips.style.gridArea = '3/2/3/2';
+    interaction.style.gridArea = '1/7/1/9';
+    instagram.style.gridArea = '8/2/8/2';
+    twitter.style.gridArea = '9/1/9/3';
+    gitHub.style.gridArea = '10/1/10/1';
+    miniProject1.style.gridArea = '4/1/4/1';
+    miniProject2.style.gridArea = '4/2/4/2';
+    miniProject3.style.gridArea = '5/1/5/1';
+    miniProject4.style.gridArea = '5/2/5/2';
+    miniProject5.style.gridArea = '6/1/6/1';
+    project.style.gridArea = '6/2/6/2';
+    interaction.style.opacity = '1';
+    project.style.opacity = '1';
+    miniProject1.style.opacity = '1';
+    miniProject2.style.opacity = '1';
+    miniProject3.style.opacity = '1';
+    miniProject4.style.opacity = '1';
+    miniProject5.style.opacity = '1';
+    techtips.style.opacity = '1';
+    tool.style.opacity = '1';
+    skill.style.opacity = '1';
+    twitter.style.opacity = '1';
+    gitHub.style.opacity = '1';
+    linkedIn.style.opacity = '1';
+    instagram.style.opacity = '1';
+    slider.style.opacity = '1';
+    resume.style.opacity = '1';
+    bio.style.opacity = '1';
+  }
+  if (small.matches) {
+    mainImage.style.visibility = 'visible';
+    main.style.gridTemplateColumns = 'repeat(1,300px)';
+    main.style.gridTemplaterows = 'repeat(15,300px)';
+    bio.style.gridArea = '1/1/1/1';
+    slider.style.gridArea = '2/1/2/1';
+    resume.style.gridArea = '15/1/15/1'
+    skill.style.gridArea = '3/1/3/1';
+    linkedIn.style.gridArea = '14/1/14/1';
+    tool.style.gridArea = '4/1/4/1';
+    techtips.style.gridArea = '5/1/5/1';
+    interaction.style.gridArea = '12/1/15/1';
+    instagram.style.gridArea = '14/1/14/1';
+    twitter.style.gridArea = '14/1/14/1';
+    gitHub.style.gridArea = '14/1/14/1';
+    miniProject1.style.gridArea = '6/1/6/1';
+    miniProject2.style.gridArea = '7/1/7/1';
+    miniProject3.style.gridArea = '8/1/8/1';
+    miniProject4.style.gridArea = '9/1/9/1';
+    miniProject5.style.gridArea = '10/1/10/1';
+    project.style.gridArea = '11/1/11/1';
+    interaction.style.opacity = '1';
+    project.style.opacity = '1';
+    miniProject1.style.opacity = '1';
+    miniProject2.style.opacity = '1';
+    miniProject3.style.opacity = '1';
+    miniProject4.style.opacity = '1';
+    miniProject5.style.opacity = '1';
+    techtips.style.opacity = '1';
+    tool.style.opacity = '1';
+    skill.style.opacity = '1';
+    twitter.style.opacity = '1';
+    gitHub.style.opacity = '1';
+    linkedIn.style.opacity = '1';
+    instagram.style.opacity = '1';
+    slider.style.opacity = '1';
+    resume.style.opacity = '1';
+    bio.style.opacity = '1';
+  }
+
+
+
+})
 about.addEventListener("click", () => {
   about.classList.add('nav-active');
   home.classList.remove('nav-active');

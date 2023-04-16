@@ -155,7 +155,7 @@ body {
   grid-row: 2/2;
   grid-column: 3/3;
 }
-.item16 {
+.item17 {
   grid-row: 3/3;
   grid-column: 2/2;
 }
@@ -984,7 +984,6 @@ a {
     grid-area: 10/2/10/2;
   }
 }
-
 @media screen and (max-width: 549px) {
   #main {
     margin: 60px auto 60px auto;
@@ -1026,6 +1025,11 @@ a {
   .main-image-bg {
     top: -49px;
     right: -17px;
+  }
+  #bio:hover .main-image-bg {
+    top: -49px;
+    right: -17px;
+    transition: 0.2s;
   }
 
   #bioAbout {
