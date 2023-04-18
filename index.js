@@ -694,7 +694,7 @@ social.addEventListener('click', () => {
   if (small.matches) {
     main.style.gridTemplateColumns = 'repeat(1,300px)';
     main.style.gridTemplaterows = 'repeat(14,300px)';
-    bio.style.gridArea = '8/1/8/1';
+    bio.style.gridArea = '14/1/14/1';
     slider.style.gridArea = '2/1/2/1';
     skill.style.gridArea = '3/1/3/1';
     tool.style.gridArea = '4/1/4/1';
