@@ -104,11 +104,11 @@ let gitHub = document.getElementById('gitHub');
 let linkedIn = document.getElementById('linkedIn');
 let mainImage = document.getElementById('mainImage');
 //media-query
-let xlarge = window.matchMedia("(min-width:1240px");
-let large = window.matchMedia("(max-width:1239px");
-let xmedium = window.matchMedia("(max-width:1100px");
-let medium = window.matchMedia("(max-width:820px");
-let small = window.matchMedia("(max-width:549px");
+let xlarge = window.matchMedia("(min-width:1240px)");
+let large = window.matchMedia("(max-width:1239px)");
+let xmedium = window.matchMedia("(max-width:1100px)");
+let medium = window.matchMedia("(max-width:820px)");
+let small = window.matchMedia("(max-width:549px)");
 // })
 // if(small.matches){
 //   instalink.href="https://www.instagram.com/arundev_7/";
@@ -202,7 +202,7 @@ home.addEventListener('click',()=>{
   }
   if (medium.matches) {
     main.style.gridTemplateColumns = 'repeat(2,240px)';
-    main.style.gridTemplaterows = 'repeat(11,240px)';
+    main.style.gridTemplaterows = 'repeat(10,240px)';
     bio.style.gridArea = '1/1/1/3';
     slider.style.gridArea = '2/1/2/1';
     resume.style.gridArea = '10/2/10/2'
@@ -241,7 +241,7 @@ home.addEventListener('click',()=>{
   if (small.matches) {
     mainImage.style.visibility = 'visible';
     main.style.gridTemplateColumns = 'repeat(1,300px)';
-    main.style.gridTemplaterows = 'repeat(19,300px)';
+    main.style.gridTemplaterows = 'repeat(14,300px)';
     bio.style.gridArea = '1/1/1/1';
     slider.style.gridArea = '2/1/2/1';
     resume.style.gridArea = '15/1/15/1'
@@ -361,7 +361,7 @@ about.addEventListener("click", () => {
   }
   if (medium.matches) {
     main.style.gridTemplateColumns = 'repeat(2,240px)';
-    main.style.gridTemplaterows = 'repeat(11,240px)';
+    main.style.gridTemplaterows = 'repeat(10,240px)';
     bio.style.gridArea = '1/1/1/3';
     slider.style.gridArea = '2/1/2/1';
     resume.style.gridArea = '2/2/2/2'
@@ -398,7 +398,7 @@ about.addEventListener("click", () => {
   if (small.matches) {
     mainImage.style.visibility = 'visible';
     main.style.gridTemplateColumns = 'repeat(1,300px)';
-    main.style.gridTemplaterows = 'repeat(19,300px)';
+    main.style.gridTemplaterows = 'repeat(14,300px)';
     bio.style.gridArea = '1/1/1/1';
     slider.style.gridArea = '3/1/3/1';
     resume.style.gridArea = '4/1/4/1'
@@ -511,7 +511,7 @@ projects.addEventListener('click', () => {
   }
   if (medium.matches) {
     main.style.gridTemplateColumns = 'repeat(2,240px)';
-    main.style.gridTemplaterows = 'repeat(11,240px)';
+    main.style.gridTemplaterows = 'repeat(10,240px)';
     bio.style.gridArea = '4/1/4/3';
     slider.style.gridArea = '9/2/9/2';
     skill.style.gridArea = '5/1/5/1';
@@ -546,9 +546,9 @@ projects.addEventListener('click', () => {
     miniProject5.style.opacity = '1';
   }
   if (small.matches) {
-    mainImage.style.visibility = 'hidden';
+    // mainImage.style.visibility = 'hidden';
     main.style.gridTemplateColumns = 'repeat(1,300px)';
-    main.style.gridTemplaterows = 'repeat(19,300px)';
+    main.style.gridTemplaterows = 'repeat(14,300px)';
     bio.style.gridArea = '7/1/7/1';
     slider.style.gridArea = '14/1/14/1';
     skill.style.gridArea = '8/1/8/1';
@@ -565,7 +565,7 @@ projects.addEventListener('click', () => {
     twitter.style.gridArea = '10/1/10/1';
     linkedIn.style.gridArea = '10/1/10/1';
     gitHub.style.gridArea = '10/1/10/1';
-    resume.style.gridArea = '15/1/15/1';
+    resume.style.gridArea = '14/1/14/1';
     interaction.style.opacity = '0.1';
     slider.style.opacity = '0.1';
     resume.style.opacity = '0.1';
@@ -695,8 +695,8 @@ social.addEventListener('click', () => {
   }
   if (small.matches) {
     main.style.gridTemplateColumns = 'repeat(1,300px)';
-    main.style.gridTemplaterows = 'repeat(19,300px)';
-    bio.style.gridArea = '18/1/18/1';
+    main.style.gridTemplaterows = 'repeat(14,300px)';
+    bio.style.gridArea = '8/1/8/1';
     slider.style.gridArea = '2/1/2/1';
     skill.style.gridArea = '3/1/3/1';
     tool.style.gridArea = '4/1/4/1';
