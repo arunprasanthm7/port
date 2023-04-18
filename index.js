@@ -172,9 +172,9 @@ home.addEventListener('click',()=>{
     linkedIn.style.gridArea = '6/2/6/2';
     tool.style.gridArea = '2/1/2/1';
     techtips.style.gridArea = '2/3/2/3';
-    interaction.style.gridArea = '3/1/5/1';
+    interaction.style.gridArea = '5/1/7/1';
     instagram.style.gridArea = '6/3/6/3';
-    twitter.style.gridArea = '5/3/5/5';
+    twitter.style.gridArea = '5/2/5/4';
     gitHub.style.gridArea = '7/1/7/3';
     miniProject1.style.gridArea = '3/1/3/1';
     miniProject2.style.gridArea = '3/2/3/2';
@@ -210,7 +210,7 @@ home.addEventListener('click',()=>{
     linkedIn.style.gridArea = '7/2/7/2';
     tool.style.gridArea = '3/1/3/1';
     techtips.style.gridArea = '3/2/3/2';
-    interaction.style.gridArea = '1/7/1/9';
+    interaction.style.gridArea = '7/1/9/1';
     instagram.style.gridArea = '8/2/8/2';
     twitter.style.gridArea = '9/1/9/3';
     gitHub.style.gridArea = '10/1/10/1';
@@ -287,8 +287,6 @@ about.addEventListener("click", () => {
   home.classList.remove('nav-active');
   projects.classList.remove('nav-active');
   social.classList.remove('nav-active');
-
-
   if (xlarge.matches || large.matches) {
     bio.style.gridArea = '1/1/1/3';
     slider.style.gridArea = '1/3/1/3';
