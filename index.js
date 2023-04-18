@@ -202,7 +202,7 @@ home.addEventListener('click',()=>{
   }
   if (medium.matches) {
     main.style.gridTemplateColumns = 'repeat(2,240px)';
-    main.style.gridTemplaterows = 'repeat(10,240px)';
+    main.style.gridTemplaterows = 'repeat(11,240px)';
     bio.style.gridArea = '1/1/1/3';
     slider.style.gridArea = '2/1/2/1';
     resume.style.gridArea = '10/2/10/2'
@@ -241,7 +241,7 @@ home.addEventListener('click',()=>{
   if (small.matches) {
     mainImage.style.visibility = 'visible';
     main.style.gridTemplateColumns = 'repeat(1,300px)';
-    main.style.gridTemplaterows = 'repeat(15,300px)';
+    main.style.gridTemplaterows = 'repeat(19,300px)';
     bio.style.gridArea = '1/1/1/1';
     slider.style.gridArea = '2/1/2/1';
     resume.style.gridArea = '15/1/15/1'
@@ -361,7 +361,7 @@ about.addEventListener("click", () => {
   }
   if (medium.matches) {
     main.style.gridTemplateColumns = 'repeat(2,240px)';
-    main.style.gridTemplaterows = 'repeat(10,240px)';
+    main.style.gridTemplaterows = 'repeat(11,240px)';
     bio.style.gridArea = '1/1/1/3';
     slider.style.gridArea = '2/1/2/1';
     resume.style.gridArea = '2/2/2/2'
@@ -398,7 +398,7 @@ about.addEventListener("click", () => {
   if (small.matches) {
     mainImage.style.visibility = 'visible';
     main.style.gridTemplateColumns = 'repeat(1,300px)';
-    main.style.gridTemplaterows = 'repeat(14,300px)';
+    main.style.gridTemplaterows = 'repeat(19,300px)';
     bio.style.gridArea = '1/1/1/1';
     slider.style.gridArea = '3/1/3/1';
     resume.style.gridArea = '4/1/4/1'
@@ -511,7 +511,7 @@ projects.addEventListener('click', () => {
   }
   if (medium.matches) {
     main.style.gridTemplateColumns = 'repeat(2,240px)';
-    main.style.gridTemplaterows = 'repeat(10,240px)';
+    main.style.gridTemplaterows = 'repeat(11,240px)';
     bio.style.gridArea = '4/1/4/3';
     slider.style.gridArea = '9/2/9/2';
     skill.style.gridArea = '5/1/5/1';
@@ -548,7 +548,7 @@ projects.addEventListener('click', () => {
   if (small.matches) {
     mainImage.style.visibility = 'hidden';
     main.style.gridTemplateColumns = 'repeat(1,300px)';
-    main.style.gridTemplaterows = 'repeat(13,300px)';
+    main.style.gridTemplaterows = 'repeat(19,300px)';
     bio.style.gridArea = '7/1/7/1';
     slider.style.gridArea = '14/1/14/1';
     skill.style.gridArea = '8/1/8/1';
