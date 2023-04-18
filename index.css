@@ -530,18 +530,18 @@ ul:hover .inter-external-link {
   transform: rotate(-20deg) translateY(-16px);
   transition: 0.2s;
 }
-.social-media-box:hover > #socialMediaBtn {
+.social-media-box:hover > .social-media-btn {
   font-size: 14px;
   font-weight: 600;
   color: white;
   transform: translateY(-10px);
   transition: 0.2s;
 }
-#socialMediaBtn {
+.social-media-btn {
   font-size: 0px;
   transition: 0.2s;
 }
-#socialMediaBtn:hover {
+.social-media-box:hover {
   cursor: pointer;
   background-color: rgb(43, 43, 43);
   border-radius: 20px;
@@ -1187,27 +1187,27 @@ a {
     transform: rotate(0deg) translateY(0px);
     transition: 0.2s;
   }
-  #socialMediaBtn {
+  .social-media-btn {
     font-size: 10px;
     font-weight: 500;
     color: white;
     transform: translateY(0px);
     transition: 0.2s;
   }
-  .social-media-box:hover > #socialMediaBtn {
+  .social-media-box:hover > .social-media-btn {
     font-size: 10px;
     font-weight: 500;
     color: white;
     transform: translateY(0px);
     transition: 0.2s;
   }
-  #socialMediaBtn {
+  .social-media-btn {
     cursor: pointer;
     background-color: rgb(43, 43, 43);
     border-radius: 20px;
     padding: 3px 6px;
   }
-  #socialMediaBtn:hover {
+  .social-media-btn:hover {
     cursor: pointer;
     background-color: rgb(43, 43, 43);
     border-radius: 20px;

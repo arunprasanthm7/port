@@ -78,6 +78,7 @@ function currentSlide(n) {
   showSlides((slideIndex = n));
 }
 //navElements
+let body=document.getElementsByTagName("BODY")[0];
 let about = document.getElementById('about');
 let home = document.getElementById('home');
 let projects = document.getElementById('projects');
@@ -109,6 +110,19 @@ let xmedium = window.matchMedia("(max-width:1100px");
 let medium = window.matchMedia("(max-width:820px");
 let small = window.matchMedia("(max-width:549px");
 // })
+// if(small.matches){
+//   instalink.href="https://www.instagram.com/arundev_7/";
+  
+//   let twitlink=document.createElement('a');
+//   twitlink.src="https://www.instagram.com/arundev_7/";
+//   twitlink.appendChild(twitter)
+//   let gitlink=document.createElement('a');
+//   gitlink.src="https://www.instagram.com/arundev_7/";
+//   gitlink.appendChild(github)
+//   let linkedlink=createElement('a');
+//   linkedlink.src="https://www.instagram.com/arundev_7/";
+//   linkedlink.appendChild(instagram)
+// }
 home.addEventListener('click',()=>{
   home.classList.add('nav-active');
   about.classList.remove('nav-active');
@@ -262,6 +276,7 @@ home.addEventListener('click',()=>{
     slider.style.opacity = '1';
     resume.style.opacity = '1';
     bio.style.opacity = '1';
+
   }
 
 
