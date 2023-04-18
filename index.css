@@ -1207,9 +1207,6 @@ a {
     padding: 3px 6px;
   }
   .social-media-btn:hover {
-    cursor: pointer;
-    background-color: rgb(43, 43, 43);
-    border-radius: 20px;
-    padding: 8px 8px;
+    padding: 3px 6px;
   }
 }
