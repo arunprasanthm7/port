@@ -541,7 +541,7 @@ ul:hover .inter-external-link {
   font-size: 0px;
   transition: 0.2s;
 }
-.social-media-box:hover {
+.social-media-btn:hover {
   cursor: pointer;
   background-color: rgb(43, 43, 43);
   border-radius: 20px;

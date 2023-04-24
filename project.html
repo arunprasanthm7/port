@@ -25,7 +25,7 @@
           <div class="text-5xl font-semibold proj-title">AP</div>
           <div class="font-semibold text-2xl proj-title">Arun's personal site</div>
       </div>
-      <img src="" alt="Project Thumbnail" title="Project Thumbnail"  class="parent-prj-thumbnail"></img>
+      <div   class="parent-prj-thumbnail"></div>
       <div class="flex flex-col center gap-4">
          
           <div class="parent-tech-tagline">Built and deployed with</div>
@@ -38,6 +38,7 @@
     </div>
    
     <style>
+     
       #projectHeader{
   justify-content: space-between;
   width: 1024px;
@@ -47,7 +48,7 @@
     color: var(--black);
   }
   #projectNavContainer{
-    width:fit-content;
+  width:fit-content;
   height:fit-content;
   font-size: 14px;
   border-radius: 30px;
@@ -80,25 +81,56 @@
        .decsribe-project{
    color:var(--black)
   }
+  .parent-prj-thumbnail{
+        width: 1000px;
+        border:1px solid rgb(220, 220, 220);
+      }
+  @media screen and (min-width:1100px) 
+{
+ 
+  .parent-prj-thumbnail{
+    background-image: url('assets/lapThumbnail.jpg');
+    background-size: 100%;
+    background:cover;
+   
+  }
+ }
        @media screen and (max-width:1100px) 
 {
   .parent-prj-thumbnail, #projectHeader{
    width: 800px;
+ 
+  }
+  .parent-prj-thumbnail{
+    background-image: url('assets/lapThumbnail.jpg');
+    background-size: 100%;
+    background:cover;
   }
  }
  @media screen and (max-width:870px) 
 {
   .parent-prj-thumbnail, #projectHeader, .decsribe-project{
    width: 500px;
+  
   }
-
+  .parent-prj-thumbnail{
+    background-image: url('assets/tabThumbnail.jpg');
+    background-size: 100%;
+    background:cover;
+    background-repeat: no-repeat;
+  }
  }
  @media screen and (max-width:550px) 
 {
   .parent-prj-thumbnail, #projectHeader,.decsribe-project{
    width: 300px;
-  }
  
+  }
+  .parent-prj-thumbnail{
+    background-image: url('assets/mobileThumbnail.jpg');
+    background-size: 100%;
+    background:cover;
+  }
  }
     </style>
     <script src="index.js"></script>
