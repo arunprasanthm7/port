@@ -213,12 +213,13 @@ body {
 }
 .main-image {
   /* background-color: #f09433; */
-  background: fixed;
+  /* background: fixed; */
+  object-fit: cover;
   width: 200px;
   height: 200px;
   border-radius: 267px;
   transition: 0.2s;
-  scale: 1.2;
+  /* scale: 1.2; */
 }
 #bio:hover .main-image-bg {
   top: 10;
