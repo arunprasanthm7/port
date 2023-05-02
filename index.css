@@ -288,7 +288,7 @@ body {
 .image {
   width: 280px;
   height: 280px;
-  background: cover;
+  object-fit: cover;
   border-radius: 12px;
 }
 .gallery-btns {
