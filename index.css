@@ -488,10 +488,12 @@ ul:hover .inter-external-link {
 }
 #twitter {
   gap: 8px;
-  background-color: rgb(3, 141, 255);
+  /* background-color: rgb(3, 141, 255); */
+  background-color: rgb(0, 0, 0);
 }
 #resume {
   background-color: rgb(0, 0, 0);
+  
 }
 #github {
   gap: 10px;
