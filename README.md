@@ -21,3 +21,6 @@ A minimal, responsive, and animated portfolio website built with **React**, **Ta
 🔗 Live Demo
 [https://arunprasanth.vercel.app/](https://arunprasanth.vercel.app/)
 
+🙌 Credits
+Made with ❤️ by Arun Prasanth
+Inspired by modern portfolio trends.
