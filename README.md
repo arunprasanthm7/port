@@ -19,5 +19,5 @@ A minimal, responsive, and animated portfolio website built with **React**, **Ta
 - **PNPM** — Package management
 
 🔗 Live Demo
-[https://your-portfolio.vercel.app](https://arunprasanth.vercel.app/)
+[https://arunprasanth.vercel.app/](https://arunprasanth.vercel.app/)
 
