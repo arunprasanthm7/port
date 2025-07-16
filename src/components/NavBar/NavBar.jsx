@@ -101,7 +101,7 @@ const NavBar = ({ onAboutClick, onProjectsClick, onContactClick }) => {
                 </linearGradient>
               </defs>
             </svg>
-      <div className="h-12 w-fit flex px-3 items-center z-50 fixed left-1/2 right-1/2 -translate-x-1/2 bottom-3 rounded-3xl bg-blue-950 border-blue-700 shadow-xl shadow-blue-950 dark:shadow-orange-300 transition-all">
+      <div className="h-12 w-fit px-2.5 flex items-center z-50 fixed left-1/2 right-1/2 -translate-x-1/2 bottom-3 rounded-3xl bg-blue-950 border-blue-700 shadow-xl shadow-blue-950 dark:shadow-orange-300 transition-all">
         <div
           title={`${dark == false ? "Dark" : "Light"}`}
           onClick={() => darkmode()}
