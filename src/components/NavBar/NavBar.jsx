@@ -114,7 +114,7 @@ const NavBar = ({ onAboutClick, onProjectsClick, onContactClick }) => {
             <BsCloudMoonFill className="text-white hover:fill-[url(#Gradient)] transition-transform hover:scale-110 hover:-translate-y-1 sm:fill-[url(#Gradient)] " size={30} />
           )}
         </div>
-        <div className={`h-5 mx-2 w-[1px] bg-slate-500 ${ scrolled ?"block":"hidden"}`}></div>
+        <div className={`transition-all ${ scrolled ?"bg-slate-500 h-5 mx-2 w-[1px]":"h-0 w-0 mx-0"}`}></div>
         <IoIosArrowRoundUp
           title="Scroll-to-top"
           onClick={() => window.scrollTo({ top: "0", behavior: "smooth" })}
