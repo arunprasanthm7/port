@@ -8,6 +8,7 @@ A minimal, responsive, and animated portfolio website built with **React**, **Ta
 - 🎨 Gradient animations and modern UI design
 - 📱 Fully responsive (mobile-first)
 - 💌 Contact form integration via EmailJS
+- 🌙 Dark mode toggle
 - ⚡ Fast build with `pnpm`
 
 ## 📦 Tech Stack
