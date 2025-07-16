@@ -109,9 +109,9 @@ const NavBar = ({ onAboutClick, onProjectsClick, onContactClick }) => {
           className={`cursor-pointer ${scrolled?"mx-2":"mx-0"}`}
         >
           {dark ? (
-            <BsCloudSunFill className="text-white hover:fill-[url(#Gradient)] sm:fill-[url(#Gradient)] " size={30} />
+            <BsCloudSunFill className="text-white hover:fill-[url(#Gradient)] transition-transform hover:scale-110 hover:-translate-y-1 sm:fill-[url(#Gradient)] " size={30} />
           ) : (
-            <BsCloudMoonFill className="text-white hover:fill-[url(#Gradient)] sm:fill-[url(#Gradient)] " size={30} />
+            <BsCloudMoonFill className="text-white hover:fill-[url(#Gradient)] transition-transform hover:scale-110 hover:-translate-y-1 sm:fill-[url(#Gradient)] " size={30} />
           )}
         </div>
         <div className={`h-5 mx-2 w-[1px] bg-slate-500 ${ scrolled ?"block":"hidden"}`}></div>
@@ -120,7 +120,7 @@ const NavBar = ({ onAboutClick, onProjectsClick, onContactClick }) => {
           onClick={() => window.scrollTo({ top: "0", behavior: "smooth" })}
           className={`transition-all ${
             scrolled
-              ? "h-8 w-8 text-white animate-pulse cursor-pointer hover:scale-125 hover:fill-[url(#Gradient)] sm:fill-[url(#Gradient)] "
+              ? "h-8 w-8 text-white animate-pulse cursor-pointer hover:fill-[url(#Gradient)] transition-transform hover:scale-110 hover:-translate-y-1 sm:fill-[url(#Gradient)] "
               : "h-0 w-0"
           }`}
         />
