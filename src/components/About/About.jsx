@@ -37,7 +37,7 @@ const About = ({ onContactClick }) => {
               </div>
               <div
                 onClick={onContactClick}
-                className="flex w-fit py-2 px-4 rounded-xl bg-gray-100 font-semibold text-gray-700 hover:bg-gray-300 cursor-pointer overflow-hidden group"
+                className="flex w-fit py-2 px-4 rounded-xl bg-gray-100 font-semibold text-gray-700 hover:bg-gray-300 transition-colors duration-300 cursor-pointer group"
               >
                 Say Hi
               </div>

@@ -19,14 +19,19 @@ const ContactForm = () => {
   const [index, setIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [animate, setAnimate] = useState(true);
 
   useEffect(() => {
-    const interval = setInterval(() => {
+  const interval = setInterval(() => {
+    setAnimate(false); 
+    setTimeout(() => {
       setIndex((prev) => (prev + 1) % words.length);
-    }, 1500);
+      setAnimate(true); 
+    }, 300); 
+  }, 2000);
 
-    return () => clearInterval(interval);
-  }, []);
+  return () => clearInterval(interval);
+}, []);
 
   const onSubmit = (data) => {
     setIsLoading(true);
@@ -60,7 +65,14 @@ const ContactForm = () => {
         <h4 className="text-2xl font-bold my-8">Contact</h4>
         <p className="text-2xl font-semibold text-[#6d6d6d] dark:text-slate-600-500">
           Say{" "}
-          <span className="text-black dark:text-slate-100">
+          <span
+            className={`inline-block text-black dark:text-slate-100 transition-all  
+              ${
+                animate
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-10 -translate-y-[20px]"
+              } `}
+          >
             {words[index]}.
           </span>
         </p>
@@ -123,7 +135,7 @@ const ContactForm = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className={`cursor-pointer col-span-2 text-center rounded p-2 hover:bg-opacity-80 font-medium text-white ${
+            className={`cursor-pointer col-span-2 text-center rounded p-2 hover:bg-opacity-80 transition-opacity duration-300 font-medium text-white ${
               submitted
                 ? "bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400"
                 : "bg-black dark:bg-blue-950"
@@ -152,11 +164,11 @@ const ContactForm = () => {
           target="_blank"
           alt="linkedin-icon"
           title="linkedin"
-          className="p-2 border border-gray-300 rounded hover:bg-gray-400 group transition-all"
+          className="p-2 border border-gray-300 rounded hover:bg-gray-400 group transition-all duration-300"
         >
           <FaLinkedin
             size={32}
-            className="group-hover:scale-110 transition-all"
+            className="group-hover:scale-110 transition-all duration-300"
           />
         </a>
         <a
@@ -164,11 +176,11 @@ const ContactForm = () => {
           target="_blank"
           alt="github-icon"
           title="github"
-          className="p-2 border border-gray-300 rounded hover:bg-gray-400 group transition-all"
+          className="p-2 border border-gray-300 rounded hover:bg-gray-400 group transition-all duration-300"
         >
           <FaGithub
             size={32}
-            className="group-hover:scale-110 transition-all"
+            className="group-hover:scale-110 transition-all duration-300"
           />
         </a>
         <a
@@ -176,11 +188,11 @@ const ContactForm = () => {
           target="_blank"
           alt="twitter-icon"
           title="twitter"
-          className="p-2 border border-gray-300 rounded hover:bg-gray-400 group transition-all"
+          className="p-2 border border-gray-300 rounded hover:bg-gray-400 group transition-all duration-300"
         >
           <FaXTwitter
             size={32}
-            className="group-hover:scale-110 transition-all"
+            className="group-hover:scale-110 transition-all duration-300"
           />
         </a>
       </div>
@@ -203,9 +215,7 @@ const ContactForm = () => {
                 </linearGradient>
               </defs>
             </svg>
-            <FaHeart
-              className="w-full h-full animate-bounce fill-[url(#heartGradient)]"
-            />
+            <FaHeart className="w-full h-full animate-bounce fill-[url(#heartGradient)]" />
           </div>
         </div>
         <div>

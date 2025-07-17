@@ -18,13 +18,13 @@ const Projects = () => {
         {projects?.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col gap-5 w-[500px] sm:w-full p-5 border dark:border-blue-950 dark:bg-slate-950 dark:text-white hover:border-slate-300 hover:shadow-xl rounded-2xl hover:scale-105 transition-all group/card"
+            className="flex flex-col gap-5 w-[500px] sm:w-full p-5 border dark:border-blue-950 dark:bg-slate-950 dark:text-white hover:border-slate-300 hover:shadow-xl rounded-2xl hover:scale-105 transition-all duration-300 group/card"
           >
             <div className="p-5 bg-gradient-to-b from-[#909090] to-[#b1b1b1] rounded-2xl bg-[#909090]">
               <img
                 src={item.image}
                 alt={`${item.title}-thumbnail`} title={`${item.title}-thumbnail`}
-                className="border-[6px] border-[#b7b7b7] filter grayscale group-hover/card:grayscale-0 transition rounded-2xl bg-white w-full h-72 sm:object-fill"
+                className="border-[6px] border-[#b7b7b7] filter grayscale group-hover/card:grayscale-0 transition rounded-2xl bg-white w-full h-72 sm:h-60"
               />
             </div>
             <div className="font-semibold text-2xl">{item.title}</div>
@@ -33,7 +33,7 @@ const Projects = () => {
               <a
                 href={item.demoLink}
                 target="_blank"
-                className="w-fit p-2 hover:bg-[#e2e2e2] hover:pr-6 transition-all flex gap-2 items-center rounded bg-[#f4f4f4] dark:bg-blue-900 group/button"
+                className="w-fit p-2 hover:bg-[#e2e2e2] hover:pr-6 transition-all duration-300 flex gap-2 items-center rounded bg-[#f4f4f4] dark:bg-blue-900 group/button"
               >
                 <span>View Project</span>
                 <RiArrowRightSLine className="group-hover/button:translate-x-4 transition-transform" />
@@ -41,7 +41,7 @@ const Projects = () => {
               <a
                 href={item.githubLink}
                 target="_blank"
-                className="w-fit p-2 hover:bg-[#e2e2e2] hover:pr-6 transition-all flex gap-2 items-center rounded bg-[#f4f4f4] dark:bg-blue-900 group/button"
+                className="w-fit p-2 hover:bg-[#e2e2e2] hover:pr-6 transition-all duration-300 flex gap-2 items-center rounded bg-[#f4f4f4] dark:bg-blue-900 group/button"
               >
                 <span>Github Repo</span>
                 <RiArrowRightSLine className="group-hover/button:translate-x-4 transition-transform" />

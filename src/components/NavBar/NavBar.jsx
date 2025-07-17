@@ -40,14 +40,14 @@ const NavBar = ({ onAboutClick, onProjectsClick, onContactClick }) => {
           <li>
             <div
               onClick={onAboutClick}
-              className=" flex flex-col h-6 overflow-hidden group transition-all cursor-pointer"
+              className=" flex flex-col h-6 overflow-hidden group transition-all duration-300 cursor-pointer"
             >
-              <span className="group-hover:-translate-y-6 transition-all">
+              <span className="group-hover:-translate-y-6 transition-all duration-300">
                 About
               </span>
               <span
                 title="Who am I? 🤔"
-                className="group-hover:-translate-y-6 transition-all text-gray-400 dark:text-white/70"
+                className="group-hover:-translate-y-6 transition-all duration-300 text-gray-400 dark:text-white/70"
               >
                 About
               </span>
@@ -56,14 +56,14 @@ const NavBar = ({ onAboutClick, onProjectsClick, onContactClick }) => {
           <li>
             <div
               onClick={onProjectsClick}
-              className=" flex flex-col h-6 overflow-hidden group transition-all cursor-pointer"
+              className=" flex flex-col h-6 overflow-hidden group transition-all duration-300 cursor-pointer"
             >
-              <span className="group-hover:-translate-y-6 transition-all">
+              <span className="group-hover:-translate-y-6 transition-all duration-300">
                 Projects
               </span>
               <span
                 title="Explore my work 🚀"
-                className="group-hover:-translate-y-6 transition-all text-gray-400 dark:text-white/70"
+                className="group-hover:-translate-y-6 transition-all duration-300 text-gray-400 dark:text-white/70"
               >
                 Projects
               </span>
@@ -72,14 +72,14 @@ const NavBar = ({ onAboutClick, onProjectsClick, onContactClick }) => {
           <li>
             <div
               onClick={onContactClick}
-              className=" flex flex-col h-6 overflow-hidden group transition-all cursor-pointer"
+              className=" flex flex-col h-6 overflow-hidden group transition-all duration-300 cursor-pointer"
             >
-              <span className="group-hover:-translate-y-6 transition-all">
+              <span className="group-hover:-translate-y-6 transition-all duration-300">
                 Contact
               </span>
               <span
                 title="Let’s connect! 📬"
-                className="group-hover:-translate-y-6 transition-all text-gray-400 dark:text-white/70"
+                className="group-hover:-translate-y-6 transition-all duration-300 text-gray-400 dark:text-white/70"
               >
                 Contact
               </span>
@@ -109,18 +109,18 @@ const NavBar = ({ onAboutClick, onProjectsClick, onContactClick }) => {
           className={`cursor-pointer ${scrolled?"mx-2":"mx-0"}`}
         >
           {dark ? (
-            <BsCloudSunFill className="text-white hover:fill-[url(#Gradient)] transition-transform hover:scale-110 hover:-translate-y-1 sm:fill-[url(#Gradient)] " size={30} />
+            <BsCloudSunFill className="text-white hover:fill-[url(#Gradient)] transition-transform duration-300 hover:scale-110 hover:-translate-y-1 sm:fill-[url(#Gradient)] " size={30} />
           ) : (
-            <BsCloudMoonFill className="text-white hover:fill-[url(#Gradient)] transition-transform hover:scale-110 hover:-translate-y-1 sm:fill-[url(#Gradient)] " size={30} />
+            <BsCloudMoonFill className="text-white hover:fill-[url(#Gradient)] transition-transform duration-300 hover:scale-110 hover:-translate-y-1 sm:fill-[url(#Gradient)] " size={30} />
           )}
         </div>
-        <div className={`transition-all ${ scrolled ?"bg-slate-500 h-5 mx-2 w-[1px]":"h-0 w-0 mx-0"}`}></div>
+        <div className={`transition-all duration-300 ${ scrolled ?"bg-slate-500 h-5 mx-2 w-[1px]":"h-0 w-0 mx-0"}`}></div>
         <IoIosArrowRoundUp
           title="Scroll-to-top"
           onClick={() => window.scrollTo({ top: "0", behavior: "smooth" })}
-          className={`transition-all ${
+          className={`transition-all duration-300 ${
             scrolled
-              ? "h-8 w-8 text-white animate-pulse cursor-pointer hover:fill-[url(#Gradient)] transition-transform hover:scale-110 hover:-translate-y-1 sm:fill-[url(#Gradient)] "
+              ? "h-8 w-8 text-white animate-pulse cursor-pointer hover:fill-[url(#Gradient)] transition-transform duration-300 hover:scale-110 hover:-translate-y-1 sm:fill-[url(#Gradient)] "
               : "h-0 w-0"
           }`}
         />
