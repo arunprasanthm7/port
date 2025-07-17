@@ -66,11 +66,11 @@ const ContactForm = () => {
         <p className="text-2xl font-semibold text-[#6d6d6d] dark:text-slate-600-500">
           Say{" "}
           <span
-            className={`inline-block text-black dark:text-slate-100 transition-all  
+            className={`inline-block text-black dark:text-slate-100 transition-all duration-300
               ${
                 animate
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-10 -translate-y-[20px]"
+                  ? "opacity-100"
+                  : "opacity-10"
               } `}
           >
             {words[index]}.

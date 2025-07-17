@@ -2,7 +2,7 @@ import { GoDotFill } from "react-icons/go";
 import { GoArrowDown } from "react-icons/go";
 import CV from "../../assets/CV-thumbnail.jpg";
 import file from "../../assets/Arun_Prasanth_M_Front-end.pdf";
-import heroImage from "../../assets/heroImage.jpg";
+import heroImage from "../../assets/heroImage.webp";
 
 const About = ({ onContactClick }) => {
   return (

@@ -23,6 +23,7 @@ const Projects = () => {
             <div className="p-5 bg-gradient-to-b from-[#909090] to-[#b1b1b1] rounded-2xl bg-[#909090]">
               <img
                 src={item.image}
+                loading="lazy"
                 alt={`${item.title}-thumbnail`} title={`${item.title}-thumbnail`}
                 className="border-[6px] border-[#b7b7b7] filter grayscale group-hover/card:grayscale-0 transition rounded-2xl bg-white w-full h-72 sm:h-60"
               />
