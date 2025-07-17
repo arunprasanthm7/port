@@ -3,8 +3,11 @@ import { GoArrowDown } from "react-icons/go";
 import CV from "../../assets/CV-thumbnail.jpg";
 import file from "../../assets/Arun_Prasanth_M_Front-end.pdf";
 import heroImage from "../../assets/heroImage.webp";
+import batmanBlack from "../../assets/batman-logo.png";
+import batmanWhite from "../../assets/batman-logo (2).png";
+import flying from "../../assets/flying.png";
 
-const About = ({ onContactClick }) => {
+const About = ({ onContactClick,dark }) => {
   return (
     <>
       {/* hero-section */}
@@ -34,17 +37,16 @@ const About = ({ onContactClick }) => {
                     size={14}
                   />
                 </span>
-                <span className="w-0 whitespace-nowrap overflow-hidden border-r-2 border-green-700 animate-typing animation-blink">
-                 Available for new project👉🏼
+                <span className="w-0 flex items-end whitespace-nowrap overflow-hidden border-r-2 border-green-700 animate-typing animation-blink">
+                  Available for new project <img className="h-5 w-5" src={flying}/>
                 </span>
               </div>
               <div onClick={onContactClick} className="relative group">
-                <div
-                  className="absolute text-xl -right-1 sm:-top-4  z-0 group-hover:z-20 sm:z-20 transition-all translate-y-0 
+                <img
+                  src={dark ? batmanWhite : batmanBlack}
+                  className="absolute h-7 w-7 right-1  sm:-top-4  z-0 transition-all translate-y-0 
                 group-hover:animate-dropInAndWobble sm:group-hover:animate-none sm:animate-wobble"
-                >
-                  ✋🏼
-                </div>
+                />
                 <div className="flex py-2 px-4 relative rounded-xl bg-gray-100 font-semibold text-gray-700 hover:bg-gray-300 transition-all cursor-pointer z-10">
                   Say Hi
                 </div>
