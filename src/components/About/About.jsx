@@ -13,7 +13,8 @@ const About = ({ onContactClick }) => {
           <div className="flex flex-col gap-2">
             <img
               src={heroImage}
-              alt="hero-image" title="hero-image"
+              alt="hero-image"
+              title="hero-image"
               className="w-20 h-24 rounded border-2  border-white -rotate-6 object-cover shadow-2xl hover:scale-110 transition-all"
             />
             <div className="flex flex-col text-4xl sm:text-2xl font-bold dark:text-white">
@@ -33,13 +34,20 @@ const About = ({ onContactClick }) => {
                     size={14}
                   />
                 </span>
-                <span>Available for new project</span>
+                <span className="w-0 whitespace-nowrap overflow-hidden border-r-2 border-green-700 animate-typing animation-blink">
+                 Available for new project👉🏼
+                </span>
               </div>
-              <div
-                onClick={onContactClick}
-                className="flex w-fit py-2 px-4 rounded-xl bg-gray-100 font-semibold text-gray-700 hover:bg-gray-300 transition-colors duration-300 cursor-pointer group"
-              >
-                Say Hi
+              <div onClick={onContactClick} className="relative group">
+                <div
+                  className="absolute text-xl -right-1 sm:-top-4  z-0 group-hover:z-20 sm:z-20 transition-all translate-y-0 
+                group-hover:animate-dropInAndWobble sm:group-hover:animate-none sm:animate-wobble"
+                >
+                  ✋🏼
+                </div>
+                <div className="flex py-2 px-4 relative rounded-xl bg-gray-100 font-semibold text-gray-700 hover:bg-gray-300 transition-all cursor-pointer z-10">
+                  Say Hi
+                </div>
               </div>
             </div>
           </div>
@@ -107,7 +115,12 @@ const About = ({ onContactClick }) => {
         <div className="p-5 w-1/2 md:w-full">
           <div className="flex flex-col mx-auto gap-5 w-fit sticky top-14">
             <h3 className="font-semibold md:text-center">CV</h3>
-            <img alt="CV-thumbnail" title="CV-thumbnail" className="h-96 w-80 rounded border blur-sm" src={CV} />
+            <img
+              alt="CV-thumbnail"
+              title="CV-thumbnail"
+              className="h-96 w-80 rounded border blur-sm"
+              src={CV}
+            />
             <a
               href={file}
               target="_blank"
