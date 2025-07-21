@@ -8,6 +8,8 @@ import ContactForm from "./components/ContactForm/ContactForm";
 import { BsCloudSunFill } from "react-icons/bs";
 import { IoIosArrowRoundUp } from "react-icons/io";
 import { BsCloudMoonFill } from "react-icons/bs";
+import { IoSunny } from "react-icons/io5";
+import { IoMoon } from "react-icons/io5";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -89,13 +91,13 @@ function App() {
           className={`cursor-pointer ${scrolled ? "mx-2" : "mx-0"}`}
         >
           {dark ? (
-            <BsCloudSunFill
-              className="text-white hover:fill-[url(#Gradient)] transition-transform duration-300 hover:scale-110 hover:-translate-y-1 sm:fill-[url(#Gradient)] "
+            <IoSunny
+              className="text-white hover:fill-[url(#Gradient)] transition-all duration-300 hover:scale-110 sm:fill-[url(#Gradient)] "
               size={30}
             />
           ) : (
-            <BsCloudMoonFill
-              className="text-white hover:fill-[url(#Gradient)] transition-transform duration-300 hover:scale-110 hover:-translate-y-1 sm:fill-[url(#Gradient)] "
+            <IoMoon
+              className="text-white hover:fill-[url(#Gradient)] transition-all duration-300 hover:scale-110 sm:fill-[url(#Gradient)] "
               size={30}
             />
           )}
