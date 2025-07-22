@@ -21,13 +21,13 @@ const Projects = () => {
           const index = entry.target.getAttribute("data-index");
 
           // If 50% of the card is visible
-          if (entry.isIntersecting && entry.intersectionRatio >= 0.7) {
+          if (entry.isIntersecting) {
             updated[+index] = true;
           }
         });
         setVisibleCards(updated);
       },
-      { threshold: 0.7 } // 50% visibility
+      { threshold: 0.7 }
     );
 
     // Start observing each card
