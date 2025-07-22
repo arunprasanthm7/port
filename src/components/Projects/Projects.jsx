@@ -21,7 +21,7 @@ const Projects = () => {
           const index = entry.target.getAttribute("data-index");
 
           // If 50% of the card is visible
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.7) {
             updated[+index] = true;
           }
         });
