@@ -22,16 +22,16 @@ const ContactForm = () => {
   const [animate, setAnimate] = useState(true);
 
   useEffect(() => {
-  const interval = setInterval(() => {
-    setAnimate(false); 
-    setTimeout(() => {
-      setIndex((prev) => (prev + 1) % words.length);
-      setAnimate(true); 
-    }, 300); 
-  }, 2000);
+    const interval = setInterval(() => {
+      setAnimate(false);
+      setTimeout(() => {
+        setIndex((prev) => (prev + 1) % words.length);
+        setAnimate(true);
+      }, 300);
+    }, 2000);
 
-  return () => clearInterval(interval);
-}, []);
+    return () => clearInterval(interval);
+  }, []);
 
   const onSubmit = (data) => {
     setIsLoading(true);
@@ -67,11 +67,7 @@ const ContactForm = () => {
           Say{" "}
           <span
             className={`inline-block text-black dark:text-slate-100 transition-all duration-300
-              ${
-                animate
-                  ? "opacity-100"
-                  : "opacity-10"
-              } `}
+              ${animate ? "opacity-100" : "opacity-10"} `}
           >
             {words[index]}.
           </span>
@@ -154,8 +150,9 @@ const ContactForm = () => {
           </button>
         </form>
         <div className="flex items-center gap-2 font-medium group w-fit dark:text-slate-300">
-          <IoTimeOutline className="animate-spin" /> Avg. response{" "}
-          <span className="text-[#989898]">12 hours</span>
+          <IoTimeOutline className="animate-spin" />
+          Expect a response within{" "}
+          <span className="text-[#989898]">half a day!</span>
         </div>
       </div>
       <div className="flex gap-3 justify-center justify-self-center">
