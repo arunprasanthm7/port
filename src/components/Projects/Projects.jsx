@@ -24,9 +24,6 @@ const Projects = () => {
           if (entry.isIntersecting && entry.intersectionRatio >= 0.7) {
             updated[+index] = true;
           }
-          else{
-             updated[+index] = false;
-          }
         });
         setVisibleCards(updated);
       },
