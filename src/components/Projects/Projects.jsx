@@ -4,8 +4,8 @@ import api from "../../api/api";
 
 const Projects = () => {
   const [projects, setProjects] = useState();
-  const cardRefs = useRef([]); // store each card's DOM reference
-  const [visibleCards, setVisibleCards] = useState([]);
+  const cardRefs = useRef([]);
+  const [visibleCards, setVisibleCards] = useState([false]);
   useEffect(() => {
     api
       .get("projects.json")
@@ -20,11 +20,11 @@ useEffect(() => {
         const index = +entry.target.getAttribute("data-index");
 
         // Mark as visible or not
-        updated[index] = true;
+        updated[index] = entry.isIntersecting && entry.intersectionRatio >= 0.5;
       });
       setVisibleCards(updated);
     },
-    { threshold: [0.8] }
+    {  threshold: Array.from({ length: 11 }, (_, i) => i / 10), }
   );
 
   cardRefs.current.forEach((ref) => {
@@ -56,9 +56,7 @@ useEffect(() => {
               loading="lazy"
               alt={`${item.title}-thumbnail`}
               title={`${item.title}-thumbnail`}
-              className={`border dark:border-blue-950 filter transition rounded-2xl bg-white w-full h-72 sm:h-60
-                
-                `}
+              className="border dark:border-blue-950 filter transition rounded-2xl bg-white w-full h-72 sm:h-60"
             />
             <div className="font-semibold text-2xl">{item.title}</div>
             <p className="text-[#676767] dark:text-slate-400">
