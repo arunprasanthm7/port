@@ -20,11 +20,11 @@ useEffect(() => {
         const index = +entry.target.getAttribute("data-index");
 
         // Mark as visible or not
-        updated[index] = true
+        updated[index] = true;
       });
       setVisibleCards(updated);
     },
-    { threshold: [0.7] }
+    { threshold: [0.8] }
   );
 
   cardRefs.current.forEach((ref) => {
@@ -36,18 +36,18 @@ useEffect(() => {
 
   return (
     <>
-      <div className="flex flex-col gap-8 items-center justify-self-center w-[900px] md:w-[calc(100%-20px)] border dark:border-blue-950 dark:bg-black px-5 pt-7 pb-20">
+      <div className="flex flex-col gap-10 items-center justify-self-center w-[900px] md:w-[calc(100%-20px)] border dark:border-blue-950 dark:bg-black px-5 pt-7 pb-20">
         <h4 className="text-2xl font-bold dark:text-white">Projects</h4>
         {projects?.map((item, index) => (
           <div
             key={item.id}
             ref={(el) => (cardRefs.current[index] = el)}
             data-index={index}
-            className={`flex flex-col gap-3 w-[500px] sm:w-full p-5 border dark:border-blue-950 dark:bg-slate-950 dark:text-white rounded-2xl transition-all group/card
+            className={`flex flex-col gap-3 w-[500px] sm:w-full p-5 border dark:border-blue-950 dark:bg-slate-950 dark:text-white rounded-2xl transition-all duration-300 group/card
               ${
                 visibleCards[index]
-                  ? "opacity-100 scale-105 shadow-xl border-slate-300 duration-400"
-                  : "opacity-50 scale-90 duration-400"
+                  ? "opacity-100 scale-105 shadow-xl border-slate-300 "
+                  : "opacity-50 scale-95"
               }
               `}
           >
@@ -57,11 +57,7 @@ useEffect(() => {
               alt={`${item.title}-thumbnail`}
               title={`${item.title}-thumbnail`}
               className={`border dark:border-blue-950 filter transition rounded-2xl bg-white w-full h-72 sm:h-60
-                 ${
-                visibleCards[index]
-                  ? "grayscale-0"
-                  : "grayscale"
-              }
+                
                 `}
             />
             <div className="font-semibold text-2xl">{item.title}</div>
