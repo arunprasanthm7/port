@@ -12,26 +12,28 @@ const Projects = () => {
       .then((res) => setProjects(res.data))
       .catch((err) => console.error("Error fetching projects:", err));
   }, []);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const updated = [...visibleCards];
-        entries.forEach((entry) => {
-          const index = entry.target.getAttribute("data-index");
-         updated[index] = entry.isIntersecting && entry.intersectionRatio >= 0.7;
-        });
-        setVisibleCards(updated);
-      },
-      {  threshold: [0.7], }
-    );
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const updated = [...visibleCards];
+      entries.forEach((entry) => {
+        const index = +entry.target.getAttribute("data-index");
 
-    // Start observing each card
-    cardRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref);
-    });
+        // Mark as visible or not
+        updated[index] = true
+      });
+      setVisibleCards(updated);
+    },
+    { threshold: [0.7] }
+  );
 
-    return () => observer.disconnect();
-  }, [projects]);
+  cardRefs.current.forEach((ref) => {
+    if (ref) observer.observe(ref);
+  });
+
+  return () => observer.disconnect();
+}, [projects]);
+
   return (
     <>
       <div className="flex flex-col gap-8 items-center justify-self-center w-[900px] md:w-[calc(100%-20px)] border dark:border-blue-950 dark:bg-black px-5 pt-7 pb-20">
@@ -41,11 +43,11 @@ const Projects = () => {
             key={item.id}
             ref={(el) => (cardRefs.current[index] = el)}
             data-index={index}
-            className={`flex flex-col gap-3 w-[500px] sm:w-full p-5 border dark:border-blue-950 dark:bg-slate-950 dark:text-white rounded-2xl transition-all duration-300 group/card
+            className={`flex flex-col gap-3 w-[500px] sm:w-full p-5 border dark:border-blue-950 dark:bg-slate-950 dark:text-white rounded-2xl transition-all group/card
               ${
                 visibleCards[index]
-                  ? "scale-105 shadow-xl border-slate-300"
-                  : ""
+                  ? "opacity-100 scale-105 shadow-xl border-slate-300 duration-400"
+                  : "opacity-50 scale-90 duration-400"
               }
               `}
           >
