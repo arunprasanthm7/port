@@ -13,21 +13,16 @@ const Projects = () => {
       .catch((err) => console.error("Error fetching projects:", err));
   }, []);
   useEffect(() => {
-    // Intersection Observer to lazy load cards
     const observer = new IntersectionObserver(
       (entries) => {
         const updated = [...visibleCards];
         entries.forEach((entry) => {
           const index = entry.target.getAttribute("data-index");
-
-          // If 50% of the card is visible
-          if (entry.isIntersecting && entry.intersectionRatio >= 0.7) {
-            updated[+index] = true;
-          }
+         updated[index] = entry.isIntersecting && entry.intersectionRatio >= 0.7;
         });
         setVisibleCards(updated);
       },
-      { threshold: 0.7 }
+      {  threshold: [0.7], }
     );
 
     // Start observing each card
