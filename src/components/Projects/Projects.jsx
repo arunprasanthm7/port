@@ -12,27 +12,27 @@ const Projects = () => {
       .then((res) => setProjects(res.data))
       .catch((err) => console.error("Error fetching projects:", err));
   }, []);
-useEffect(() => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      const updated = [...visibleCards];
-      entries.forEach((entry) => {
-        const index = +entry.target.getAttribute("data-index");
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const updated = [...visibleCards];
+        entries.forEach((entry) => {
+          const index = +entry.target.getAttribute("data-index");
 
-        // Mark as visible or not
-        updated[index] = entry.isIntersecting && entry.intersectionRatio >= 0.5;
-      });
-      setVisibleCards(updated);
-    },
-    {  threshold: Array.from({ length: 11 }, (_, i) => i / 10), }
-  );
+          // Mark as visible or not
+          updated[index] = entry.isIntersecting;
+        });
+        setVisibleCards(updated);
+      },
+      { rootMargin: "0px 0px -30% 0px", threshold: 0 }
+    );
 
-  cardRefs.current.forEach((ref) => {
-    if (ref) observer.observe(ref);
-  });
+    cardRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
 
-  return () => observer.disconnect();
-}, [projects]);
+    return () => observer.disconnect();
+  }, [projects]);
 
   return (
     <>
