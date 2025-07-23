@@ -24,7 +24,7 @@ useEffect(() => {
       });
       setVisibleCards(updated);
     },
-    { threshold: [0.3,0.8] }
+    { threshold: [0.8] }
   );
 
   cardRefs.current.forEach((ref) => {
