@@ -35,7 +35,7 @@ const Projects = () => {
             {[...headings, ...headings]?.map((heading, index) => (
               <div key={index}>
                 <div className="flex items-center gap-3 flex-shrink-0">
-                  <div className="text-nowrap px-2 dark:text-white font-bold text-3xl sm:text-2xl">
+                  <div className="text-nowrap px-2 dark:text-white font-bold text-3xl">
                     {heading}
                   </div>
                   <PiStarFourDuotone size={24} className="dark:text-white" />
@@ -50,7 +50,7 @@ const Projects = () => {
             {[...headings, ...headings]?.map((heading, index) => (
               <div key={`Ghost-${index}`}>
                 <div className="flex items-center gap-3 flex-shrink-0">
-                  <div className="text-nowrap px-2 dark:text-white font-bold text-3xl sm:text-2xl">
+                  <div className="text-nowrap px-2 dark:text-white font-bold text-3xl">
                     {heading}
                   </div>
                   <PiStarFourDuotone size={24} className="dark:text-white" />
