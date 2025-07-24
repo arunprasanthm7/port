@@ -62,7 +62,10 @@ const ContactForm = () => {
   return (
     <div className="flex flex-col gap-10 justify-self-center w-[900px] md:w-[calc(100%-20px)] dark:border-blue-950 dark:bg-black dark:text-white border-l border-r">
       <div className="flex flex-col gap-2 w-[60%] sm:w-[calc(100%-20px)] mx-auto">
-        <h4 className="text-2xl font-bold my-8">Contact</h4>
+        <h4 className="text-2xl font-bold my-8">
+          Contact
+         
+        </h4>
         <p className="text-2xl font-semibold text-[#6d6d6d] dark:text-slate-600-500">
           Say{" "}
           <span

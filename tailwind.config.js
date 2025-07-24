@@ -33,12 +33,37 @@ export default {
         blink: {
           "50%": { borderColor: "transparent" },
         },
+        marquee: {
+          "0%": {
+            transform: "translateX(0%)",
+            opacity: "0",
+          },
+          "2%": {
+            opacity: "1",
+          },
+          "100%": {
+            transform: "translateX(-50%)",
+          },
+        },
+        marqueeReverse: {
+          "0%": {
+            transform: "translateX(-50%)",
+          },
+          "100%": {
+            transform: "translateX(0%)",
+          },
+        },
+        boxShadow: {
+          inner: "inset 0 0 20px rgba(0, 0, 0, 0.3)",
+        },
       },
       animation: {
         dropInAndWobble: "dropInAndWobble 2s forwards",
         wobble: "wobble 2s forwards infinite",
         typing: "typing 5s steps(25) infinite",
         blink: "blink 0.7s step-end infinite",
+        marquee: "marquee 12s linear infinite",
+        marqueeReverse: "marqueeReverse 12s linear infinite",
       },
     },
   },
