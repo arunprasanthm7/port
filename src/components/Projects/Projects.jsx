@@ -72,7 +72,7 @@ const Projects = () => {
                 loading="lazy"
                 alt={`${item.title}-thumbnail`}
                 title={`${item.title}-thumbnail`}
-                className="absolute -right-14 -top-14 group-hover/card:-right-0.5 group-hover/card:-top-0.5 border dark:border-blue-950 filter transition-all duration-300 ease-in-out rounded-md bg-white w-32 h-28"
+                className="absolute -right-14 -top-14 blur-lg group-hover/card:blur-none group-hover/card:-right-0.5 group-hover/card:-top-0.5 border dark:border-blue-950 filter transition-all duration-300 ease-in-out rounded-md bg-white w-32 h-28"
               />
               <div className="font-semibold text-2xl">{item.title}</div>
               <p className="text-[#676767] dark:text-slate-400">
