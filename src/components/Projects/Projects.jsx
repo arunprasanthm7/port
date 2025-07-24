@@ -35,7 +35,7 @@ const Projects = () => {
             {[...headings, ...headings]?.map((heading, index) => (
               <div key={index}>
                 <div className="flex items-center gap-3 flex-shrink-0">
-                  <div className="text-nowrap px-2 dark:text-white font-bold text-3xl sm:text-xl">
+                  <div className="text-nowrap px-2 dark:text-white font-bold text-3xl sm:text-2xl">
                     {heading}
                   </div>
                   <PiStarFourDuotone size={24} className="dark:text-white" />
@@ -50,7 +50,7 @@ const Projects = () => {
             {[...headings, ...headings]?.map((heading, index) => (
               <div key={`Ghost-${index}`}>
                 <div className="flex items-center gap-3 flex-shrink-0">
-                  <div className="text-nowrap px-2 dark:text-white font-bold text-3xl sm:text-xl">
+                  <div className="text-nowrap px-2 dark:text-white font-bold text-3xl sm:text-2xl">
                     {heading}
                   </div>
                   <PiStarFourDuotone size={24} className="dark:text-white" />
@@ -94,7 +94,7 @@ const Projects = () => {
                   target="_blank"
                   className="relative w-fit overflow-hidden py-2 px-6 flex justify-center items-center hover:bg-[#e2e2e2] transition-all duration-200 rounded bg-[#f4f4f4] dark:bg-blue-900 group/button"
                 >
-                  <span className="relative group-hover/button:-translate-x-3 transition-all duration-200">
+                  <span className=" relative group-hover/button:-translate-x-3 transition-all duration-200">
                     View Project
                   </span>
                   <RiArrowRightSLine className="absolute -right-5 group-hover/button:right-2 transition-all duration-200" />
@@ -104,7 +104,7 @@ const Projects = () => {
                   target="_blank"
                   className="relative w-fit overflow-hidden py-2 px-6 flex justify-center items-center hover:bg-[#e2e2e2] transition-all duration-200 rounded bg-[#f4f4f4] dark:bg-blue-900 group/button"
                 >
-                  <span className="relative group-hover/button:-translate-x-3 transition-all duration-200">
+                  <span className=" relative group-hover/button:-translate-x-3 transition-all duration-200">
                     Github Repo
                   </span>
                   <RiArrowRightSLine className="absolute -right-5 group-hover/button:right-2 transition-all duration-200" />
