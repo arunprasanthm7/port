@@ -1,7 +1,7 @@
 import { GoDotFill } from "react-icons/go";
 import { GoArrowDown } from "react-icons/go";
 import CV from "../../assets/CV-thumbnail.jpg";
-import file from "../../assets/Arun_Prasanth_M_Front-end.pdf";
+import file from "../../assets/ArunPrasanthM_FrontEnd-React.pdf";
 import heroImage from "../../assets/heroImage.webp";
 import batmanBlack from "../../assets/batman-logo.png";
 import batmanWhite from "../../assets/batman-logo (2).png";
