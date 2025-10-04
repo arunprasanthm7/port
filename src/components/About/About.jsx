@@ -6,8 +6,45 @@ import heroImage from "../../assets/heroImage.webp";
 import batmanBlack from "../../assets/batman-logo.png";
 import batmanWhite from "../../assets/batman-logo (2).png";
 import flying from "../../assets/flying.png";
+import { FaJs } from "react-icons/fa";
+import { IoLogoHtml5 } from "react-icons/io";
+import { IoLogoCss3 } from "react-icons/io5";
+import { SiTailwindcss } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { SiRedux } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { SiTypeorm } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { DiMsqlServer } from "react-icons/di";
+import { SiExpress } from "react-icons/si";
+import { BsFiletypeScss } from "react-icons/bs";
+import { SiTypescript } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
+import { SiGithub } from "react-icons/si";
+import { IoLogoVercel } from "react-icons/io5";
+import { SiNetlify } from "react-icons/si";
 
-const About = ({ onContactClick,dark }) => {
+const About = ({ onContactClick, dark }) => {
+  const techStack = [
+    { icon: IoLogoHtml5, name: "HTML5", theme: "text-slate hover:text-orange-500 dark:hover:text-orange-500" },
+    { icon: IoLogoCss3, name: "CSS3", theme: "text-slate hover:text-blue-500 dark:hover:text-blue-500" },
+    { icon: BsFiletypeScss, name: "SCSS", theme: "text-slate hover:text-orange-500 dark:hover:text-blue-300" },
+    { icon: FaJs, name: "JavaScript", theme: "text-slate hover:text-yellow-400 dark:hover:text-yellow-400" },
+    { icon: SiTypescript, name: "TypeScript", theme: "text-slate hover:text-blue-400 dark:hover:text-blue-400" },
+    { icon: FaReact, name: "React", theme: "text-slate hover:text-[#087ea4] dark:hover:text-[#087ea4]" },
+    { icon: SiRedux, name: "Redux", theme: "text-slate hover:text-purple-500 dark:hover:text-purple-500" },
+    { icon: SiTailwindcss, name: "TailwindCSS", theme: "text-slate hover:text-blue-500 dark:hover:text-blue-500" },
+    { icon: FaNodeJs, name: "Node.js", theme: "text-slate hover:text-green-500 dark:hover:text-green-500" },
+    { icon: SiExpress, name: "Express", theme: "text-slate hover:text-black dark:hover:text-black" },
+    { icon: DiMsqlServer, name: "MS SQL Server", theme: "text-slate hover:text-red-500 dark:hover:text-red-500" },
+    { icon: SiTypeorm, name: "TypeORM", theme: "text-slate hover:text-[#f73] dark:hover:text-[#f73]" },
+    { icon: SiMongodb, name: "MongoDB", theme: "text-slate hover:text-green-500 dark:hover:text-green-500" },
+    { icon: FaGitAlt, name: "Git", theme: "text-slate hover:text-orange-500 dark:hover:text-orange-500" },
+    { icon: SiGithub, name: "GitHub", theme: "text-slate hover:text-black dark:hover:text-black" },
+    { icon: IoLogoVercel, name: "Vercel", theme: "text-slate hover:text-black dark:hover:text-black" }, 
+    { icon: SiNetlify, name: "Netlify", theme: "text-slate hover:text-[#32e6e2] dark:hover:text-[#32e6e2]" },
+  ];
+
   return (
     <>
       {/* hero-section */}
@@ -38,7 +75,8 @@ const About = ({ onContactClick,dark }) => {
                   />
                 </span>
                 <span className="w-0 flex items-end whitespace-nowrap overflow-hidden border-r-2 border-green-700 animate-typing animation-blink">
-                  Available for new project <img className="h-5 w-5" src={flying}/>
+                  Available for new project
+                  <img className="h-5 w-5" src={flying} />
                 </span>
               </div>
               <div onClick={onContactClick} className="relative group">
@@ -89,11 +127,13 @@ const About = ({ onContactClick,dark }) => {
             </p>
           </div>
           {/* horizontal-line */}
-          <div className="m-auto w-4/5 h-[1px] bg-gray-200 dark:bg-slate-800"></div>
+          <div className="m-auto w-4/5 h-[1px] bg-gray-200 dark:bg-slate-800" />
           <h3 className="font-semibold">Work Experience</h3>
-          <div className="flex gap-16 xm:flex-col xm:gap-3 items-center">
-            <div className="opacity-50 font-semibold">2023 - 2025</div>
-            <div className="flex flex-col gap-1">
+          <div className="flex xm:flex-col xm:gap-3 items-center">
+            <div className="opacity-50 font-semibold w-1/2">
+              Nov 2023 - Apr 2025
+            </div>
+            <div className="flex flex-col gap-1 w-1/2">
               <div className="font-semibold opacity-80">
                 Full Stack Developer at
               </div>
@@ -103,7 +143,7 @@ const About = ({ onContactClick,dark }) => {
             </div>
           </div>
           <div className="flex gap-16 xm:flex-col xm:gap-3 items-center">
-            <div className="opacity-50 font-semibold">2019 - 2022</div>
+            <div className="opacity-50 font-semibold">Jun 2019 - Jun 2022</div>
             <div className="flex flex-col gap-1">
               <div className="font-semibold opacity-80">
                 Financial Processor at
@@ -112,6 +152,19 @@ const About = ({ onContactClick,dark }) => {
                 Deccan i Services Pvt Lmtd
               </div>
             </div>
+          </div>
+          {/* horizontal-line */}
+          <div className="m-auto w-4/5 h-[1px] bg-gray-200 dark:bg-slate-800" />
+          <h3 className="font-semibold">Tech Stack</h3>
+          <div className="grid grid-cols-5 self-center w-fit gap-5">
+            {techStack.map((item, index) => (
+              <div key={index} title={item.name}>
+                <item.icon
+                  size={50}
+                  className={`${item.theme} rounded text-slate-800 dark:text-white hover:bg-white border dark:border-blue-950 px-2 hover:scale-125 hover:shadow-2xl cursor-pointer transition-all duration-300`}
+                />
+              </div>
+            ))}
           </div>
         </div>
         <div className="p-5 w-1/2 md:w-full">
