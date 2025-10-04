@@ -232,7 +232,7 @@ const About = ({ onContactClick, dark }) => {
                   style={{
                     animationDelay: `${index * 0.2}s`
                   }}
-                  className={`${item.theme} rounded text-slate-800 dark:text-white hover:bg-white border dark:border-blue-950 px-2 hover:scale-125 hover:shadow-2xl cursor-pointer transition-all duration-300  sm:animate-pulseScale`}
+                  className={`${item.theme} rounded text-slate-800 dark:text-white hover:bg-white border dark:border-blue-950 px-2 hover:scale-125 hover:shadow-2xl sm:shadow-2xl cursor-pointer transition-all duration-300  sm:animate-pulseScale`}
                 />
               </div>
             ))}
