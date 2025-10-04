@@ -197,26 +197,28 @@ const About = ({ onContactClick, dark }) => {
           {/* horizontal-line */}
           <div className="m-auto w-4/5 h-[1px] bg-gray-200 dark:bg-slate-800" />
           <h3 className="font-semibold">Work Experience</h3>
-          <div className="flex xm:flex-col xm:gap-3 items-center">
-            <div className="opacity-50 font-semibold w-1/2">
+          <div className="flex sm:flex-col sm:gap-3 sm:items-center">
+            <div className="opacity-50 font-semibold w-52 sm:w-fit">
               Nov 2023 - Apr 2025
             </div>
-            <div className="flex flex-col gap-1 w-1/2">
+            <div className="flex flex-col gap-1 w-52 sm:items-center sm:w-fit ">
               <div className="font-semibold opacity-80">
                 Full Stack Developer at
               </div>
-              <div className="p-1 border text-sm text-slate-500 border-slate-200 bg-slate-100 dark:bg-slate-700 dark:text-white dark:border-slate-500 rounded">
+              <div className="p-1 w-fit border text-sm text-slate-500 border-slate-200 bg-slate-100 dark:bg-slate-700 dark:text-white dark:border-slate-500 rounded">
                 SaveData Infotech Solutions
               </div>
             </div>
           </div>
-          <div className="flex gap-16 xm:flex-col xm:gap-3 items-center">
-            <div className="opacity-50 font-semibold">Jun 2019 - Jun 2022</div>
-            <div className="flex flex-col gap-1">
+          <div className="flex sm:flex-col sm:gap-3 sm:items-center">
+            <div className="opacity-50 font-semibold w-52 sm:w-fit">
+            Jun 2019 - Jun 2022
+            </div>
+            <div className="flex flex-col gap-1 w-52 sm:items-center sm:w-fit">
               <div className="font-semibold opacity-80">
                 Financial Processor at
               </div>
-              <div className="p-1 border text-sm text-slate-500 border-slate-200 bg-slate-100 dark:bg-slate-700 dark:text-white dark:border-slate-500 rounded">
+              <div className="p-1 w-fit border text-sm text-slate-500 border-slate-200 bg-slate-100 dark:bg-slate-700 dark:text-white dark:border-slate-500 rounded">
                 Deccan i Services Pvt Lmtd
               </div>
             </div>
