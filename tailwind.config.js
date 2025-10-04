@@ -10,6 +10,11 @@ export default {
         xm: { max: "400px" },
       },
       keyframes: {
+         pulseScale: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.15)" },
+        }
+        ,
         dropInAndWobble: {
           "0%": { transform: "translateY(0px) rotate(0deg)", opacity: "0" },
           "20%": { transform: "translateY(-15px) rotate(15deg)", opacity: "1" },
@@ -64,6 +69,7 @@ export default {
         blink: "blink 0.7s step-end infinite",
         marquee: "marquee 12s linear infinite",
         marqueeReverse: "marqueeReverse 12s linear infinite",
+        pulseScale: "pulseScale 1.5s ease-in-out infinite",
       },
     },
   },

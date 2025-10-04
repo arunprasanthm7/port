@@ -26,23 +26,91 @@ import { SiNetlify } from "react-icons/si";
 
 const About = ({ onContactClick, dark }) => {
   const techStack = [
-    { icon: IoLogoHtml5, name: "HTML5", theme: "text-slate hover:text-orange-500 dark:hover:text-orange-500" },
-    { icon: IoLogoCss3, name: "CSS3", theme: "text-slate hover:text-blue-500 dark:hover:text-blue-500" },
-    { icon: BsFiletypeScss, name: "SCSS", theme: "text-slate hover:text-orange-500 dark:hover:text-blue-300" },
-    { icon: FaJs, name: "JavaScript", theme: "text-slate hover:text-yellow-400 dark:hover:text-yellow-400" },
-    { icon: SiTypescript, name: "TypeScript", theme: "text-slate hover:text-blue-400 dark:hover:text-blue-400" },
-    { icon: FaReact, name: "React", theme: "text-slate hover:text-[#087ea4] dark:hover:text-[#087ea4]" },
-    { icon: SiRedux, name: "Redux", theme: "text-slate hover:text-purple-500 dark:hover:text-purple-500" },
-    { icon: SiTailwindcss, name: "TailwindCSS", theme: "text-slate hover:text-blue-500 dark:hover:text-blue-500" },
-    { icon: FaNodeJs, name: "Node.js", theme: "text-slate hover:text-green-500 dark:hover:text-green-500" },
-    { icon: SiExpress, name: "Express", theme: "text-slate hover:text-black dark:hover:text-black" },
-    { icon: DiMsqlServer, name: "MS SQL Server", theme: "text-slate hover:text-red-500 dark:hover:text-red-500" },
-    { icon: SiTypeorm, name: "TypeORM", theme: "text-slate hover:text-[#f73] dark:hover:text-[#f73]" },
-    { icon: SiMongodb, name: "MongoDB", theme: "text-slate hover:text-green-500 dark:hover:text-green-500" },
-    { icon: FaGitAlt, name: "Git", theme: "text-slate hover:text-orange-500 dark:hover:text-orange-500" },
-    { icon: SiGithub, name: "GitHub", theme: "text-slate hover:text-black dark:hover:text-black" },
-    { icon: IoLogoVercel, name: "Vercel", theme: "text-slate hover:text-black dark:hover:text-black" }, 
-    { icon: SiNetlify, name: "Netlify", theme: "text-slate hover:text-[#32e6e2] dark:hover:text-[#32e6e2]" },
+    {
+      icon: IoLogoHtml5,
+      name: "HTML5",
+      theme: "text-slate sm:text-orange-500 sm:dark:sm:text-orange-500 hover:text-orange-500 dark:hover:text-orange-500",
+    },
+    {
+      icon: IoLogoCss3,
+      name: "CSS3",
+      theme: "text-slate sm:text-blue-500 sm:dark:sm:text-blue-500 hover:text-blue-500 dark:hover:text-blue-500",
+    },
+    {
+      icon: BsFiletypeScss,
+      name: "SCSS",
+      theme: "text-slate sm:text-orange-500 sm:dark:sm:text-orange-500 hover:text-orange-500 dark:hover:text-blue-300",
+    },
+    {
+      icon: FaJs,
+      name: "JavaScript",
+      theme: "text-slate sm:text-yellow-400 sm:dark:sm:text-yellow-400 hover:text-yellow-400 dark:hover:text-yellow-400",
+    },
+    {
+      icon: SiTypescript,
+      name: "TypeScript",
+      theme: "text-slate sm:text-blue-400 sm:dark:sm:text-blue-400 hover:text-blue-400 dark:hover:text-blue-400",
+    },
+    {
+      icon: FaReact,
+      name: "React",
+      theme: "text-slate sm:text-[#087ea4] sm:dark:sm:text-[#087ea4] hover:text-[#087ea4] dark:hover:text-[#087ea4]",
+    },
+    {
+      icon: SiRedux,
+      name: "Redux",
+      theme: "text-slate sm:text-purple-500 sm:dark:sm:text-purple-500 hover:text-purple-500 dark:hover:text-purple-500",
+    },
+    {
+      icon: SiTailwindcss,
+      name: "TailwindCSS",
+      theme: "text-slate sm:text-blue-500 sm:dark:sm:text-blue-500 hover:text-blue-500 dark:hover:text-blue-500",
+    },
+    {
+      icon: FaNodeJs,
+      name: "Node.js",
+      theme: "text-slate sm:text-blue-500 sm:dark:sm:text-blue-500 hover:text-green-500 dark:hover:text-green-500",
+    },
+    {
+      icon: SiExpress,
+      name: "Express",
+      theme: "text-slate sm:text-black sm:dark:sm:text-black hover:text-black dark:hover:text-black",
+    },
+    {
+      icon: DiMsqlServer,
+      name: "MS SQL Server",
+      theme: "text-slate sm:text-red-500 sm:dark:sm:text-red-500 hover:text-red-500 dark:hover:text-red-500",
+    },
+    {
+      icon: SiTypeorm,
+      name: "TypeORM",
+      theme: "text-slate sm:text-[#f73] sm:dark:sm:text-[#f73] hover:text-[#f73] dark:hover:text-[#f73]",
+    },
+    {
+      icon: SiMongodb,
+      name: "MongoDB",
+      theme: "text-slate sm:text-green-500 sm:dark:sm:text-green-500 hover:text-green-500 dark:hover:text-green-500",
+    },
+    {
+      icon: FaGitAlt,
+      name: "Git",
+      theme: "text-slate sm:text-orange-500 sm:dark:sm:text-orange-500 hover:text-orange-500 dark:hover:text-orange-500",
+    },
+    {
+      icon: SiGithub,
+      name: "GitHub",
+      theme: "text-slate sm:text-black sm:dark:sm:text-black hover:text-black dark:hover:text-black",
+    },
+    {
+      icon: IoLogoVercel,
+      name: "Vercel",
+      theme: "text-slate sm:text-black sm:dark:sm:text-black hover:text-black dark:hover:text-black",
+    },
+    {
+      icon: SiNetlify,
+      name: "Netlify",
+      theme: "text-slate sm:text-[#32e6e2] sm:dark:sm:text-[#32e6e2] hover:text-[#32e6e2] dark:hover:text-[#32e6e2]",
+    },
   ];
 
   return (
@@ -161,7 +229,10 @@ const About = ({ onContactClick, dark }) => {
               <div key={index} title={item.name}>
                 <item.icon
                   size={50}
-                  className={`${item.theme} rounded text-slate-800 dark:text-white hover:bg-white border dark:border-blue-950 px-2 hover:scale-125 hover:shadow-2xl cursor-pointer transition-all duration-300`}
+                  style={{
+                    animationDelay: `${index * 0.2}s`
+                  }}
+                  className={`${item.theme} rounded text-slate-800 dark:text-white hover:bg-white border dark:border-blue-950 px-2 hover:scale-125 hover:shadow-2xl cursor-pointer transition-all duration-300  sm:animate-pulseScale`}
                 />
               </div>
             ))}
