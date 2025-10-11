@@ -3,6 +3,7 @@ import { GoArrowDown } from "react-icons/go";
 import CV from "../../assets/CV-thumbnail.jpg";
 import file from "../../assets/ArunPrasanthM_FrontEnd-React.pdf";
 import heroImage from "../../assets/heroImage.webp";
+import batman from "../../assets/batman.png";
 import batmanBlack from "../../assets/batman-logo.png";
 import batmanWhite from "../../assets/batman-logo (2).png";
 import flying from "../../assets/flying.png";
@@ -25,91 +26,125 @@ import { IoLogoVercel } from "react-icons/io5";
 import { SiNetlify } from "react-icons/si";
 
 const About = ({ onContactClick, dark }) => {
+  const wrkExp = [
+    {
+      role: "React.js Developer",
+      journey: "Sep 2025 - Present",
+      company: "(TCS) via Sellcraft Global Solutions Pvt Ltd, Bangalore.",
+    },
+    {
+      role: "Full Stack Developer",
+      journey: "Nov 2023 - Apr 2025",
+      company: "SaveData Infotech Solutions, Coimbatore.",
+    },
+    {
+      role: "Financial Processor",
+      journey: "Jun 2019 - Jun 2022",
+      company: "Deccan i Services Pvt Lmtd, Coimbatore.",
+    },
+  ];
   const techStack = [
     {
       icon: IoLogoHtml5,
       name: "HTML5",
-      theme: "text-slate sm:text-orange-500 sm:dark:sm:text-orange-500 hover:text-orange-500 dark:hover:text-orange-500",
+      theme:
+        "text-slate sm:text-orange-500 sm:dark:sm:text-orange-500 hover:text-orange-500 dark:hover:text-orange-500",
     },
     {
       icon: IoLogoCss3,
       name: "CSS3",
-      theme: "text-slate sm:text-blue-500 sm:dark:sm:text-blue-500 hover:text-blue-500 dark:hover:text-blue-500",
+      theme:
+        "text-slate sm:text-blue-500 sm:dark:sm:text-blue-500 hover:text-blue-500 dark:hover:text-blue-500",
     },
     {
       icon: BsFiletypeScss,
       name: "SCSS",
-      theme: "text-slate sm:text-orange-500 sm:dark:sm:text-orange-500 hover:text-orange-500 dark:hover:text-blue-300",
+      theme:
+        "text-slate sm:text-orange-500 sm:dark:sm:text-orange-500 hover:text-orange-500 dark:hover:text-blue-300",
     },
     {
       icon: FaJs,
       name: "JavaScript",
-      theme: "text-slate sm:text-yellow-400 sm:dark:sm:text-yellow-400 hover:text-yellow-400 dark:hover:text-yellow-400",
+      theme:
+        "text-slate sm:text-yellow-400 sm:dark:sm:text-yellow-400 hover:text-yellow-400 dark:hover:text-yellow-400",
     },
     {
       icon: SiTypescript,
       name: "TypeScript",
-      theme: "text-slate sm:text-blue-400 sm:dark:sm:text-blue-400 hover:text-blue-400 dark:hover:text-blue-400",
+      theme:
+        "text-slate sm:text-blue-400 sm:dark:sm:text-blue-400 hover:text-blue-400 dark:hover:text-blue-400",
     },
     {
       icon: FaReact,
       name: "React",
-      theme: "text-slate sm:text-[#087ea4] sm:dark:sm:text-[#087ea4] hover:text-[#087ea4] dark:hover:text-[#087ea4]",
+      theme:
+        "text-slate sm:text-[#087ea4] sm:dark:sm:text-[#087ea4] hover:text-[#087ea4] dark:hover:text-[#087ea4]",
     },
     {
       icon: SiRedux,
       name: "Redux",
-      theme: "text-slate sm:text-purple-500 sm:dark:sm:text-purple-500 hover:text-purple-500 dark:hover:text-purple-500",
+      theme:
+        "text-slate sm:text-purple-500 sm:dark:sm:text-purple-500 hover:text-purple-500 dark:hover:text-purple-500",
     },
     {
       icon: SiTailwindcss,
       name: "TailwindCSS",
-      theme: "text-slate sm:text-blue-500 sm:dark:sm:text-blue-500 hover:text-blue-500 dark:hover:text-blue-500",
+      theme:
+        "text-slate sm:text-blue-500 sm:dark:sm:text-blue-500 hover:text-blue-500 dark:hover:text-blue-500",
     },
     {
       icon: FaNodeJs,
       name: "Node.js",
-      theme: "text-slate sm:text-blue-500 sm:dark:sm:text-blue-500 hover:text-green-500 dark:hover:text-green-500",
+      theme:
+        "text-slate sm:text-blue-500 sm:dark:sm:text-blue-500 hover:text-green-500 dark:hover:text-green-500",
     },
     {
       icon: SiExpress,
       name: "Express",
-      theme: "text-slate sm:text-black sm:dark:sm:text-black hover:text-black dark:hover:text-black",
+      theme:
+        "text-slate sm:text-black sm:dark:sm:text-black hover:text-black dark:hover:text-black",
     },
     {
       icon: DiMsqlServer,
       name: "MS SQL Server",
-      theme: "text-slate sm:text-red-500 sm:dark:sm:text-red-500 hover:text-red-500 dark:hover:text-red-500",
+      theme:
+        "text-slate sm:text-red-500 sm:dark:sm:text-red-500 hover:text-red-500 dark:hover:text-red-500",
     },
     {
       icon: SiTypeorm,
       name: "TypeORM",
-      theme: "text-slate sm:text-[#f73] sm:dark:sm:text-[#f73] hover:text-[#f73] dark:hover:text-[#f73]",
+      theme:
+        "text-slate sm:text-[#f73] sm:dark:sm:text-[#f73] hover:text-[#f73] dark:hover:text-[#f73]",
     },
     {
       icon: SiMongodb,
       name: "MongoDB",
-      theme: "text-slate sm:text-green-500 sm:dark:sm:text-green-500 hover:text-green-500 dark:hover:text-green-500",
+      theme:
+        "text-slate sm:text-green-500 sm:dark:sm:text-green-500 hover:text-green-500 dark:hover:text-green-500",
     },
     {
       icon: FaGitAlt,
       name: "Git",
-      theme: "text-slate sm:text-orange-500 sm:dark:sm:text-orange-500 hover:text-orange-500 dark:hover:text-orange-500",
+      theme:
+        "text-slate sm:text-orange-500 sm:dark:sm:text-orange-500 hover:text-orange-500 dark:hover:text-orange-500",
     },
     {
       icon: SiGithub,
       name: "GitHub",
-      theme: "text-slate sm:text-black sm:dark:sm:text-black hover:text-black dark:hover:text-black",
+      theme:
+        "text-slate sm:text-black sm:dark:sm:text-black hover:text-black dark:hover:text-black",
     },
     {
       icon: IoLogoVercel,
       name: "Vercel",
-      theme: "text-slate sm:text-black sm:dark:sm:text-black hover:text-black dark:hover:text-black",
+      theme:
+        "text-slate sm:text-black sm:dark:sm:text-black hover:text-black dark:hover:text-black",
     },
     {
       icon: SiNetlify,
       name: "Netlify",
-      theme: "text-slate sm:text-[#32e6e2] sm:dark:sm:text-[#32e6e2] hover:text-[#32e6e2] dark:hover:text-[#32e6e2]",
+      theme:
+        "text-slate sm:text-[#32e6e2] sm:dark:sm:text-[#32e6e2] hover:text-[#32e6e2] dark:hover:text-[#32e6e2]",
     },
   ];
 
@@ -123,10 +158,16 @@ const About = ({ onContactClick, dark }) => {
               src={heroImage}
               alt="hero-image"
               title="hero-image"
-              className="w-20 h-24 rounded border-2  border-white -rotate-6 object-cover shadow-2xl hover:scale-110 transition-all"
+              className="w-20 h-24 rounded border-2 -rotate-6 object-cover shadow-2xl shadow-stone-600 dark:shadow-violet-500 hover:scale-110 transition-all"
             />
             <div className="flex flex-col text-4xl sm:text-2xl font-bold dark:text-white">
-              <h1>Hey, I’m Arun Prasanth.</h1>
+              <h1 className="flex items-end">
+                Hey, I’m
+                <span class="pl-3 bg-gradient-to-r from-fuchsia-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text">
+                  Arun Prasanth
+                </span>
+                <img src={batman} className="h-10 w-10 -translate-x-1" />
+              </h1>
               <h2>Front End Developer</h2>
             </div>
             <div className="text-gray-500 dark:text-gray-100">
@@ -197,44 +238,35 @@ const About = ({ onContactClick, dark }) => {
           {/* horizontal-line */}
           <div className="m-auto w-4/5 h-[1px] bg-gray-200 dark:bg-slate-800" />
           <h3 className="font-semibold">Work Experience</h3>
-          <div className="flex sm:flex-col sm:gap-3 sm:items-center">
-            <div className="opacity-50 font-semibold w-52 sm:w-fit">
-              Nov 2023 - Apr 2025
-            </div>
-            <div className="flex flex-col gap-1 w-52 sm:items-center sm:w-fit ">
-              <div className="font-semibold opacity-80">
-                Full Stack Developer at
+          {wrkExp.map((item, index) => (
+            <div
+              key={`wrkExp-${index}`}
+              className="flex sm:flex-col sm:gap-3 items-center"
+            >
+              <div className="opacity-50 font-semibold w-52 sm:w-fit">
+                {item.journey}
               </div>
-              <div className="p-1 w-fit border text-sm text-slate-500 border-slate-200 bg-slate-100 dark:bg-slate-700 dark:text-white dark:border-slate-500 rounded">
-                SaveData Infotech Solutions
-              </div>
-            </div>
-          </div>
-          <div className="flex sm:flex-col sm:gap-3 sm:items-center">
-            <div className="opacity-50 font-semibold w-52 sm:w-fit">
-            Jun 2019 - Jun 2022
-            </div>
-            <div className="flex flex-col gap-1 w-52 sm:items-center sm:w-fit">
-              <div className="font-semibold opacity-80">
-                Financial Processor at
-              </div>
-              <div className="p-1 w-fit border text-sm text-slate-500 border-slate-200 bg-slate-100 dark:bg-slate-700 dark:text-white dark:border-slate-500 rounded">
-                Deccan i Services Pvt Lmtd
+
+              <div className="flex flex-col gap-1 w-52 items-center sm:w-fit">
+                <div className="font-semibold opacity-80">{item.role} at</div>
+                <div className="p-1 w-fit border text-sm text-center text-slate-500 border-slate-200 bg-slate-100 dark:bg-slate-700 dark:text-white dark:border-slate-500 rounded">
+                  {item.company}
+                </div>
               </div>
             </div>
-          </div>
+          ))}
           {/* horizontal-line */}
           <div className="m-auto w-4/5 h-[1px] bg-gray-200 dark:bg-slate-800" />
           <h3 className="font-semibold">Tech Stack</h3>
-          <div className="grid grid-cols-5 self-center w-fit gap-5">
+          <div className="grid grid-cols-5 self-center w-fit gap-5 group">
             {techStack.map((item, index) => (
               <div key={index} title={item.name}>
                 <item.icon
                   size={50}
                   style={{
-                    animationDelay: `${index * 0.2}s`
+                    animationDelay: `${index * 0.2}s`,
                   }}
-                  className={`${item.theme} rounded text-slate-800 dark:text-white hover:bg-white border dark:border-blue-950 px-2 hover:scale-125 hover:shadow-2xl sm:shadow-2xl cursor-pointer transition-all duration-300  sm:animate-pulseScale`}
+                  className={`${item.theme} rounded text-slate-800 dark:text-white border dark:border-blue-950 px-2 hover:scale-125 hover:shadow-2xl sm:shadow-2xl cursor-pointer transition-all duration-300 animate-pulseScale`}
                 />
               </div>
             ))}

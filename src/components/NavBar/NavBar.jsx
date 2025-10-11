@@ -4,7 +4,7 @@ const NavBar = ({ onAboutClick, onProjectsClick, onContactClick }) => {
       <a
         href="/"
         title="Arun Prasanth🚀"
-        className="font-medium dark:text-white"
+        className="font-medium bg-gradient-to-r from-fuchsia-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text"
       >
         AP
       </a>

@@ -196,7 +196,7 @@ const ContactForm = () => {
           />
         </a>
       </div>
-      <div className="flex gap-3 justify-between justify-self-center text-[#989898] p-5 sm:flex-col sm:items-center sm:pb-16 xm:p-1">
+      <div className="flex gap-3 justify-between justify-self-center dark:text-[#989898] p-5 sm:flex-col sm:items-center sm:pb-16 xm:p-1">
         <div className="font-medium flex items-center gap-2">
           <span>From India with</span>
           <div className="relative w-5 h-5">
