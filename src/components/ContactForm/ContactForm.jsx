@@ -219,7 +219,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div>
-          ©2025 <span className="font-medium">Arun Prasanth</span>
+          ©{new Date().getFullYear()} <span className="font-medium">Arun Prasanth</span>
         </div>
       </div>
     </div>

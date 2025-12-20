@@ -163,7 +163,7 @@ const About = ({ onContactClick, dark }) => {
             <div className="flex flex-col text-4xl sm:text-2xl font-bold dark:text-white">
               <h1 className="flex items-end">
                 Hey, I’m
-                <span class="pl-3 bg-gradient-to-r from-fuchsia-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text">
+                <span className="pl-3 bg-gradient-to-r from-fuchsia-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text">
                   Arun Prasanth
                 </span>
                 <img src={batman} className="h-10 w-10 -translate-x-1" />
