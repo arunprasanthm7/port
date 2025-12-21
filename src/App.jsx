@@ -5,11 +5,10 @@ import NavBar from "./components/NavBar/NavBar";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import ContactForm from "./components/ContactForm/ContactForm";
-import { BsCloudSunFill } from "react-icons/bs";
-import { IoIosArrowRoundUp } from "react-icons/io";
-import { BsCloudMoonFill } from "react-icons/bs";
 import { IoSunny } from "react-icons/io5";
 import { IoMoon } from "react-icons/io5";
+import { RiExchangeFundsLine } from "react-icons/ri";
+import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -105,7 +104,7 @@ function App() {
             scrolled ? "bg-slate-500 h-5 mx-2 w-[1px]" : "h-0 w-0 mx-0"
           }`}
         ></div>
-        <IoIosArrowRoundUp
+        <MdOutlineKeyboardDoubleArrowUp
           title="Scroll-to-top"
           onClick={() => window.scrollTo({ top: "0", behavior: "smooth" })}
           className={`transition-all duration-300 ${
