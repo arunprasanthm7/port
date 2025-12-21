@@ -28,14 +28,12 @@ function App() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 300);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [dark]);
 
   const darkmode = () => {
     setDark((condition) => !condition);
-    console.log("dark :", dark);
   };
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -84,7 +82,7 @@ function App() {
           </linearGradient>
         </defs>
       </svg>
-      <div className="h-12 w-fit px-2.5 flex justify-between items-center z-50 fixed left-1/2 right-1/2 -translate-x-1/2 bottom-3 rounded-3xl bg-blue-950 border-blue-700 shadow-xl shadow-blue-950 dark:shadow-orange-300 transition-all">
+      <div className="h-12 w-fit px-2.5 flex justify-between items-center z-50 fixed left-1/2 right-1/2 -translate-x-1/2 bottom-3 rounded-3xl bg-blue-950 border-blue-700 shadow-lg shadow-blue-950 dark:shadow-orange-300 transition-all">
         <div
           title={`${dark == false ? "Dark" : "Light"}`}
           onClick={() => darkmode()}

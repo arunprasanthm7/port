@@ -1,16 +1,16 @@
 import { GoDotFill } from "react-icons/go";
 import { GoArrowDown } from "react-icons/go";
-import CV from "../../assets/CV-thumbnail.jpg";
+import CV from "../../assets/CV-thumbnail.webp";
 import file from "../../assets/ArunPrasanthM_FrontEnd-React.pdf";
 import heroImage from "../../assets/heroImage.webp";
-import batman from "../../assets/batman.png";
-import batmanBlack from "../../assets/batman-logo.png";
-import batmanWhite from "../../assets/batman-logo (2).png";
-import flying from "../../assets/flying.png";
+import batman from "../../assets/batman.webp";
+import batmanBlack from "../../assets/batman-logo.webp";
+import batmanWhite from "../../assets/batman-logo (2).webp";
+import flying from "../../assets/flying.webp";
 import { FaJs } from "react-icons/fa";
-import { IoLogoHtml5 } from "react-icons/io";
+import { IoLogoBitbucket, IoLogoHtml5 } from "react-icons/io";
 import { IoLogoCss3 } from "react-icons/io5";
-import { SiTailwindcss } from "react-icons/si";
+import { SiPostman, SiTailwindcss } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
@@ -28,9 +28,9 @@ import { SiNetlify } from "react-icons/si";
 const About = ({ onContactClick, dark }) => {
   const wrkExp = [
     {
-      role: "React.js Developer",
+      role: "Full Stack Developer",
       journey: "Sep 2025 - Present",
-      company: "(TCS) via Sellcraft Global Solutions Pvt Ltd, Bangalore.",
+      company: "Tata Consultancy Services via (SGS), Bangalore.",
     },
     {
       role: "Full Stack Developer",
@@ -123,6 +123,12 @@ const About = ({ onContactClick, dark }) => {
         "text-slate sm:text-green-500 sm:dark:sm:text-green-500 hover:text-green-500 dark:hover:text-green-500",
     },
     {
+      icon: SiPostman,
+      name: "Postman",
+      theme:
+        "text-slate sm:text-orange-500 sm:dark:sm:text-orange-600 hover:text-orange-600 dark:hover:text-orange-600",
+    },
+    {
       icon: FaGitAlt,
       name: "Git",
       theme:
@@ -133,6 +139,12 @@ const About = ({ onContactClick, dark }) => {
       name: "GitHub",
       theme:
         "text-slate sm:text-black sm:dark:sm:text-black hover:text-black dark:hover:text-black",
+    },
+    {
+      icon: IoLogoBitbucket,
+      name: "Bitbucket",
+      theme:
+        "text-slate sm:text-black sm:dark:sm:text-blue-500 hover:text-blue-500 dark:hover:text-blue-500",
     },
     {
       icon: IoLogoVercel,
@@ -168,7 +180,7 @@ const About = ({ onContactClick, dark }) => {
                 </span>
                 <img src={batman} className="h-10 w-10 -translate-x-1" />
               </h1>
-              <h2>Front End Developer</h2>
+              <h2>Full Stack Developer</h2>
             </div>
             <div className="text-gray-500 dark:text-gray-100">
               Design-driven creator with a passion for building things that
@@ -213,13 +225,14 @@ const About = ({ onContactClick, dark }) => {
               ideas to life through design.
             </p>
             <p>
-              With 1.6 years of hands-on experience in front-end development and
-              over 4.6 years of professional experience overall, I specialize in
-              building responsive, accessible, and visually consistent web
-              applications. My work spans a wide range of technologies including
-              React, Angular, TypeScript, and TailwindCSS — enabling me to
-              deliver interfaces that are not only functional but crafted with
-              attention to detail.
+              With around 2 years of hands-on experience in Full Stack
+              Development and over 5 years of professional experience overall, I
+              specialize in building responsive, accessible, and visually
+              consistent web applications. My work spans a wide range of
+              technologies including React, JavaScript, TypeScript, TailwindCSS,
+              NodeJs, ExpressJS, TypeORM & MS-SQL — enabling me to deliver
+              interfaces that are not only functional but crafted with attention
+              to detail.
             </p>
             <p>
               This journey has equipped me with a strong balance between UI
@@ -230,7 +243,7 @@ const About = ({ onContactClick, dark }) => {
 
             <p>
               Currently based in Bangalore, India, I’m looking for a full-time
-              front-end/product development role where I can collaborate
+              full stack/product development role where I can collaborate
               globally and solve real-world problems through meaningful,
               scalable user experiences.
             </p>
