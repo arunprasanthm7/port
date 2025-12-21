@@ -30,17 +30,17 @@ const About = ({ onContactClick, dark }) => {
     {
       role: "Full Stack Developer",
       journey: "Sep 2025 - Present",
-      company: "Tata Consultancy Services via (SGS), Bangalore.",
+      company: "Tata Consultancy Services via (SGS), Bangalore, India.",
     },
     {
       role: "Full Stack Developer",
       journey: "Nov 2023 - Apr 2025",
-      company: "SaveData Infotech Solutions, Coimbatore.",
+      company: "SaveData Infotech Solutions, Coimbatore, India.",
     },
     {
       role: "Financial Processor",
       journey: "Jun 2019 - Jun 2022",
-      company: "Deccan i Services Pvt Lmtd, Coimbatore.",
+      company: "Deccan i Services Pvt Lmtd, Coimbatore, India.",
     },
   ];
   const techStack = [
