@@ -9,7 +9,6 @@ import { IoSunny } from "react-icons/io5";
 import { IoMoon } from "react-icons/io5";
 import { RiExchangeFundsLine } from "react-icons/ri";
 import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
-import { Analytics } from "@vercel/analytics/next";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -72,7 +71,7 @@ function App() {
       <div ref={contactRef}>
         <ContactForm />
       </div>
-      <Analytics />
+
       <svg className="absolute inset-0 w-full h-full">
         <defs>
           <linearGradient id="Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -100,20 +99,6 @@ function App() {
             />
           )}
         </div>
-        <div
-          className={`transition-all duration-300 ${
-            scrolled ? "bg-slate-500 h-5 mx-2 w-[1px]" : "h-0 w-0 mx-0"
-          }`}
-        ></div>
-        <RiExchangeFundsLine
-          title="Version Toggle"
-          onClick={() => window.scrollTo({ top: "0", behavior: "smooth" })}
-          className={`transition-all duration-300 ${
-            scrolled
-              ? "h-8 w-8 text-white cursor-pointer hover:fill-[url(#Gradient)] duration-300 hover:scale-110 sm:fill-[url(#Gradient)] "
-              : "h-0 w-0"
-          }`}
-        />
         <div
           className={`transition-all duration-300 ${
             scrolled ? "bg-slate-500 h-5 mx-2 w-[1px]" : "h-0 w-0 mx-0"
