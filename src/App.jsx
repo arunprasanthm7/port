@@ -9,6 +9,7 @@ import { IoSunny } from "react-icons/io5";
 import { IoMoon } from "react-icons/io5";
 import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
 import { Analytics } from "@vercel/analytics/react";
+import GradientDefs from "./components/svg/GradientDefs";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -71,16 +72,6 @@ function App() {
       <div ref={contactRef}>
         <ContactForm />
       </div>
-
-      <svg className="absolute inset-0 w-full h-full">
-        <defs>
-          <linearGradient id="Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#f472b6" />
-            <stop offset="50%" stopColor="#c084fc" />
-            <stop offset="100%" stopColor="#60a5fa" />
-          </linearGradient>
-        </defs>
-      </svg>
       <div className="h-12 w-fit px-2.5 flex justify-between items-center z-50 fixed left-1/2 right-1/2 -translate-x-1/2 bottom-3 rounded-3xl bg-blue-950 border-blue-700 shadow-lg shadow-blue-950 dark:shadow-orange-300 transition-all">
         <div
           title={`${dark == false ? "Dark" : "Light"}`}
@@ -115,6 +106,7 @@ function App() {
         />
       </div>
       <Analytics />
+      <GradientDefs />
     </div>
   );
 }
