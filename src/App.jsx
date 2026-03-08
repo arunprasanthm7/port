@@ -7,8 +7,9 @@ import Projects from "./components/Projects/Projects";
 import ContactForm from "./components/ContactForm/ContactForm";
 import { IoSunny } from "react-icons/io5";
 import { IoMoon } from "react-icons/io5";
-import { RiExchangeFundsLine } from "react-icons/ri";
 import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
+import { Analytics } from "@vercel/analytics/react";
+import GradientDefs from "./components/svg/GradientDefs";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -127,6 +128,8 @@ function App() {
           }`}
         />
       </div>
+      <Analytics />
+      <GradientDefs />
     </div>
   );
 }

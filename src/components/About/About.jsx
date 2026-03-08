@@ -1,7 +1,7 @@
 import { GoDotFill } from "react-icons/go";
 import { GoArrowDown } from "react-icons/go";
 import CV from "../../assets/CV-thumbnail.webp";
-import file from "../../assets/ArunPrasanthM_FrontEnd-React.pdf";
+import file from "../../assets/Arun_Prasanth_M_Resume.pdf";
 import heroImage from "../../assets/heroImage.webp";
 import batman from "../../assets/batman.webp";
 import batmanBlack from "../../assets/batman-logo.webp";
@@ -29,17 +29,20 @@ const About = ({ onContactClick, dark }) => {
   const wrkExp = [
     {
       role: "Full Stack Developer",
-      journey: "Sep 2025 - Present",
+      start: "Sep 2025",
+      end: "Present",
       company: "Tata Consultancy Services via (SGS), Bangalore, India.",
     },
     {
       role: "Full Stack Developer",
-      journey: "Nov 2023 - Apr 2025",
+      start: "Nov 2023",
+      end: "Apr 2025",
       company: "SaveData Infotech Solutions, Coimbatore, India.",
     },
     {
       role: "Financial Processor",
-      journey: "Jun 2019 - Jun 2022",
+      start: "Jun 2019",
+      end: "Jun 2022",
       company: "Deccan i Services Pvt Lmtd, Coimbatore, India.",
     },
   ];
@@ -160,6 +163,24 @@ const About = ({ onContactClick, dark }) => {
     },
   ];
 
+  const getExperience = (start, end) => {
+    const startDate = new Date(start);
+    const endDate = end === "Present" ? new Date() : new Date(end);
+
+    const totalMonths =
+      (endDate.getFullYear() - startDate.getFullYear()) * 12 +
+      (endDate.getMonth() - startDate.getMonth()) +
+      1;
+
+    const years = Math.floor(totalMonths / 12);
+    const months = totalMonths % 12;
+
+    const yr = years ? `${years} yr${years > 1 ? "s" : ""}` : "";
+    const mo = months ? `${months} mo${months > 1 ? "s" : ""}` : "";
+
+    return `${yr} ${mo}`.trim();
+  };
+
   return (
     <>
       {/* hero-section */}
@@ -225,14 +246,13 @@ const About = ({ onContactClick, dark }) => {
               ideas to life through design.
             </p>
             <p>
-              With around 2 years of hands-on experience in Full Stack
-              Development and over 5 years of professional experience overall, I
-              specialize in building responsive, accessible, and visually
-              consistent web applications. My work spans a wide range of
-              technologies including React, JavaScript, TypeScript, TailwindCSS,
-              NodeJs, ExpressJS, TypeORM & MS-SQL — enabling me to deliver
-              interfaces that are not only functional but crafted with attention
-              to detail.
+              With 2+ years of hands-on experience in Full Stack Development and
+              over 5+ years of professional experience overall, I specialize in
+              building responsive, accessible, and visually consistent web
+              applications. My work spans a wide range of technologies including
+              React, JavaScript, TypeScript, TailwindCSS, NodeJs, ExpressJS,
+              TypeORM & MS-SQL — enabling me to deliver interfaces that are not
+              only functional but crafted with attention to detail.
             </p>
             <p>
               This journey has equipped me with a strong balance between UI
@@ -254,12 +274,16 @@ const About = ({ onContactClick, dark }) => {
           {wrkExp.map((item, index) => (
             <div
               key={`wrkExp-${index}`}
-              className="flex sm:flex-col sm:gap-3 items-center"
+              className="flex sm:flex-col sm:gap-3 items-center md:justify-center"
             >
-              <div className="opacity-50 font-semibold w-52 sm:w-fit">
-                {item.journey}
+              <div className="w-52 flex flex-col opacity-50 md:items-center sm:flex-row sm:gap-1 sm:w-fit">
+                <div className="font-semibold">
+                  {item.start} - {item.end}
+                </div>
+                <div className="flex items-center">
+                  {`( ${getExperience(item.start, item.end)} )`}
+                </div>
               </div>
-
               <div className="flex flex-col gap-1 w-52 items-center sm:w-fit">
                 <div className="font-semibold opacity-80">{item.role} at</div>
                 <div className="p-1 w-fit border text-sm text-center text-slate-500 border-slate-200 bg-slate-100 dark:bg-slate-700 dark:text-white dark:border-slate-500 rounded">

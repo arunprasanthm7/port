@@ -44,7 +44,7 @@ const ContactForm = () => {
           email: data.email,
           message: data.message,
         },
-        "7JGUOVvRVvEp5MYW8"
+        "7JGUOVvRVvEp5MYW8",
       )
       .then((response) => {
         alert("Message sent successfully!");
@@ -62,10 +62,7 @@ const ContactForm = () => {
   return (
     <div className="flex flex-col gap-10 justify-self-center w-[900px] md:w-[calc(100%-20px)] dark:border-blue-950 dark:bg-black dark:text-white border-l border-r">
       <div className="flex flex-col gap-2 w-[60%] sm:w-[calc(100%-20px)] mx-auto">
-        <h4 className="text-2xl font-bold my-8">
-          Contact
-         
-        </h4>
+        <h4 className="text-2xl font-bold my-8">Contact</h4>
         <p className="text-2xl font-semibold text-[#6d6d6d] dark:text-slate-600-500">
           Say{" "}
           <span
@@ -200,26 +197,12 @@ const ContactForm = () => {
         <div className="font-medium flex items-center gap-2">
           <span>From India with</span>
           <div className="relative w-5 h-5">
-            <svg className="absolute inset-0 w-full h-full">
-              <defs>
-                <linearGradient
-                  id="heartGradient"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="0%"
-                >
-                  <stop offset="0%" stopColor="#f472b6" />
-                  <stop offset="50%" stopColor="#c084fc" />
-                  <stop offset="100%" stopColor="#60a5fa" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <FaHeart className="w-full h-full animate-bounce fill-[url(#heartGradient)]" />
+            <FaHeart className="w-full h-full animate-bounce fill-[url(#Gradient)]" />
           </div>
         </div>
         <div>
-          ©{new Date().getFullYear()} <span className="font-medium">Arun Prasanth</span>
+          ©{new Date().getFullYear()}{" "}
+          <span className="font-medium">Arun Prasanth</span>
         </div>
       </div>
     </div>
