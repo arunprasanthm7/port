@@ -1,5 +1,5 @@
 import { GoDotFill } from "react-icons/go";
-import { GoArrowDown } from "react-icons/go";
+import { GoDownload } from "react-icons/go";
 import CV from "../../assets/CV-thumbnail.webp";
 import file from "../../assets/Arun_Prasanth_M_Resume.pdf";
 import heroImage from "../../assets/heroImage.webp";
@@ -324,8 +324,7 @@ const About = ({ onContactClick, dark }) => {
               className="group mx-auto flex justify-center items-center gap-2 px-4 py-1 w-fit bg-black dark:bg-slate-700 dark:hover:bg-slate-800 text-white rounded border border-transparent transition-colors hover:bg-gray-700"
             >
               <span className="flex items-center gap-2">
-                Take a look{" "}
-                <GoArrowDown className="group-hover:rotate-0 -rotate-90 transition-transform" />
+                Take a look <GoDownload />
               </span>
             </a>
           </div>
